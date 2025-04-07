@@ -48,8 +48,8 @@
   <entityname.scp_wreckammocrate>Abandoned Ammunition Component Crate</entityname.scp_wreckammocrate>
   <entitydescription.scp_wreckammocrate>An old, heavy box that looks like it's been sitting in the water for a long time, regardless the contents should be relatively intact.</entitydescription.scp_wreckammocrate>
   <entityname.scp_picture>Strange Sketch</entityname.scp_picture>
-  <entitydescription.scp_picture>Thanks Andrew.</entitydescription.scp_picture>
-  <entitydescription.scp_picture>Thanks Andrew.</entitydescription.scp_picture>
+  <entitydescription.scp_picture>It watches.</entitydescription.scp_picture>
+  <entitydescription.scp_picture>I am watching.</entitydescription.scp_picture>
   <entitydescription.scp_picture>Thanks Andrew.</entitydescription.scp_picture>
   <entityname.scp_ae1025>Strange Book</entityname.scp_ae1025>
   <entitydescription.scp_ae1025>A dull book of unknown origin only marked by a Biohazard symbol, you feel sick just holding it.</entitydescription.scp_ae1025>
@@ -80,7 +80,7 @@
   <!--Admin-->
   <entityname.sgt_adminskillbook>Specialist Training Handbook</entityname.sgt_adminskillbook>
   <entitydescription.sgt_adminskillbook>A booklet containing uncensored details about some Black-Ops under the ice, and how they were performed, to the letter. Reading this feels like you've walked the steps in their boots. 
-	
+    
   This is an Admin item.</entitydescription.sgt_adminskillbook>
   <entityname.sgt_adminmechbook>Exosuit Maintenance Manual</entityname.sgt_adminmechbook>
   <entitydescription.sgt_adminmechbook>A boring step-by-step process to maintain an Exosuit, and some neat tricks to use it better. Atleast it has plenty of pictures.
@@ -105,13 +105,13 @@
   <entityname.scp_armory>Armoury</entityname.scp_armory>
   <entitydescription.scp_armory>A large, lockable cabinet for storing large amounts of weaponry.</entitydescription.scp_armory>
   <entityname.scp_engineeringcab>Engineering Cabinet</entityname.scp_engineeringcab>
-  <entitydescription.scp_engineeringcab>None</entitydescription.scp_engineeringcab>
+  <entitydescription.scp_engineeringcab></entitydescription.scp_engineeringcab>
   <entityname.scp_weaponrack>Basic Weapon Rack</entityname.scp_weaponrack>
-  <entitydescription.scp_weaponrack>None</entitydescription.scp_weaponrack>
+  <entitydescription.scp_weaponrack></entitydescription.scp_weaponrack>
   <entityname.scp_smallweaponrack>Small Weapon Rack</entityname.scp_smallweaponrack>
-  <entitydescription.scp_smallweaponrack>None</entitydescription.scp_smallweaponrack>
+  <entitydescription.scp_smallweaponrack></entitydescription.scp_smallweaponrack>
   <entityname.scp_coilgunammocabinet>Coilgun Ammunition Cabinet</entityname.scp_coilgunammocabinet>
-  <entitydescription.scp_coilgunammocabinet>None</entitydescription.scp_coilgunammocabinet>
+  <entitydescription.scp_coilgunammocabinet></entitydescription.scp_coilgunammocabinet>
   <entityname.scp_railguncabinet>Railgun Storage Cabinet</entityname.scp_railguncabinet>
   <entitydescription.scp_railguncabinet>A large cabinet for storing railgun shells.</entitydescription.scp_railguncabinet>
   
@@ -185,8 +185,8 @@
   <entityname.scp_wreckammocrate>Abandoned Ammunition Component Crate</entityname.scp_wreckammocrate>
   <entitydescription.scp_wreckammocrate>An old, heavy box that looks like it's been sitting in the water for a long time, regardless the contents should be relatively intact.</entitydescription.scp_wreckammocrate>
   <entityname.scp_picture>Strange Sketch</entityname.scp_picture>
-  <entitydescription.scp_picture>Thanks Andrew.</entitydescription.scp_picture>
-  <entitydescription.scp_picture>Thanks Andrew.</entitydescription.scp_picture>
+  <entitydescription.scp_picture>It watches.</entitydescription.scp_picture>
+  <entitydescription.scp_picture>I am watching.</entitydescription.scp_picture>
   <entitydescription.scp_picture>Thanks Andrew.</entitydescription.scp_picture>
   <entityname.scp_ae1025>Strange Book</entityname.scp_ae1025>
   <entitydescription.scp_ae1025>A dull book of unknown origin only marked by a Biohazard symbol, you feel sick just holding it.</entitydescription.scp_ae1025>
@@ -250,22 +250,22 @@
   <entityname.scp_prototankcannon>Prototype Heavy Coilgun</entityname.scp_prototankcannon>
   <entitydescription.scp_prototankcannon>A heavily modified 80mm cannon meant to further increase it's abilities, firing significantly faster and is more energy efficient. However this comes at the cost of very heavy springs and a large price tag.</entitydescription.scp_prototankcannon>
   <entityname.scp_tankgunloader>Heavy Coilgun Loader</entityname.scp_tankgunloader>
-  <entitydescription.scp_tankgunloader>None</entitydescription.scp_tankgunloader>
+  <entitydescription.scp_tankgunloader></entitydescription.scp_tankgunloader>
   <entityname.scp_tankgunbox>Heavy Coilgun HE Ammo Box</entityname.scp_tankgunbox>
   <entitydescription.scp_tankgunbox>A large and bulky box containing 20 80mm HE shells for use in the Heavy Coilgun, producing a large explosion on impact.</entitydescription.scp_tankgunbox>
   <entityname.scp_tankheatproj>tankprojheat</entityname.scp_tankheatproj>
-  <entitydescription.scp_tankheatproj>None</entitydescription.scp_tankheatproj>
+  <entitydescription.scp_tankheatproj></entitydescription.scp_tankheatproj>
   <entityname.scp_tankgunapbox>Heavy Coilgun HEAS Ammo Box</entityname.scp_tankgunapbox>
   <entitydescription.scp_tankgunapbox>A large and bulky box containing 20 80mm HEAS shells for use in the Heavy Coilgun, meant to piece armour and then explode.</entitydescription.scp_tankgunapbox>
   <entityname.scp_tankapproj>tankprojap</entityname.scp_tankapproj>
-  <entitydescription.scp_tankapproj>None</entitydescription.scp_tankapproj>
+  <entitydescription.scp_tankapproj></entitydescription.scp_tankapproj>
   <entityname.scp_tankgunphysbox>Heavy Coilgun Physicorium Ammo Box</entityname.scp_tankgunphysbox>
   <entitydescription.scp_tankgunphysbox>A large and bulky box containing 20 80mm AP-PH shells for use in the Heavy Coilgun, the projectiles have a significantly higher velocity due to their lightness, though retain excellent explosive and penetrating potential.</entitydescription.scp_tankgunphysbox>
   <entityname.scp_tankphysproj>tankprojphys</entityname.scp_tankphysproj>
-  <entitydescription.scp_tankphysproj>None</entitydescription.scp_tankphysproj>
+  <entitydescription.scp_tankphysproj></entitydescription.scp_tankphysproj>
   <entityname.scp_tankgundubox>Heavy Coilgun DU Ammo Box</entityname.scp_tankgundubox>
   <entitydescription.scp_tankgundubox>A large ammo box containing 20 80mm sabot shells using 20mm Depleted Uranium self sharpening Darts, for penetrating straight through most hull designs and causing a large amount of spalling.</entitydescription.scp_tankgundubox>
-  <entitydescription.scp_tankduproj>None</entitydescription.scp_tankduproj>
+  <entitydescription.scp_tankduproj></entitydescription.scp_tankduproj>
   <entityname.scp_miniguncoilgun>Prototype Coilgun</entityname.scp_miniguncoilgun>
   <entitydescription.scp_miniguncoilgun>A highly Prototype coilgun utilizing a rotary gun system for an impressive rate of fire, however as a consequence it's very power demanding.</entitydescription.scp_miniguncoilgun>
   <entityname.scp_xm25>Experimental Grenade Launcher</entityname.scp_xm25>
@@ -275,7 +275,7 @@
   <entityname.scp_mgturret>Machine Gun Turret</entityname.scp_mgturret>
   <entitydescription.scp_mgturret>A relatively cheap 7.62x51mm GPMG attached to a coilgun base meant to be used against lightly armoured, fast moving targets. As a result of its conventional loading and firing mechanism it uses almost no power aside from the periscope light and trigger system.</entitydescription.scp_mgturret>
   <entityname.scp_machinegunturretloader>Machine Gun Turret Loader</entityname.scp_machinegunturretloader>
-  <entitydescription.scp_machinegunturretloader>None</entitydescription.scp_machinegunturretloader>
+  <entitydescription.scp_machinegunturretloader></entitydescription.scp_machinegunturretloader>
   <entityname.scp_mgturretfmjbox>Machine Gun Ammo Box</entityname.scp_mgturretfmjbox>
   <entitydescription.scp_mgturretfmjbox>A 250 round box of 7.62x51mm FMJ cartridges inside of a plastic box, meant to be used within a sub mounted Machine Gun</entitydescription.scp_mgturretfmjbox>
   <entityname.scp_mgturretapbox>Machine Gun Armour Piercing Box</entityname.scp_mgturretapbox>

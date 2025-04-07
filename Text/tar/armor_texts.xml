@@ -11,9 +11,9 @@
 	<entitydescription.sgt_longrangeradio>Links up with the user's headset to broadcast at a significantly longer range than normal. Has a few pockets on the sides for spare equipment.</entitydescription.sgt_longrangeradio>
 	<entityname.sgt_bobag>Coalition Black-Ops Specialist Hardcase</entityname.sgt_bobag>
 	<entitydescription.sgt_bobag>A Hardcase with a built-in range extender for radio equipment. It comes with a few deeper-than-usual pockets for spare munitions, as well as a sling for putting heavy weapons away, and out of sight.</entitydescription.sgt_bobag>
-	<entityname.sgt_exogear>Utility Exoskeleton</entityname.sgt_exogear>
+	<entityname.sgt_exogear>Coalition Exoskeleton</entityname.sgt_exogear>
 	<entitydescription.sgt_exogear>A semi-experimental suit used predominantly by miners and logistics teams for easy transport of materials and heavy equipment, whilst having a decent degree of ballistic protection. This suit however hampers movement given it's overall weight and the servomotors require a significant amount of power to function under load. Pressure rated for 2km/2000m.</entitydescription.sgt_exogear>
-	<entityname.sgt_fieldcap>Patrol Cap</entityname.sgt_fieldcap>
+	<entityname.sgt_fieldcap>Coalition Patrol Cap</entityname.sgt_fieldcap>
 	<entitydescription.sgt_fieldcap>Regulation wear, when a ballistic helmet is updressing the job, but you still want something on your noggin'.</entitydescription.sgt_fieldcap>
 	<entityname.sgt_combatmedicuniform>Combat Medic Uniform (Style 2)</entityname.sgt_combatmedicuniform>
 	<entitydescription.sgt_combatmedicuniform>A uniform with a unique looking digital camouflage printed onto it. It features thick aramid padding and larger pockets for equipment. Bloodstains are hard to wash out of clothing.</entitydescription.sgt_combatmedicuniform>

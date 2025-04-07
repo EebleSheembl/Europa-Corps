@@ -45,19 +45,19 @@
   
   <entityname.suture>Suture Kit</entityname.suture>
   <entitydescription.suture>Stitches up surgical incisions.
-	
+    
   On Use:
   ‖color:243,162,50,255‖-100% Surgical Incision‖color:end‖</entitydescription.suture>
   <entityname.scalpel>Scalpel</entityname.scalpel>
   <entitydescription.scalpel>Can make very precise cuts, perfect for surgery.
-	
+    
   On Use:
   ‖color:243,162,50,255‖+100% Surgical Incision‖color:end‖</entitydescription.scalpel>
 
 
   <entityname.tweezers>Tweezers</entityname.tweezers>
   <entitydescription.tweezers>Allows the retrieval of a variety foreign objects through incisions. Mostly bullets though.
-	
+    
   On Use:
   ‖color:154,213,163,255‖-30% Gunshot Wound‖color:end‖
   ‖color:245,105,105,255‖+4% Blood Loss‖color:end‖
@@ -71,7 +71,7 @@
 
   <entityname.surgeryscissors>Surgical Scissors</entityname.surgeryscissors>
   <entitydescription.surgeryscissors>Can make very precise snips, perfect for liberating someone of their organs.
-	
+    
   On Use:
   ‖color:154,213,163,255‖-20% Organ Damage‖color:end‖
   ‖color:245,105,105,255‖+9% Missing Organs‖color:end‖
@@ -80,14 +80,14 @@
   ‖color:243,162,50,255‖(Requires an open surgical incision)‖color:end‖</entitydescription.surgeryscissors>
   <entityname.humanorgan>Human Organ</entityname.humanorgan>
   <entitydescription.humanorgan>An organ, of a human. ‖color:245,105,105,255‖Edible when processed.‖color:end‖
-	
+    
   When implanted via surgery:
   ‖color:154,213,163,255‖-10% Missing Organs‖color:end‖</entitydescription.humanorgan>
 
 
   <entityname.basebionic>Bionic Organ</entityname.basebionic>
   <entitydescription.basebionic>A bionic contraption to mimic the function of a normal human organ, can be used to replace missing organs.
-	
+    
   When implanted via surgery:
   ‖color:154,213,163,255‖-10% Missing Organs‖color:end‖
   ‖color:245,105,105,255‖+9% Organ Rejection‖color:end‖
@@ -97,7 +97,7 @@
  
   <entityname.humanflesh>Human Flesh</entityname.humanflesh>
   <entitydescription.humanflesh>A flesh sample of the human species.
-	
+    
   When eaten:
   ‖color:154,213,163,255‖-30% Flesh Withdrawal‖color:end‖
   ‖color:245,105,105,255‖+15% Flesh Addiction‖color:end‖
@@ -179,7 +179,7 @@
 
   <entityname.concentratedants>Concentrated Ants</entityname.concentratedants>
   <entitydescription.concentratedants>A bunch of ants in a syringe; often used as a torture method
-	
+    
   ‖color:154,213,163,255‖+100% Ants‖color:end‖
   ‖color:243,162,50,255‖(No skill requirement.)‖color:end‖
   </entitydescription.concentratedants>
@@ -283,7 +283,7 @@
   
   <entityname.calyxanide>Calyxanide</entityname.calyxanide>
   <entitydescription.calyxanide>An antiparasitic drug used in the treatment of husk parasite infections. Might require higher dosage to cure the infection at later stages.
-	
+    
   On Use:
   ‖color:154,213,163,255‖-100% Husk Infection‖color:end‖
   ‖color:243,162,50,255‖(Healing reduced if skill requirement not met.)‖color:end‖
@@ -292,7 +292,7 @@
   
   <entityname.antibiotics>Broad-spectrum Antibiotics</entityname.antibiotics>
   <entitydescription.antibiotics>An aggressive antibiotic that acts against a wide range of disease-causing bacteria, though with the side effect of moderate organ damage in the process.
-	
+    
   On Use:
   ‖color:154,213,163,255‖-30% Husk Infection‖color:end‖
   ‖color:154,213,163,255‖-0.25% Husk Infection/s ~ 120s‖color:end‖
@@ -305,7 +305,7 @@
   
   <entityname.meth>Methamphetamine</entityname.meth>
   <entitydescription.meth>A potent nervous system stimulant.
-	
+    
   On Use:
   ‖color:154,213,163,255‖+420% Hyperactivity‖color:end‖
   ‖color:154,213,163,255‖-30% Meth Withdrawal‖color:end‖
@@ -317,7 +317,7 @@
 
   <entityname.steroids>Anabolic Steroids</entityname.steroids>
   <entitydescription.steroids>Temporarily increases muscular strength and physical performance.
-	
+    
   On Use:
   ‖color:154,213,163,255‖+420% Vigor‖color:end‖
   ‖color:154,213,163,255‖-3% Oxygen low/s 60s ‖color:end‖
@@ -330,7 +330,7 @@
   
   <entityname.hyperzine>Hyperzine</entityname.hyperzine>
   <entitydescription.hyperzine>An extremely potent muscle stimulant for those moments when you gotta go fast.
-	
+    
   On Use:
   ‖color:154,213,163,255‖+400% Vigor‖color:end‖
   ‖color:154,213,163,255‖+400% Hyperactivity‖color:end‖
@@ -344,7 +344,7 @@
 
   <entityname.combatstimulantsyringe>Combat Stimulant</entityname.combatstimulantsyringe>
   <entitydescription.combatstimulantsyringe>A highly advanced stimulant that makes the user rapidly recover from physical injuries and bloodloss.
-	
+    
   On Use:
   ‖color:154,213,163,255‖+75% Combat Stimulant‖color:end‖
   ‖color:245,105,105,255‖+25% Combat Stimulant Overdose‖color:end‖
@@ -355,7 +355,7 @@
   
   <entityname.antirad>Antirad</entityname.antirad>
   <entitydescription.antirad>Slows down cellular degradation caused by radiation.
-	
+    
   On Use:
   ‖color:154,213,163,255‖-100% Radiation Sickness‖color:end‖
   ‖color:243,162,50,255‖(Healing reduced if skill requirement not met.)‖color:end‖
@@ -364,7 +364,7 @@
   
   <entityname.stabilozine>Stabilozine</entityname.stabilozine>
   <entitydescription.stabilozine>Used as an ingredient in the manufacture of various medicines. On its own, can be used to slow down the effects of most toxins.
-	
+    
   On Use:
   ‖color:154,213,163,255‖-120% Organ Rejection‖color:end‖
   ‖color:154,213,163,255‖-1% Poison/s ~ 30s‖color:end‖
@@ -423,7 +423,7 @@
   ‖color:243,162,50,255‖(Healing reduced if skill requirement not met.)‖color:end‖
   </entitydescription.feniterdecontaminant>
 
-	<!-- Medical items -->
+    <!-- Medical items -->
 
   <entityname.foldingsurgerytable>Folding Surgical Table</entityname.foldingsurgerytable>
   <entitydescription.foldingsurgerytable>A folding surgical table used in the event of missing a hospital bed.</entitydescription.foldingsurgerytable>
