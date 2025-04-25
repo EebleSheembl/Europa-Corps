@@ -30,7 +30,7 @@
 	<entityname.sgt_bopmr>Coalition Precision Marksman Rifle</entityname.sgt_bopmr>
 	<entitydescription.sgt_bopmr>A 8.6x70mm straight-pull rifle, suppressed to the liking of the Black-Ops, using a bullpup frame to allow a longer barrel behind the suppressor, though it still needs to be stowed on the back due to it's sheer akwardness.</entitydescription.sgt_bopmr>
 	<entityname.sgt_boarmorhaz>Coalition Black-Ops Hazardous Environment Panels</entityname.sgt_boarmorhaz>
-	<entitydescription.sgt_boarmorhaz>A set of additive plates that attach to the existing system for the Black-Ops Rig. The Hazardous Environment Variants were developed for the more chem-savvy individuals, when such is used in the field, and comes with slots for drugs and antidotes.  Rated for 3000m Pressure.</entitydescription.sgt_boarmorhaz>
+	<entitydescription.sgt_boarmorhaz>A set of additive plates that attach to the existing system for the Black-Ops Rig. The Hazardous Environment Variants were developed for the more chem-savvy individuals, when such is used in the field, and comes with slots for drugs and antidotes.	Rated for 3000m Pressure.</entitydescription.sgt_boarmorhaz>
 	<entityname.sgt_boarmorleg>Coalition Black-Ops Mobility Assist Panels</entityname.sgt_boarmorleg>
 	<entitydescription.sgt_boarmorleg>A set of additive plates that attach to the existing system for the Black-Ops Rig. The Mobility Assist Variants are a little clunky, as the straps don't allow other armors to be worn, however they passively boost the users mobility, and keeps them on their feet.</entitydescription.sgt_boarmorleg>
 	<entityname.sgt_boarmorhvy>Coalition Black-Ops Heavy Engagement Panels</entityname.sgt_boarmorhvy>

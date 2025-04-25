@@ -80,7 +80,7 @@
 			<!--explosion-->
 			<StatusEffect type="OnBroken" target="This">
 
-				<sound file="%ModDir%/Sounds/Weapons/Explosives/bang1.ogg" type="OnUse" volume="1.75" range="8000" frequencymultiplier="0.95"  selectionmode="All" />
+				<sound file="%ModDir%/Sounds/Weapons/Explosives/bang1.ogg" type="OnUse" volume="1.75" range="8000" frequencymultiplier="0.95"	selectionmode="All" />
 				<sound file="Content/Items/Weapons/ExplosionDebris5.ogg" type="OnUse" range="8000" />
 
 				<ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="90" velocitymin="500" velocitymax="1000" scalemin="1.0" scalemax="1.5" />

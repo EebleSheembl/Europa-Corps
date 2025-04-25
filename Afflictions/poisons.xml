@@ -967,7 +967,7 @@
 			minstrength="2" maxstrength="60" 
 			minvitalitydecrease="10" maxvitalitydecrease="30" 
 			strengthchange="-0.08" 
-			mingrainstrength="2" maxgrainstrength="10.0" graincolor="20,0,0,255"  
+			mingrainstrength="2" maxgrainstrength="10.0" graincolor="20,0,0,255"	
 			minscreendistort="1" maxscreendistort="2" 
 			minscreenblur="3" maxscreenblur="7"
 			minspeedmultiplier="1" maxspeedmultiplier="0.8" 

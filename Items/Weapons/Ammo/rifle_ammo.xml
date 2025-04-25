@@ -1528,7 +1528,7 @@
 			<ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="210,255,115,100" scalemultiplier="1,0.6" />
 
 			<Attack 
-				structuredamage="1.0" itemdamage="7.5"  
+				structuredamage="1.0" itemdamage="7.5"	
 				targetforce="5" 
 				severlimbsprobability="0.05" 
 				penetration="0.2">

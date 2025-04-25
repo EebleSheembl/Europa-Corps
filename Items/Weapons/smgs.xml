@@ -311,7 +311,7 @@
 		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="20,-25" aimpos="45,6" handle1="-22,-26" handle2="46,-8" holdangle="-25" msg="ItemMsgPickUpSelect" />
 
 		<RangedWeapon 
-			reload="0.125" reloadnoskill="0.175" reloadskillrequirement="45"  
+			reload="0.125" reloadnoskill="0.175" reloadskillrequirement="45"	
 			weapondamagemodifier="0.9"
 			barrelpos="130,16" 
 			spread="8" unskilledspread="16" 

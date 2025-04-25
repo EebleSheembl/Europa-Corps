@@ -64,7 +64,7 @@
 			strengthchange="-0.2" 
 			minchromaticaberration="5.0" maxchromaticaberration="10.0" 
 			minradialdistort="0.0" maxradialdistort="10.0"
-			minscreendistort="0.0" maxscreendistort="3.0"  
+			minscreendistort="0.0" maxscreendistort="3.0"	
 			dialogflag="MethWithdrawalHigh">
 
 			<StatusEffect target="Character" SpeedMultiplier="0.5" color="195,136,60,255" setvalue="true" />
@@ -450,7 +450,7 @@
 				<Conditional alcoholaddiction="lt 20" />
 				<ReduceAffliction identifier="alcoholwithdrawal" strength="0.1" />
 			</StatusEffect>
-			<StatusEffect target="Character"  disabledeltatime="true" interval="1">
+			<StatusEffect target="Character"	disabledeltatime="true" interval="1">
 				<Affliction identifier="nausea" strength="12" probability="0.3" />
 			</StatusEffect>
 		</Effect>
@@ -472,7 +472,7 @@
 				<Conditional alcoholaddiction="lt 20" />
 				<ReduceAffliction identifier="alcoholwithdrawal" strength="0.05" />
 			</StatusEffect>
-			<StatusEffect target="Character"  disabledeltatime="true" interval="1">
+			<StatusEffect target="Character"	disabledeltatime="true" interval="1">
 				<Affliction identifier="nausea" strength="30" probability="0.5" />
 			</StatusEffect>
 		</Effect>

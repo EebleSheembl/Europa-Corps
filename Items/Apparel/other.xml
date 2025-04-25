@@ -1,14 +1,14 @@
 <Items>
 
-    <!--###-->
-    <!--Vests-->
+		<!--###-->
+		<!--Vests-->
 
-    
-    <!--++++++++++++++++++++++++++++++++++++-->
-    
-    <!--helmets-->
+		
+		<!--++++++++++++++++++++++++++++++++++++-->
+		
+		<!--helmets-->
 
-    <Item name="" identifier="scp_clownbatmask" category="Equipment" subcategory="Clown" tags="smallitem,clothing,clownmask,clowns" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.4">
+		<Item name="" identifier="scp_clownbatmask" category="Equipment" subcategory="Clown" tags="smallitem,clothing,clownmask,clowns" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.4">
 
 		<Sprite name="Clownbat Helm" texture="%ModDir%/Sprites/Items/Apparel/helmets.png" sourcerect="423,446,100,102" depth="0.6" origin="0.5,0.5" />
 
@@ -16,18 +16,18 @@
 
 		<Wearable slots="Any,Head" msg="ItemMsgPickUpSelect">
 			
-            <damagemodifier afflictionidentifiers="gunshotwound,bleeding" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+						<damagemodifier afflictionidentifiers="gunshotwound,bleeding" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
 			<damagemodifier afflictionidentifiers="lacerations,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
 			
-            <sprite name="Clownbat Helm Wearable" texture="%ModDir%/Sprites/Items/Apparel/helmets.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hidewearablesoftype="hair" sourcerect="423,446,100,102" origin="0.50285524,0.5793666" />
+						<sprite name="Clownbat Helm Wearable" texture="%ModDir%/Sprites/Items/Apparel/helmets.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hidewearablesoftype="hair" sourcerect="423,446,100,102" origin="0.50285524,0.5793666" />
 			
-            <StatusEffect tags="clown" type="OnWearing" target="Character" HideFace="true" duration="0.1" stackable="false" />
+						<StatusEffect tags="clown" type="OnWearing" target="Character" HideFace="true" duration="0.1" stackable="false" />
 		
-        </Wearable>
+				</Wearable>
 
 	</Item>
 
-    <!--++++++++++++++++++++++++++++++++++++-->
+		<!--++++++++++++++++++++++++++++++++++++-->
 	
 	<!--uniforms-->
 
@@ -65,7 +65,7 @@
 		</Wearable>
 
 		<ItemContainer 
-            capacity="3">
+						capacity="3">
 
 			<Containable items="smallitem" excludeditems="clothing,toolbox,mobilecontainer,rucksack,backpack,waistbelt,vest" />
 
@@ -73,7 +73,7 @@
 
 	</Item>
 
-    <!--++++++++++++++++++++++++++++++++++++-->
+		<!--++++++++++++++++++++++++++++++++++++-->
 	
 	<!--Misc-->
 

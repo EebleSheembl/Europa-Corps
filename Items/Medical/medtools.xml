@@ -127,8 +127,8 @@
 				<Sound file="Content/Items/Medical/Syringe.ogg" range="400" />
 
 				<ReduceAffliction identifier="gunshotwound" amount="15" />
-       			<Affliction identifier="bloodloss" amount="4"/>
-       			<Affliction identifier="bleeding" amount="2"/>
+			 			<Affliction identifier="bloodloss" amount="4"/>
+			 			<Affliction identifier="bleeding" amount="2"/>
 			</StatusEffect>
 
 			<StatusEffect type="OnFailure" target="Limb" duration="1.0" comparison="And">
@@ -138,8 +138,8 @@
 				<Sound file="Content/Items/Medical/Syringe.ogg" range="400" />
 
 				<ReduceAffliction identifier="gunshotwound" amount="10" />
-     			<Affliction identifier="bloodloss" amount="6"/>
-     			<Affliction identifier="bleeding" amount="2"/>
+		 			<Affliction identifier="bloodloss" amount="6"/>
+		 			<Affliction identifier="bleeding" amount="2"/>
 			</StatusEffect>
 
 			<!-- Remove the item when fully used -->

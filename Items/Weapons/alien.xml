@@ -177,7 +177,7 @@
 
 		<RangedWeapon 
 			reload="0.65" reloadnoskill="2" reloadskillrequirement="95" 
-			weapondamagemodifier="3.5" penetrationmultiplier="0.25"  
+			weapondamagemodifier="3.5" penetrationmultiplier="0.25"	
 			barrelpos="64,9" 
 			spread="8" unskilledspread="24" 
 			combatPriority="80" 

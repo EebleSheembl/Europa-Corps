@@ -50,7 +50,7 @@
 			<!--###-->
 
  		<!--Machete-->
-  	<Item name="" description="" identifier="scp_machete" category="Weapon" subcategory="Melee" Tags="smallitem,weapon,gunsmith" cargocontaineridentifier="metalcrate" scale="0.37" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+		<Item name="" description="" identifier="scp_machete" category="Weapon" subcategory="Melee" Tags="smallitem,weapon,gunsmith" cargocontaineridentifier="metalcrate" scale="0.37" impactsoundtag="impact_metal_light" RequireAimToUse="True">
 
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/meleeweapons.png" sourcerect="0,41,265,39" depth="0.55" origin="0.5,0.5" />
 		
@@ -78,7 +78,7 @@
 			</Attack>
 		</MeleeWeapon>
 
-    	<aitarget sightrange="500" soundrange="250" fadeouttime="1" />
+			<aitarget sightrange="500" soundrange="250" fadeouttime="1" />
 	</Item>
 
 			<!--###-->

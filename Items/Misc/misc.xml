@@ -3,7 +3,7 @@
 <!--MARKED FOR FIXING-->
 
 <Items>
-  <!--Starbound Reed Organ-->
+	<!--Starbound Reed Organ-->
 	<Item name="Strange Instrument" description="a blocky looking instrument resembling an electric keyboard." identifier="scp_starboundorgan" category="Misc" Tags="smallitem" scale="0.7" price="300" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" isshootable="true">
 		<RangedWeapon reload="1" />
 		<Upgrade gameversion="0.9.2.0" scale="0.5" />
@@ -40,7 +40,7 @@
 			<StatusEffect tags="playingharmonica" type="OnUse" target="Character" duration="0.1" stackable="false" />
 		</Holdable>
 	</Item>
-  <!--Meme horn-->
+	<!--Meme horn-->
 	<Item name="Bike Horn?" description="An object resembling a bike horn that appears to emit random noises when the ball is compressed." identifier="scp_memehorn" category="Misc" Tags="smallitem" cargocontaineridentifier="metalcrate" scale="0.7" price="300" impactsoundtag="impact_metal_light" isshootable="true">
 		<RangedWeapon reload="1" />
 		<Upgrade gameversion="0.9.2.0" scale="0.5" />

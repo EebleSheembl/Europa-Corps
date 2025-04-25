@@ -346,8 +346,8 @@
 
 	<Item name="" description="" identifier="scp_condensedstabilozine" maxstacksize="2" maxstacksizecharacterinventory="1" category="Medical" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
 
-	    <InventoryIcon name="constabinv" texture="%ModDir%/Sprites/Items/Medical/eha_medical.png" sourcerect="124,292,56,62" origin="0.5,0.5" />
-	    <Sprite texture="%ModDir%/Sprites/Items/Medical/eha_medical.png" sourcerect="360,106,65,10" depth="0.6" origin="0.5,0.5" />
+			<InventoryIcon name="constabinv" texture="%ModDir%/Sprites/Items/Medical/eha_medical.png" sourcerect="124,292,56,62" origin="0.5,0.5" />
+			<Sprite texture="%ModDir%/Sprites/Items/Medical/eha_medical.png" sourcerect="360,106,65,10" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="35" height="10" density="15" />
 
@@ -393,8 +393,8 @@
 
 		<SuitableTreatment type="scp_psidamage" suitability="100" />
 
-	    <Sprite texture="%ModDir%/Sprites/Items/Medical/eha_medical.png" sourcerect="6,104,30,20" depth="0.6" origin="0.5,0.5" />
-	    <InventoryIcon name="psyblockinv" texture="%ModDir%/Sprites/Items/Medical/eha_medical.png" sourcerect="1,129,45,45" depth="0.6" origin="0.5,0.5" />
+			<Sprite texture="%ModDir%/Sprites/Items/Medical/eha_medical.png" sourcerect="6,104,30,20" depth="0.6" origin="0.5,0.5" />
+			<InventoryIcon name="psyblockinv" texture="%ModDir%/Sprites/Items/Medical/eha_medical.png" sourcerect="1,129,45,45" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="25" height="20" density="20" />
 
@@ -442,7 +442,7 @@
 	<Anticide name="" identifier="anticide" category="medical" axstacksize="32" maxstacksizeincharacterinventory="8" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,syringe" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 
 		<SuitableTreatment identifier="concentratedants" suitability="100" />
-        
+				
 		<InventoryIcon texture="%ModDir%/Sprites/Items/Medical/drugs.png" sourcerect="256,64,64,64" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Sprites/Items/Medical/drugs.png" sourcerect="152,187,37,69" depth="0.6" origin="0.5,0.5" />
 
@@ -523,7 +523,7 @@
 				<Affliction identifier="psychosis" amount="0.3" />
 				<Affliction identifier="hallucinating" amount="2" />
 			</StatusEffect>
-		  
+			
 			<StatusEffect type="OnBroken" target="This">
 				<Remove />
 			</StatusEffect>
@@ -535,7 +535,7 @@
 	</FenAtropine>
 
 	<!--+++++++++++++++++++++++++++++++++++-->
-  
+	
 	<FenPulmonaryflush name="" identifier="feniterpulmonaryagentcure1" category="Medical" Tags="smallitem,chem" maxstacksize="8" cargocontaineridentifier="mediccrate" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
 
 		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/chemicalwarfaremain.png" sourcerect="230,80,80,80" origin="0.5,0.5" />
@@ -547,7 +547,7 @@
 		<SuitableTreatment identifier="feniterblisteragentinternal" suitability="1" />
 
 		<MeleeWeapon 
-	  		canBeCombined="true" removeOnCombined="true" 
+				canBeCombined="true" removeOnCombined="true" 
 			slots="Any,RightHand,LeftHand" 
 			aimpos="40,5" handle1="0,-5" holdangle="-180"
 			reload="1.0" 
@@ -592,7 +592,7 @@
 		<SkillRequirementHint identifier="medical" level="40" />
 
 	</FenPulmonaryflush>
-  
+	
 	<!--+++++++++++++++++++++++++++++++++++-->
 	
 	<FenPulmonarybinder name="" identifier="feniterpulmonaryagentcure2" category="Medical" Tags="smallitem,chem" maxstacksize="8" cargocontaineridentifier="mediccrate" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
@@ -746,7 +746,7 @@
 		<SkillRequirementHint identifier="medical" level="10" />
 		
 	</FenGenDecon>
-  
+	
 	<!--+++++++++++++++++++++++++++++++++++-->
 
 </Items>

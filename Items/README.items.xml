@@ -16,7 +16,7 @@
 
 <!--
 
-    ! Formatting for items. Follow this if adding any. 
+		! Formatting for items. Follow this if adding any. 
 	! Names, descriptions and anything similar must be defined in texts.
 	^ Note: This really isn't complete. It's done to the best of my abilities but is still irrationally difficult to work with.
 
@@ -84,23 +84,23 @@
 <!--!	Put these markers inbetween every item PACKET. They are there to make it easier to tell when packets start and stop.-->
 <!--++++++++++++++++++++++++++++++++++++-->
 
-<!--!   Put these between every GROUPED item. These are here to make it easier to group alike objects without making it difficult to pick apart each item.-->
+<!--!	 Put these between every GROUPED item. These are here to make it easier to group alike objects without making it difficult to pick apart each item.-->
 <!--###-->
 
 <!--EXAMPLE BELOW-->
 
 <!-- 
-    <Item magazine>
-        ...
-    </Item>
+		<Item magazine>
+				...
+		</Item>
 -->
 
-    <!--###-->
+		<!--###-->
 
 <!--
-   <Item projectile>
-        ...
-   </Item>
+	 <Item projectile>
+				...
+	 </Item>
 -->
 
 
@@ -108,7 +108,7 @@
 
 
 <!--
-   <Item 3>
-        ...
-   </Item>
+	 <Item 3>
+				...
+	 </Item>
 -->

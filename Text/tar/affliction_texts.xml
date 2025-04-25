@@ -4,7 +4,7 @@
 	<afflictionname.fatigue>Fatigue</afflictionname.fatigue>
 	<afflictiondescription.fatigue.low>You could use a break to regain your energy.</afflictiondescription.fatigue.low>
 	<afflictiondescription.fatigue.high>You can't run like this for much longer, you need to stop and catch your breath.</afflictiondescription.fatigue.high>
-  
+	
 	<!--Preso Latex-->
 	<afflictionname.scp_presolatexinfection>Preso Latex Petrification</afflictionname.scp_presolatexinfection>
 	<afflictiondescription.scp_presolatexinfection>The patient's dermal, subcutaneous and muscle tissues are rapidly being converted into Preso Latex. The affected areas beginning to rapidly shut down, with the patient's skin turning an anoxic black.</afflictiondescription.scp_presolatexinfection>

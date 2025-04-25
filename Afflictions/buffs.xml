@@ -42,7 +42,7 @@
 	
 	<!--++++++++++++++++++++++++++++++++++++-->
 
-  <Affliction
+	<Affliction
 		name="" 
 		identifier="scp_psiresistance" 
 		description=""
@@ -50,13 +50,13 @@
 		limbspecific="false" indicatorlimb="Head" 
 		maxstrength="100">
 
-    <Effect 
+		<Effect 
 			minstrength="0" maxstrength="100" 
 			strengthchange="-0.2" 
 			resistancefor="psiradiation" 
 			minresistance="0" maxresistance="0.6">
 		</Effect>
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="256,896,128,128" color="10,193,114,255" origin="0,0" />
-  </Affliction>
+		<icon texture="Content/UI/MainIconsAtlas.png" sourcerect="256,896,128,128" color="10,193,114,255" origin="0,0" />
+	</Affliction>
 
 </Afflictions>
