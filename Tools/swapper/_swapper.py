@@ -3,9 +3,9 @@ import re
 import difflib
 import xml.etree.ElementTree as ET
 
-SRC_DIR = "Text\\src"
-TAR_DIR = "Text\\tar"
-OUT_DIR = "Text\\tmp"
+SRC_DIR = "Text\\swapper\\src"
+TAR_DIR = "Text\\swapper\\tar"
+OUT_DIR = "Text\\swapper\\tmp"
 DIFF_SUFFIX = ".diff.txt"
 PREVIEW_MODE = True	# Set to False to remove previews
 
