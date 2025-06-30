@@ -65,22 +65,13 @@
 		<!--12g slug-->
 	<Item 
 		name="" 
-		description="" 
 		identifier="scp_12gslug" 
-		category="Weapon" 
-		maxstacksize="40" maxstacksizecharacterinventory="10" 
-		interactthroughwalls="true" 
-		cargocontaineridentifier="scp_ammocrate" 
-		tags="smallitem,shotgunammo,ehaammo" 
-		Scale="0.5" 
-		impactsoundtag="impact_metal_light">
+		description="" 
+		variantof="scp_12gmagbuck"
+		maxstacksize="40" maxstacksizecharacterinventory="10" >
 		
 		<InventoryIcon name="12gsluginv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/shotgunshells.png" sourcerect="0,0,45,46" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/shotgunshells.png" sourcerect="0,134,22,10" depth="0.55" origin="0.5,0.5" />
-
-		<Body width="23" height="10" density="40" />
-
-		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
 
 		<Projectile 
 			characterusable="false" 
@@ -125,20 +116,11 @@
 		name="" 
 		description="" 
 		identifier="scp_12gapslug" 
-		category="Weapon" 
-		maxstacksize="20" maxstacksizecharacterinventory="10" 
-		interactthroughwalls="true" 
-		cargocontaineridentifier="scp_ammocrate" 
-		tags="smallitem,shotgunammo,ehaammo" 
-		Scale="0.5" 
-		impactsoundtag="impact_metal_light">
+		variantof="scp_12gmagbuck"
+		maxstacksize="20" maxstacksizecharacterinventory="10" >
 
 		<InventoryIcon name="12gapsluginv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/shotgunshells.png" sourcerect="187,2,49,50" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/shotgunshells.png" sourcerect="24,145,29,10" depth="0.55" origin="0.5,0.5" />
-
-		<Body width="23" height="10" density="40" />
-
-		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
 
 		<Projectile 
 			characterusable="false" 
@@ -182,20 +164,11 @@
 		name="" 
 		description="" 
 		identifier="scp_12gbreachslug" 
-		category="Weapon" 
-		maxstacksize="40" maxstacksizecharacterinventory="10" 
-		interactthroughwalls="true" 
-		cargocontaineridentifier="scp_ammocrate" 
-		tags="smallitem,shotgunammo,ehaammo" 
-		Scale="0.5" 
-		impactsoundtag="impact_metal_light">
+		variantof="scp_12gmagbuck"
+		maxstacksize="40" maxstacksizecharacterinventory="10" >
 
 		<InventoryIcon name="12gsluginv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/shotgunshells.png" sourcerect="98,48,45,46" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/shotgunshells.png" sourcerect="0,134,22,10" depth="0.55" origin="0.5,0.5" />
-
-		<Body width="23" height="10" density="40" />
-
-		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
 
 		<Projectile 
 			characterusable="false" 
@@ -237,21 +210,12 @@
 	<Item 
 		name="" 
 		description="" 
-		identifier="scp_12devilslug" 
-		category="Weapon" subcategory="Chemical Weapons" 
-		maxstacksize="20" maxstacksizecharacterinventory="10" 
-		interactthroughwalls="true" 
-		cargocontaineridentifier="scp_ammocrate"
-		tags="smallitem,shotgunammo,ehaammo" 
-		Scale="0.5" 
-		impactsoundtag="impact_metal_light">
+		identifier="scp_12devilslug"
+		variantof="scp_12gmagbuck"
+		maxstacksize="20" maxstacksizecharacterinventory="10" >
 
 		<InventoryIcon name="12gdevilinv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/shotgunshells.png" sourcerect="46,48,52,49" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/shotgunshells.png" sourcerect="0,134,22,10" depth="0.55" origin="0.5,0.5" />
-		
-		<Body width="23" height="10" density="40" />
-
-		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
 
 		<Projectile 
 			characterusable="false" 
@@ -306,7 +270,8 @@
 		cargocontaineridentifier="scp_ammocrate" 
 		category="Weapon" subcategory="Renegade" 
 		impactsoundtag="impact_metal_light" 
-		scale="0.45">
+		scale="0.45"
+		health="5">
 		
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/renegadeammo.png" depth="0.54" sourcerect="279,105,40,61" origin="0.5,0.5" />
 
@@ -324,7 +289,7 @@
 
 		<Containable items="scp_12gbucksaiga" />
 
-		<StatusEffect type="OnUse" target="This" condition="-20" disabledeltatime="true">
+		<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
 			
 			<SpawnItem identifier="scp_12gbucksaiga" spawnposition="ThisInventory" />
 
@@ -344,39 +309,11 @@
 		name="" 
 		identifier="scp_saigaextmag" 
 		description="" 
-		tags="smallitem,saigaammo,ehaammo" 
-		maxstacksize="6" maxstacksizecharacterinventory="3" 
-		category="Weapon" subcategory="Renegade" 
-		cargocontaineridentifier="scp_ammocrate" 
-		impactsoundtag="impact_metal_light" 
-		scale="0.45">
+		variantof="scp_saigamag" 
+		maxstacksize="6" maxstacksizecharacterinventory="3"
+		health="10">
 		
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/renegadeammo.png" depth="0.54" sourcerect="188,86,49,81" origin="0.5,0.5" />
-
-		<Body width="30" height="40" density="50" />
-
-		<ItemContainer 
-			hideitems="true" 
-			capacity="1" 
-			drawinventory="false" 
-			canbeselected="false" 
-			ShowConditionInContainedStateIndicator="true" 
-			SpawnWithId="scp_12gbucksaiga" 
-			removecontaineditemsondeconstruct="true" 
-			containedstateindicatorstyle="bullet">
-
-		<Containable items="scp_12gbucksaiga" />
-
-		<StatusEffect type="OnUse" target="This" condition="-10" disabledeltatime="true">
-
-			<SpawnItem identifier="scp_12gbucksaiga" spawnposition="ThisInventory" />
-
-			<ParticleEmitter particle="scp_spentcasingshotgun" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.4" scalemax="0.4" />
-		</StatusEffect>
-
-		</ItemContainer>
-
-		<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
 
 	</Item>
 
@@ -387,40 +324,11 @@
 		name="" 
 		identifier="scp_saigadrummag" 
 		description="" 
-		tags="smallitem,saigaammo,ehaammo" 
-		category="Weapon" 
+		variantof="scp_saigamag"
 		maxstacksize="2" maxstacksizecharacterinventory="1" 
-		subcategory="Renegade" 
-		cargocontaineridentifier="scp_ammocrate" 
-		impactsoundtag="impact_metal_light" 
-		scale="0.45">
+		health="20">
 
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/renegadeammo.png" depth="0.54" sourcerect="239,108,39,59" origin="0.5,0.5" />
-
-		<Body width="30" height="40" density="50" />
-		
-		<ItemContainer
-			hideitems="true" 
-			capacity="1" 
-			drawinventory="false" 
-			canbeselected="false" 
-			ShowConditionInContainedStateIndicator="true" 
-			SpawnWithId="scp_12gbucksaiga" 
-			removecontaineditemsondeconstruct="true" 
-			containedstateindicatorstyle="bullet">
-
-		<Containable items="scp_12gbucksaiga" />
-
-		<StatusEffect type="OnUse" target="This" condition="-5" disabledeltatime="true">
-
-			<SpawnItem identifier="scp_12gbucksaiga" spawnposition="ThisInventory" />
-			
-			<ParticleEmitter particle="scp_spentcasingshotgun" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.4" scalemax="0.4" />
-		</StatusEffect>
-
-		</ItemContainer>
-
-		<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
 
 	</Item>
 
@@ -543,20 +451,10 @@
 	<Item 
 		name="" 
 		identifier="heavystunshell" 
-		category="Weapon" subcategory="Coalition" 
-		maxstacksize="12" 
-		interactthroughwalls="true" 
-		cargocontaineridentifier="metalcrate" 
-		tags="smallitem,heavyshotshell" 
-		Scale="0.025" 
-		impactsoundtag="impact_metal_light">
+		variantof="heavyshotshell" >
 		
 		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Ammo/heavyshotshell.png" sourcerect="0,228,580,228" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/heavyshotshell.png" sourcerect="0,228,580,228" depth="0.55" origin="0.5,0.5" />
-
-		<Body width="23" height="10" density="15" />
-
-		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
 
 		<Projectile 
 			characterusable="false" 
@@ -599,20 +497,10 @@
 	<Item 
 		name="" 
 		identifier="heavysliceshell" 
-		category="Weapon" subcategory="Coalition"
-		maxstacksize="12" 
-		interactthroughwalls="true" 
-		cargocontaineridentifier="metalcrate" 
-		tags="smallitem,heavyshotshell" 
-		Scale="0.025" 
-		impactsoundtag="impact_metal_light">
+		variantof="heavyshotshell">
 
 		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Ammo/heavyshotshell.png" sourcerect="0,456,580,228" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/heavyshotshell.png" sourcerect="0,456,580,228" depth="0.55" origin="0.5,0.5" />
-
-		<Body width="23" height="10" density="15" />
-
-		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
 
 		<Projectile 
 			characterusable="false" 
@@ -648,22 +536,12 @@
 	<!--8-Gauge Incendiary Shotshell-->
 	<Item 
 		name="" 
-		identifier="heavyhotshell" 
-		category="Weapon" subcategory="Coalition" 
-		maxstacksize="12" 
-		interactthroughwalls="true" 
-		cargocontaineridentifier="metalcrate" 
-		tags="smallitem,heavyshotshell" 
-		Scale="0.025" 
-		impactsoundtag="impact_metal_light">
+		identifier="heavyhotshell"
+		variantof="heavyshotshell" >
 
 		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Ammo/heavyshotshell.png" sourcerect="0,684,580,228" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/heavyshotshell.png" sourcerect="0,684,580,228" depth="0.55" origin="0.5,0.5" />
 
-		<Body width="23" height="10" density="15" />
-
-		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
-		
 		<Projectile 
 			characterusable="false" 
 			hitscan="true" hitscancount="10" 
@@ -768,21 +646,11 @@
 	<Item 
 		name="" 
 		description="" 
-		identifier="scp_4gslug" 
-		category="Weapon" subcategory="Prototype"
-		maxstacksize="10" maxstacksizecharacterinventory="5" 
-		interactthroughwalls="true" 
-		cargocontaineridentifier="metalcrate" 
-		tags="smallitem,ks23ammo,ehaammo" 
-		Scale="0.2" 
-		impactsoundtag="impact_metal_light">
+		identifier="scp_4gslug"
+		variantof="scp_4gshell">
 
 		<InventoryIcon name="4gsluginv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/ammo.png" sourcerect="58,70,56,57" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/ammo.png" sourcerect="29,131,25,69" depth="0.55" origin="0.5,0.5" />
-
-		<Body width="23" height="10" density="40" />
-
-		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
 
 		<Projectile 
 			characterusable="false" 
