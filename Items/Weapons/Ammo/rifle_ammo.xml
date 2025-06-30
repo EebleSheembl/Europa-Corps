@@ -20,7 +20,8 @@
 		category="Weapon" subcategory="Renegade" 
 		maxstacksize="16" maxstacksizecharacterinventory="8" 
 		impactsoundtag="impact_metal_light" 
-		scale="0.45">
+		scale="0.45"
+		health="30">
 
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/renegadeammo.png" depth="0.54" sourcerect="1,106,37,54" origin="0.5,0.5" />
 		<Body width="30" height="40" density="50" />
@@ -406,22 +407,13 @@
 		<!--5.56x45	AP mag-->
 	<Item 
 		identifier="scp_556apmag" 
-		name=""
-		impactsoundtag="impact_metal_light" 
+		variantof="scp_556mag"
 		scale="0.48" 
-		cargocontaineridentifier="scp_ammocrate" 
-		description="" 
-		category="Weapon" subcategory="Coalition" 
-		tags="smallitem,556ammo,ehaammo,55630mag" 
+		description=""
 		maxstacksize="12" maxstacksizecharacterinventory="4" 
-		linkable="true" 
 		interactthroughwall="true">
 		
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/improvedammo.png" depth="0.54" sourcerect="111,3,29,56" origin="0.5,0.5" />
-		
-		<Body width="30" height="40" density="50" />
-
-		<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
 
 		<ItemContainer 
 			hideitems="true" 
@@ -435,7 +427,7 @@
 
 			<Containable items="scp_556approjectile" />
 
-			<StatusEffect type="OnUse" target="This" condition="-3.3" disabledeltatime="true">
+			<StatusEffect type="OnUse" target="This" condition="1" disabledeltatime="true">
 				<SpawnItem identifier="scp_556approjectile" spawnposition="ThisInventory" />
 				<ParticleEmitter particle="scp_spentcasingriflesmall" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
 			</StatusEffect>
@@ -449,22 +441,13 @@
 		<!--5.56x45 30rnd durasteel magazine-->
 	<Item
 		identifier="scp_556duramag"
+		variantof="scp_556mag"
 		name=""
-		impactsoundtag="impact_metal_light" 
 		scale="0.48" 
-		cargocontaineridentifier="scp_ammocrate" 
-		description="" 
-		category="Weapon" subcategory="Coalition" 
-		tags="smallitem,556ammo,ehaammo,55630mag" 
 		maxstacksize="6" maxstacksizecharacterinventory="3" 
-		linkable="true" 
 		interactthroughwall="true">
 
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/improvedammo.png" depth="0.54" sourcerect="171,3,29,56" origin="0.5,0.5" />
-
-		<Body width="30" height="40" density="50" />
-		
-		<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
 
 		<ItemContainer 
 			hideitems="true" 
@@ -478,7 +461,7 @@
 
 			<Containable items="scp_556duraprojectile" />
 
-			<StatusEffect type="OnUse" target="This" condition="-3.3" disabledeltatime="true">
+			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
 				<SpawnItem identifier="scp_556duraprojectile" spawnposition="ThisInventory" />
 				<ParticleEmitter particle="scp_spentcasingriflesmall" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.5" scalemax="0.5" colormultiplier="75,75,200,255" />
 			</StatusEffect>
@@ -545,21 +528,10 @@
 		<!--5.56x45 AP round-->
 	<Item 
 		name="" 
-		identifier="scp_556approjectile" 
-		category="Weapon" 
+		identifier="scp_556approjectile"
+		variantof="scp_556projectile"
 		interactthroughwalls="true" 
-		cargocontaineridentifier="scp_weaponcrate" 
-		tags="smallitem" 
-		impactsoundtag="impact_metal_light" 
-		hideinmenus="true" 
 		scale="0.5">
-
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
-
-		<Body width="40" height="15" density="40" />
-
-		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
 
 		<Projectile 
 			characterusable="false" 
@@ -603,6 +575,7 @@
 	<Item 
 		name="" 
 		identifier="scp_556duraprojectile" 
+		variantof="scp_556projectile"
 		category="Weapon" 
 		interactthroughwalls="true" 
 		cargocontaineridentifier="scp_weaponcrate" 
