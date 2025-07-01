@@ -163,7 +163,7 @@
 		<!--Blaster Cell-->
 	<Item 
 		name="" 
-		identifier="sgt_hbcell" 
+		identifier="sgt_hbcell"
 		Category="Weapon" 
 		Tags="smallitem,hbcell,ehaammo" 
 		maxstacksize="2" 
@@ -210,11 +210,7 @@
 	<Item 
 		name="" 
 		identifier="sgt_hbcell2"
-		Category="Weapon" 
-		Tags="smallitem,hbcell,ehaammo" 
-		maxstacksize="2" 
-		cargocontaineridentifier="metalcrate" 
-		scale="0.5">
+		variantof="sgt_hbcell">
 
 		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Ammo/blastercell.png" sourcerect="59,0,21,21" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/blastercell.png" depth="0.55" sourcerect="40,1,18,68" origin="0.5,0.5" />
@@ -445,18 +441,11 @@
 		name="" 
 		identifier="scp_taucannonthorium" 
 		description="" 
-		tags="smallitem,tauammo,ehaammo" 
-		category="Weapon" 
-		subcategory="Prototype" 
-		cargocontaineridentifier="metalcrate" 
-		maxstacksize="1" 
-		impactsoundtag="impact_metal_light" 
-		scale="0.5">
+		variantof="scp_taucannonuranium"
+		maxstacksize="1">
 
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/improvedammo.png" depth="0.54" sourcerect="128,215,18,68" origin="0.5,0.5" />
 		<InventoryIcon name="tauthorinv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/improvedammo.png" sourcerect="208,218,35,34" origin="0.5,0.5" />
-
-		<Body width="30" height="40" density="50" />
 
 		<ItemContainer 
 			hideitems="true" 
@@ -476,8 +465,6 @@
 
 		</ItemContainer>
 
-		<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
-
 	</Item>
 
 		<!--###-->
@@ -487,17 +474,11 @@
 		name="" 
 		identifier="scp_taucannonfulgurium" 
 		description="" 
-		tags="smallitem,tauammo,ehaammo" 
-		category="Weapon" subcategory="Prototype" 
-		cargocontaineridentifier="metalcrate" 
-		maxstacksize="1" 
-		impactsoundtag="impact_metal_light" 
-		scale="0.5">
+		variantof="scp_taucannonuranium" 
+		maxstacksize="1">
 
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/improvedammo.png" depth="0.54" sourcerect="147,215,18,68" origin="0.5,0.5" />
 		<InventoryIcon name="taufulginv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/improvedammo.png" sourcerect="244,218,35,34" origin="0.5,0.5" />
-
-		<Body width="30" height="40" density="50" />
 
 		<ItemContainer 
 			hideitems="true" 
@@ -536,8 +517,6 @@
 			</StatusEffect>
 
 		</ItemContainer>
-
-		<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
 
 	</Item>
 	
