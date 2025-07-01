@@ -200,7 +200,8 @@
 		category="Weapon" subcategory="Coalition" 
 		maxstacksize="6" 
 		impactsoundtag="impact_metal_light" 
-		scale="0.3">
+		scale="0.3"
+		health="10">
 
 		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Renegade.png" sourcerect="422,155,47,70" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Renegade.png" depth="0.54" sourcerect="422,155,47,70" origin="0.5,0.5" />
@@ -219,7 +220,7 @@
 
 			<Containable items="sgt_10mmbullet" />
 
-			<StatusEffect type="OnUse" target="This" condition="-10" disabledeltatime="true">
+			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
 
 				<SpawnItem identifier="sgt_10mmbullet" spawnposition="ThisInventory" />
 				<ParticleEmitter particle="scp_spentcasingpistol" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="400" copyentityangle="true" scalemin="0.6" scalemax="0.6" />
@@ -240,17 +241,12 @@
 		name="" 
 		identifier="sgt_10mmmagext" 
 		description="" 
-		tags="smallitem,10mmsmgammo,ehaammo" 
-		cargocontaineridentifier="scp_ammocrate" 
-		category="Weapon" subcategory="Coalition"
-		maxstacksize="3" 
-		impactsoundtag="impact_metal_light" 
-		scale="0.3">
+		variantof="sgt_10mmmag"
+		maxstacksize="3"
+		health="20">
 
 		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Renegade.png" sourcerect="350,154,46,130" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Renegade.png" depth="0.54" sourcerect="350,154,46,130" origin="0.45217395,0.295" />
-
-		<Body width="30" height="65" density="50" />
 
 		<ItemContainer 
 			hideitems="true" 
@@ -264,7 +260,7 @@
 
 			<Containable items="sgt_10mmbullet" />
 
-			<StatusEffect type="OnUse" target="This" condition="-5" disabledeltatime="true">
+			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
 
 				<SpawnItem identifier="sgt_10mmbullet" spawnposition="ThisInventory" />
 				<ParticleEmitter particle="scp_spentcasingpistol" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="400" copyentityangle="true" scalemin="0.6" scalemax="0.6" />
@@ -272,8 +268,6 @@
 			</StatusEffect>
 
 		</ItemContainer>
-
-		<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
 
 	</Item>
 
@@ -349,7 +343,8 @@
 		category="Weapon" 
 		subcategory="Coalition" 
 		impactsoundtag="impact_metal_light" 
-		scale="0.5">
+		scale="0.5"
+		health="9">
 
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/improvedammo.png" depth="0.54" sourcerect="178,142,14,66" origin="0.5,0.5" />
 		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Ammo/improvedammo.png" sourcerect="178,142,14,45" origin="0.5,0.5" />
@@ -370,7 +365,7 @@
 		
 		<Containable items="scp_45projectile" />
 
-		<StatusEffect type="OnUse" target="This" condition="-11.1" disabledeltatime="true">
+		<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
 			<SpawnItem identifier="scp_45projectile" spawnposition="ThisInventory" />
 			<ParticleEmitter particle="scp_spentcasingpistol" particleamount="1" anglemin="70" anglemax="100" velocitymin="250" velocitymax="350" copyentityangle="true" scalemin="0.7" scalemax="0.7" />
 		</StatusEffect>
@@ -386,19 +381,12 @@
 		name="" 
 		identifier="scp_45incendmag" 
 		description="" 
-		tags="smallitem,45pistolammo,ehaammo,4510mag" 
-		cargocontaineridentifier="scp_ammocrate" 
+		variantof="scp_45mag"
 		maxstacksize="6" maxstacksizecharacterinventory="3" 
-		category="Weapon" subcategory="Coalition" 
-		impactsoundtag="impact_metal_light" 
-		scale="0.5">
+		health="10">
 
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/improvedammo.png" depth="0.54" sourcerect="214,143,15,66" origin="0.5,0.5" />
 		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Ammo/improvedammo.png" sourcerect="214,143,14,45" origin="0.5,0.5" />
-
-		<Body width="30" height="40" density="50" />
-
-		<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
 
 		<ItemContainer 
 			hideitems="true" 
@@ -412,7 +400,7 @@
 
 		<Containable items="scp_45incendprojectile" />
 
-		<StatusEffect type="OnUse" target="This" condition="-10" disabledeltatime="true">
+		<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
 			<SpawnItem identifier="scp_45incendprojectile" spawnposition="ThisInventory" />
 			<ParticleEmitter particle="scp_spentcasingpistol" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="350" copyentityangle="true" scalemin="0.7" scalemax="0.7" />
 		</StatusEffect>
@@ -533,8 +521,8 @@
 		<!--Service Revolver Ammo-->
 
 
-		<!--9x33mmR AP round-->
-		<!--Service Revolver AP Round-->
+		<!--9x33mmR round-->
+		<!--Service Revolver Round-->
 	<Item 
 		name="" 
 		identifier="scp_357round" 
@@ -595,20 +583,10 @@
 		name="" 
 		identifier="scp_357apround" 
 		description="" 
-		category="Weapon" subcategory="Coalition" 
-		interactthroughwalls="true" 
-		maxstacksize="24" maxstacksizecharacterinventory="12"
-		cargocontaineridentifier="scp_ammocrate" 
-		tags="smallitem,357ammo,ehaammo,pistolammoitem" 
-		impactsoundtag="impact_metal_light" 
-		scale="0.5">
+		variantof="scp_357round">
 		
 		<InventoryIcon name="357apinv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/improvedammo.png" sourcerect="402,11,38,38" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/improvedammo.png" sourcerect="26,254,8,23" origin="0.5,0.5" />
-
-		<Body width="40" height="15" density="40" />
-
-		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
 
 		<Projectile 
 			characterusable="false" 
@@ -711,20 +689,10 @@
 		name="" 
 		identifier="scp_44apround" 
 		description=""
-		category="Weapon" subcategory="Coalition" 
-		interactthroughwalls="true" 
-		maxstacksize="12" maxstacksizecharacterinventory="6" 
-		cargocontaineridentifier="scp_ammocrate" 
-		tags="smallitem,44ammo,ehaammo,pistolammoitem" 
-		impactsoundtag="impact_metal_light" 
-		scale="0.5">
+		variantof="scp_44round">
 
 		<InventoryIcon name="44apinv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/improvedammo.png" sourcerect="346,51,47,47" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/improvedammo.png" sourcerect="10,251,6,26" origin="0.5,0.5" />
-
-		<Body width="40" height="15" density="40" />
-
-		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
 
 		<Projectile 
 			characterusable="false" 
@@ -930,21 +898,11 @@
 	<Item 
 		name=""
 		identifier="scp_arevolverduraround" 
-		interactthroughwalls="true" 
 		description="" 
-		cargocontaineridentifier="scp_ammocrate" 
-		category="Weapon" subcategory="Coalition" 
-		tags="smallitem,weapon,ammo,pistolammoitem,gunsmith,ehaammo,arevolverround" 
-		scale="0.5" 
-		maxstacksize="10" maxstacksizecharacterinventory="5" 
-		impactsoundtag="impact_metal_light">
+		variantof="scp_arevolverround" >
 
 		<InventoryIcon name="arvolverduraroundinv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/improvedammo.png" sourcerect="451,66,60,60" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/improvedammo.png" sourcerect="12,215,9,34" depth="0.15" origin="0.5,0.5" />
-
-		<Body width="15" height="34" density="40" />
-
-		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
 
 		<Projectile 
 			characterusable="false" 
