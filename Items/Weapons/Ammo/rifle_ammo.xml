@@ -1174,7 +1174,7 @@
 		identifier="scp_scarduramag" 
 		description="" 
 		variantof="scp_scarmag" 
-		maxstacksize="4" maxstacksizecharacterinventory="2" 
+		maxstacksize="4" maxstacksizecharacterinventory="2">
 
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/improvedammo.png" depth="0.54" sourcerect="93,78,21,39" origin="0.5,0.5" />
 
