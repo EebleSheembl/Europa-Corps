@@ -184,60 +184,6 @@
 		
 	</Item>
 
-		<!--###-->
-
-		<!--9x19mm AP round-->
-	<Item 
-		name="" 
-		identifier="scp_9x19capprojectile" 
-		tags="smallitem,9mmammo,pistolammoitem" 
-		Scale="0.3"
-		category="Weapon" 
-		impactsoundtag="impact_metal_light" 
-		hideinmenus="true" 
-		scale="0.4">
-
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
-
-		<Body width="40" height="15" density="40" />
-
-		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
-
-		<Projectile 
-			characterusable="false" 
-			hitscan="true" 
-			removeonhit="true">
-
-			<ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,135" scalemultiplier="1,0.6" />
-
-			<Attack 
-				structuredamage="1.0" itemdamage="3" 
-				targetforce="0.2" 
-				severlimbsprobability="0.05" 
-				penetration="0.15">
-
-				<Affliction identifier="bleeding" strength="5" />
-				<Affliction identifier="bleeding" strength="5" probability="0.25" />
-				<Affliction identifier="gunshotwound" strength="12" />
-				<Affliction identifier="explosiondamage" strength="6" probability="0.1" />
-				<Affliction identifier="stun" strength="0.05" />
-			</Attack>
-			
-			<StatusEffect type="OnImpact" target="UseTarget">
-				<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
-			</StatusEffect>
-
-			<StatusEffect type="OnImpact" target="UseTarget">
-				<Conditional entitytype="eq Structure" />
-				<Conditional hastag="eq door" />
-			</StatusEffect>
-		
-		</Projectile>
-
-	</Item>
-
-
 		<!--++++++++++++++++++++++++++++++++++++-->
 		<!--10mm Auto-->
 		<!--Assault Pistol Ammo-->
