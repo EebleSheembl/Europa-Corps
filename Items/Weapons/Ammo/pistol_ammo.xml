@@ -17,7 +17,8 @@
 		category="Weapon" subcategory="Coalition" 
 		maxstacksize="10" maxstacksizecharacterinventory="5" 
 		impactsoundtag="impact_metal_light" 
-		scale="0.3">
+		scale="0.3"
+		health="16">
 
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/ammo.png" depth="0.54" sourcerect="10,0,28,56" origin="0.5,0.5" />
 
@@ -35,7 +36,7 @@
 
 			<Containable items="scp_9x19pprojectile" />
 
-			<StatusEffect type="OnUse" target="This" condition="-6.3" disabledeltatime="true">
+			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
 				<SpawnItem identifier="scp_9x19pprojectile" spawnposition="ThisInventory" />
 				<ParticleEmitter particle="scp_spentcasingpistol" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="400" copyentityangle="true" scalemin="0.6" scalemax="0.6" />
 			</StatusEffect>
@@ -52,18 +53,10 @@
 		name="" 
 		identifier="scp_9mmapmag" 
 		description="" 
-		tags="smallitem,9mmpistolammo,ehaammo,9mm16mag" 
-		cargocontaineridentifier="scp_ammocrate" 
-		category="Weapon" subcategory="Coalition" 
-		maxstacksize="10" maxstacksizecharacterinventory="5" 
-		impactsoundtag="impact_metal_light"
-		scale="0.3">
+		variantof="scp_9mmmag"
+		maxstacksize="10" maxstacksizecharacterinventory="5">
 
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/ammo.png" depth="0.54" sourcerect="67,3,28,56" origin="0.5,0.5" />
-
-		<Body width="30" height="40" density="50" />
-
-		<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
 
 		<ItemContainer 
 			hideitems="true" 
@@ -77,7 +70,7 @@
 
 			<Containable items="scp_9x19cappprojectile" />
 
-			<StatusEffect type="OnUse" target="This" condition="-6.2" disabledeltatime="true">
+			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
 				<SpawnItem identifier="scp_9x19cappprojectile" spawnposition="ThisInventory" />
 				<ParticleEmitter particle="scp_spentcasingpistol" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="400" copyentityangle="true" scalemin="0.6" scalemax="0.6" />
 			</StatusEffect>
