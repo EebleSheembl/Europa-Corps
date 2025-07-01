@@ -14,7 +14,8 @@
 		category="Weapon" subcategory="Coalition" 
 		maxstacksize="6" maxstacksizecharacterinventory="2" 
 		impactsoundtag="impact_metal_light" 
-		scale="0.5">
+		scale="0.5"
+		health="20">
 
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/improvedammo.png" depth="0.54" sourcerect="171,255,31,47" origin="0.5,0.5" />
 		<InventoryIcon name="cinv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/improvedammo.png" depth="0.54" sourcerect="206,255,60,60" origin="0.5,0.5" />
@@ -33,7 +34,7 @@
 
 			<Containable items="scp_coilgunproj" />
 
-			<StatusEffect type="OnUse" target="This" condition="-5" disabledeltatime="true">
+			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
 				<SpawnItem identifier="scp_coilgunproj" spawnposition="ThisInventory" />
 			</StatusEffect>
 
@@ -113,7 +114,8 @@
 		Tags="smallitem,chemfuel" 
 		cargocontaineridentifier="metalcrate" 
 		scale="0.5" 
-		impactsoundtag="impact_metal_light">
+		impactsoundtag="impact_metal_light"
+		health="10">
 
 		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Ammo/Chemfuel.png" sourcerect="1,1,34,68" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/Chemfuel.png" sourcerect="2,2,33,67" depth="0.55" origin="0.5026745,0.5045908" />
@@ -126,7 +128,7 @@
 			holdpos="30,-15" handle1="0,5" handle2="0,-5" 
 			msg="ItemMsgPickUpSelect">
 
-			<StatusEffect type="OnFire" target="This" Condition="-10.0" tags="onfire" duration="1" stackable="false" />
+			<StatusEffect type="OnFire" target="This" Condition="-1.0" tags="onfire" duration="1" stackable="false" />
 
 			<StatusEffect type="OnBroken" target="This" delay="1" stackable="true">
 				<Conditional HasStatusTag="onfire" />
@@ -168,7 +170,8 @@
 		Tags="smallitem,hbcell,ehaammo" 
 		maxstacksize="2" 
 		cargocontaineridentifier="metalcrate" 
-		scale="0.5">
+		scale="0.5"
+		health="1">
 
 		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Ammo/blastercell.png" sourcerect="19,0,21,21" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/blastercell.png" depth="0.55" sourcerect="0,1,18,68" origin="0.5,0.5" />
@@ -191,7 +194,7 @@
 
 			<Containable items="sgt_blasterbolt" />
 
-			<StatusEffect type="OnUse" target="This" condition="-100.0" disabledeltatime="true">
+			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
 				<SpawnItem identifiers="sgt_blasterbolt" spawnposition="ThisInventory" />
 			</StatusEffect>
 
@@ -233,7 +236,7 @@
 
 			<Containable items="sgt_blasterbolt2" />
 
-			<StatusEffect type="OnUse" target="This" condition="-100.0" disabledeltatime="true">
+			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
 				<SpawnItem identifiers="sgt_blasterbolt2" spawnposition="ThisInventory" />
 			</StatusEffect>
 
@@ -405,7 +408,8 @@
 		cargocontaineridentifier="metalcrate" 
 		maxstacksize="2" 
 		impactsoundtag="impact_metal_light" 
-		scale="0.5">
+		scale="0.5"
+		health="10">
 
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/improvedammo.png" depth="0.54" sourcerect="109,215,18,68" origin="0.5,0.5" />
 		<InventoryIcon name="tauuraninv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/improvedammo.png" sourcerect="169,218,35,33" origin="0.5,0.5" />
@@ -424,7 +428,7 @@
 
 			<Containable items="scp_tauuraniumshot" />
 
-			<StatusEffect type="OnUse" target="This" condition="-10" disabledeltatime="true">
+			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
 				<SpawnItem identifier="scp_tauuraniumshot" spawnposition="ThisInventory" />
 			</StatusEffect>
 
@@ -442,7 +446,8 @@
 		identifier="scp_taucannonthorium" 
 		description="" 
 		variantof="scp_taucannonuranium"
-		maxstacksize="1">
+		maxstacksize="1"
+		helath="8">
 
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/improvedammo.png" depth="0.54" sourcerect="128,215,18,68" origin="0.5,0.5" />
 		<InventoryIcon name="tauthorinv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/improvedammo.png" sourcerect="208,218,35,34" origin="0.5,0.5" />
@@ -459,7 +464,7 @@
 
 			<Containable items="scp_tauthoriumshot" />
 
-			<StatusEffect type="OnUse" target="This" condition="-12.5" disabledeltatime="true">
+			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
 				<SpawnItem identifier="scp_tauthoriumshot" spawnposition="ThisInventory" />
 			</StatusEffect>
 
@@ -475,7 +480,8 @@
 		identifier="scp_taucannonfulgurium" 
 		description="" 
 		variantof="scp_taucannonuranium" 
-		maxstacksize="1">
+		maxstacksize="1"
+		health="5">
 
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/improvedammo.png" depth="0.54" sourcerect="147,215,18,68" origin="0.5,0.5" />
 		<InventoryIcon name="taufulginv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/improvedammo.png" sourcerect="244,218,35,34" origin="0.5,0.5" />
@@ -492,7 +498,7 @@
 
 			<Containable items="scp_taufulgshot" />
 
-			<StatusEffect type="OnUse" target="This" condition="-20" disabledeltatime="true">
+			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
 				<SpawnItem identifier="scp_taufulgshot" spawnposition="ThisInventory" />
 			</StatusEffect>
 
