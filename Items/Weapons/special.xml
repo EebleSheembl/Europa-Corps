@@ -591,6 +591,61 @@
 
 	</Item>
 
+		<!--###-->
+
+		<!--Prototype Automatic Rifle-->
+		<!--HCAR-->
+	<Item name="" description="" identifier="sgt_rifleprototype" category="Weapon" subcategory="Prototype" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.35" impactsoundtag="weaponheavydrop">
+		
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/prototype.png" sourcerect="0,353,331,85" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="rifleinv" texture="%ModDir%/Sprites/Items/Weapons/prototype.png" sourcerect="417,0,56,62" origin="0.5,0.5" />
+		
+		<Body width="190" height="50" density="25" />
+		
+		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-20" aimpos="55,-10" handle1="-74,-20" handle2="16,-8" holdangle="-25" msg="ItemMsgPickUpSelect" />
+		
+		<RangedWeapon 
+			barrelpos="125,7" 
+			unskilledspread="18" spread="6" 
+			combatPriority="70" 
+			reload="0.25" reloadnoskill="0.8" reloadskillrequirement="70" 
+			drawhudwhenequipped="true" 
+			crosshairscale="0.15" 
+			penetrationmultiplier="0.5">
+			
+			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+			
+			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/garand2.ogg" type="OnUse" range="4000" volume="1.2" frequencymultiplier="1" selectionmode="Random" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/garand2.ogg" type="OnUse" range="4000" volume="1.2" frequencymultiplier="0.9" />
+
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="150.0" force="2.0" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="10.0" />
+			</StatusEffect>
+			
+			<RequiredItems items="rifleammo" type="Contained" msg="ItemMsgAmmoRequired" />
+			
+			<RequiredSkill identifier="weapons" level="65" />
+		
+		</RangedWeapon>
+		<!--ItemContainer capacity="2" maxstacksize="12" hideitems="false" containedstateindicatorslot="0+1" containedstateindicatorstyle="bullet" containedspritedepth="0.56"-->
+		<ItemContainer capacity="2" maxstacksize="12" hideitems="false" containedstateindicatorslot="0+1" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
+			<Containable items="rifleammo" hide="true" />
+			<SlotIcon slotindex="0" texture="Content/UI/ContainerIndicators.png" sourcerect="1,62,120,29" origin="0.5,0.5" />
+			<SlotIcon slotindex="1" texture="Content/UI/ContainerIndicators.png" sourcerect="1,62,120,29" origin="0.5,0.5" />
+			<SlotIcon slotindex="2" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
+			<!--SubContainer capacity="1" containedspritedepth="0.5">
+			<Containable items="flashlight" hide="false" itempos="32,3" setactive="true" />
+			</SubContainer-->
+		</ItemContainer>
+
+		<aitarget sightrange="3000" soundrange="5000" fadeouttime="5" />
+		
+		<SkillRequirementHint identifier="weapons" level="70" />
+
+	</Item>
+
 		<!--Nerve Agent-->
 	<Item name="" identifier="fenitergasgrenade1" category="Weapon" maxstacksize="8" cargocontaineridentifier="chemicalcrate" tags="smallitem,weapon,explosive" Scale="0.5" impactsoundtag="" health="15">
 	
