@@ -25,10 +25,6 @@
 	<entitydescription.sgt_renegadeuniform>A standard issue Separatist uniform, providing a small amount of protection though allows for slightly more agile movement. I guess just ripping off your sleeves is just too punk, huh?</entitydescription.sgt_renegadeuniform>
 	<entityname.sgt_combatrig>Coalition Black-Ops Rig</entityname.sgt_combatrig>
 	<entitydescription.sgt_combatrig>An extremely experimental combat suit, designed for the Coalition Black-Ops. A Uniform with advanced alloys and flexible joints, it allows a great deal of protection from gunfire, while keeping the user mobile enough to evade and reposition in the case of overwhelming force.</entitydescription.sgt_combatrig>
-	<entityname.sgt_boshotgun>Coalition Suppressed Combat Shotgun</entityname.sgt_boshotgun>
-	<entitydescription.sgt_boshotgun>A tactical mag-fed design, suppressed for use by Black-Ops. Using Renegade-style 12 gauge magazines, it substantially increases overall menueverability of the weapon, as well as reduce the required user-effort to cycle, though this method has a chance to jam if the mechanism gets too hot.</entitydescription.sgt_boshotgun>
-	<entityname.sgt_bopmr>Coalition Precision Marksman Rifle</entityname.sgt_bopmr>
-	<entitydescription.sgt_bopmr>A 8.6x70mm straight-pull rifle, suppressed to the liking of the Black-Ops, using a bullpup frame to allow a longer barrel behind the suppressor, though it still needs to be stowed on the back due to it's sheer akwardness.</entitydescription.sgt_bopmr>
 	<entityname.sgt_boarmorhaz>Coalition Black-Ops Hazardous Environment Panels</entityname.sgt_boarmorhaz>
 	<entitydescription.sgt_boarmorhaz>A set of additive plates that attach to the existing system for the Black-Ops Rig. The Hazardous Environment Variants were developed for the more chem-savvy individuals, when such is used in the field, and comes with slots for drugs and antidotes.	Rated for 3000m Pressure.</entitydescription.sgt_boarmorhaz>
 	<entityname.sgt_boarmorleg>Coalition Black-Ops Mobility Assist Panels</entityname.sgt_boarmorleg>
