@@ -711,7 +711,7 @@
 	<FenGenDecon name="" identifier="feniterdecontaminant" category="Medical" Tags="smallitem,chem" maxstacksize="8" cargocontaineridentifier="mediccrate" useinhealthinterface="true" scale="1.2" impactsoundtag="impact_metal_light" RequireAimToUse="True">
 
 		<InventoryIcon texture="%ModDir%/Sprites/Items/Utilities/chemicalwarfareextraicon.png" sourcerect="0,64,64,64" origin="0.5,0.5" />
-		<Sprite texture="Items/Utilities/Sprites/chemicalwarfaremisc.png" sourcerect="147,42,12,26" depth="0.6" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Utilities/chemicalwarfaremisc.png" sourcerect="147,42,12,26" depth="0.6" origin="0.5,0.5" />
 		
 		<Body width="25" height="40" density="5" />
 
