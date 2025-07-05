@@ -279,7 +279,7 @@
 		<!--###-->
 
 			<!--Surplus Assault Rifle-->
-			<!--Vanilla Assault Revolver-->
+			<!--Vanilla Assault Rifle-->
 		<Item name="" description="" identifier="assaultrifle" category="Weapon" subcategory="Surplus" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="weaponlightdrop">
 			<InventoryIcon name="assaultrifleinv" texture="%ModDir%/Sprites/Items/Weapons/vanillaweaponchanges.png" sourcerect="353,78,68,77" origin="0.5,0.5" />
 			<Sprite texture="%ModDir%/Sprites/Items/Weapons/vanillaweaponchanges.png" sourcerect="2,335,222,71" depth="0.55" origin="0.5,0.5" />
