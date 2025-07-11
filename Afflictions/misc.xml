@@ -288,8 +288,7 @@
 		 <icon texture="%ModDir%/Sprites/Afflictions/afflictions.png" sourcerect="910,0,128,128" color="0,200,0,255" origin="0,0" />
 	 </Affliction>
 	
-	<!--++++++++++++++++++++++++++++++++++++
- -->
+	<!--++++++++++++++++++++++++++++++++++++-->
 
 	<Affliction 
 		name="eepy" 
