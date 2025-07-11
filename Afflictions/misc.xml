@@ -316,19 +316,19 @@
 
 		<Effect 
 			minstrength="0" maxstrength="3" 
-			strengthchange="-0.5">
+			strengthchange="-0.4">
 		</Effect>
 
 		<Effect 
 			minstrength="3" maxstrength="6" 
-			strengthchange="-0.4"
+			strengthchange="-0.3"
 			minspeedmultiplier="1" maxspeedmultiplier="0.7">
 		</Effect>
 		
 		<Effect 
 			minstrength="6" maxstrength="30" 
-			strengthchange="-0.3"
-			minspeedmultiplier="0.7" maxspeedmultiplier="0.7">
+			strengthchange="-0.2"
+			minspeedmultiplier="0.7" maxspeedmultiplier="0.5">
 		</Effect>
 
 		<icon texture="%ModDir%/Sprites/Afflictions/afflictions.png" sourcerect="1428,0,128,128" color="103,103,103,255" origin="0,0" />
@@ -426,25 +426,19 @@
 		maxstrength="1">
 		<!--HumanDefaultRagdoll.xml applies sprint, sprint controlls fatigue-->
 		<Effect 
-			minstrength="0" maxstrength="1"> <!--walk speed is 1.7, run speed is 3, exhausted speed is 2.1 - 2.2-->
-
-			<StatusEffect type="Always" target="Character" disableDeltaTime="True"> <!--Applies a little fatigue when exhausted (Negligible due to fatigue only having a max of 30(I think))-->
-				<Conditional CurrentSpeed="eq 2.1" targettype="Character"/>
-				<Conditional CurrentSpeed="eq 2.2" targettype="Character"/>
-				<Affliction identifier="fatigue" amount="0.019	"/>
-			</StatusEffect>
+			minstrength="0" maxstrength="1"> <!--walk speed is 1.7, run speed is 3, exhausted speed is 2.1-->
 
 			<StatusEffect type="Always" target="Character" disableDeltaTime="True"> <!--Applies fatigue when running-->
-				<Conditional CurrentSpeed="gt 2.2" targettype="Character"/>
+				<Conditional CurrentSpeed="gt 1.7" targettype="Character"/>
 				<Affliction identifier="fatigue" amount="0.02"/>
 			</StatusEffect>
 
 			<StatusEffect type="Always" target="Character" disableDeltaTime="True"> <!--Makes fatigue deplete faster when still-->
 				<Conditional CurrentSpeed="lt 0.1" targettype="Character"/>
-				<ReduceAffliction identifier="fatigue" amount="0.02"/>
+				<ReduceAffliction identifier="fatigue" amount="0.01"/>
 			</StatusEffect>
 
-			<StatusEffect type="Always" target="Character" disableDeltaTime="True"> <!--Makes sure you don't get fatigue when not running-->
+			<StatusEffect type="Always" target="Character" disableDeltaTime="True"> <!--Makes sure you don't get fatigue when not running eg. getting flung by explosions-->
 				<Conditional CurrentSpeed="gt 4.2" targettype="Character"/>
 				<ReduceAffliction identifier="fatigue" amount="10"/>
 			</StatusEffect>
