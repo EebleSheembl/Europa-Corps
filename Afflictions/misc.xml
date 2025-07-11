@@ -288,7 +288,8 @@
 		 <icon texture="%ModDir%/Sprites/Afflictions/afflictions.png" sourcerect="910,0,128,128" color="0,200,0,255" origin="0,0" />
 	 </Affliction>
 	
-	<!--++++++++++++++++++++++++++++++++++++-->
+	<!--++++++++++++++++++++++++++++++++++++
+ -->
 
 	<Affliction 
 		name="eepy" 
@@ -300,7 +301,7 @@
 		limbspecific="false"
 		showicontoothersthreshold="1000"
 		showinhealthscannerthreshold="3"
-		showiconthreshold="3" 
+		showiconthreshold="3"
 		maxstrength="30">
 
 		<Description
@@ -321,13 +322,13 @@
 
 		<Effect 
 			minstrength="3" maxstrength="6" 
-			strengthchange="-0.5"
+			strengthchange="-0.4"
 			minspeedmultiplier="1" maxspeedmultiplier="0.7">
 		</Effect>
 		
 		<Effect 
 			minstrength="6" maxstrength="30" 
-			strengthchange="-0.5"
+			strengthchange="-0.3"
 			minspeedmultiplier="0.7" maxspeedmultiplier="0.7">
 		</Effect>
 
@@ -414,4 +415,44 @@
 		<icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,640,128,128" color="0,255,0,255" origin="0,0" />
 	</Affliction>
 
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<Affliction 
+		name="Sprint" 
+		identifier="sprint"
+		type="stamina" 
+		limbspecific="false" indicatorlimb="Torso" 
+		showiconthreshold="1000" 
+		showinhealthscannerthreshold="1000"
+		maxstrength="1">
+		<!--HumanDefaultRagdoll.xml applies sprint, sprint controlls fatigue-->
+		<Effect 
+			minstrength="0" maxstrength="1"> <!--walk speed is 1.7, run speed is 3, exhausted speed is 2.1 - 2.2-->
+
+			<StatusEffect type="Always" target="Character" disableDeltaTime="True"> <!--Applies a little fatigue when exhausted (Negligible due to fatigue only having a max of 30(I think))-->
+				<Conditional CurrentSpeed="eq 2.1" targettype="Character"/>
+				<Conditional CurrentSpeed="eq 2.2" targettype="Character"/>
+				<Affliction identifier="fatigue" amount="0.019	"/>
+			</StatusEffect>
+
+			<StatusEffect type="Always" target="Character" disableDeltaTime="True"> <!--Applies fatigue when running-->
+				<Conditional CurrentSpeed="gt 2.2" targettype="Character"/>
+				<Affliction identifier="fatigue" amount="0.02"/>
+			</StatusEffect>
+
+			<StatusEffect type="Always" target="Character" disableDeltaTime="True"> <!--Makes fatigue deplete faster when still-->
+				<Conditional CurrentSpeed="lt 0.1" targettype="Character"/>
+				<ReduceAffliction identifier="fatigue" amount="0.02"/>
+			</StatusEffect>
+
+			<StatusEffect type="Always" target="Character" disableDeltaTime="True"> <!--Makes sure you don't get fatigue when not running-->
+				<Conditional CurrentSpeed="gt 4.2" targettype="Character"/>
+				<ReduceAffliction identifier="fatigue" amount="10"/>
+			</StatusEffect>
+
+		</Effect>
+
+		<!-- no need for sprite, not ever seen -->
+		<icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,640,128,128" color="0,255,0,255" origin="0,0" />
+	</Affliction>
 </Afflictions>
