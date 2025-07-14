@@ -345,29 +345,27 @@
 		maxstrength="2">
 
 		<PeriodicEffect 
-			mininterval="1" maxinterval="5">
+			mininterval="1" maxinterval="4">
 
-			<StatusEffect target="Character" disabledeltatime="true">
-				<Conditional CurrentSpeed="gte 2.7"/>
-				<Conditional gunshotwound="gte 10"/>
-				<Conditional gunshotwound="lt 20"/>
-
-				<Affliction identifier="explosiondamage" amount="10"/>
-			</StatusEffect>
-
-			<StatusEffect target="Character" disabledeltatime="true">
-				<Conditional CurrentSpeed="gte 2.6"/>
-				<Conditional gunshotwound="gte 20"/>
-				<Conditional gunshotwound="lt 30"/>
-
-				<Affliction identifier="explosiondamage" amount="15"/>
-			</StatusEffect>
-
-			<StatusEffect target="Character" disabledeltatime="true">
+			<StatusEffect target="Limb" disabledeltatime="true" ConditionalComparison="And">
 				<Conditional CurrentSpeed="gte 2.5"/>
+				<Conditional gunshotwound="gte 10"/>
+
+				<Affliction identifier="explosiondamage" amount="3"/>
+			</StatusEffect>
+
+			<StatusEffect target="Limb" disabledeltatime="true" ConditionalComparison="And">
+				<Conditional CurrentSpeed="gte 2.4"/>
+				<Conditional gunshotwound="gte 20"/>
+
+				<Affliction identifier="explosiondamage" amount="5"/>
+			</StatusEffect>
+
+			<StatusEffect target="Limb" disabledeltatime="true" ConditionalComparison="And">
+				<Conditional CurrentSpeed="gte 2.3"/>
 				<Conditional gunshotwound="gte 30"/>
 
-				<Affliction identifier="explosiondamage" amount="20"/>
+				<Affliction identifier="explosiondamage" amount="8"/>
 			</StatusEffect>
 			
 		</PeriodicEffect>
