@@ -79,6 +79,7 @@
 	<UIStyle file="%ModDir%/styles.xml"/>
 	<Jobs file="%ModDir%/Jobs/jobs.xml"/>
 	<Jobs file="%ModDir%/Jobs/job_overrides.xml"/>
+	<Particles file="%ModDir%/Effects/Particles/particles.xml" />
 
 	<!--+++++-->
 	<!--TEXTS-->
