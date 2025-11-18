@@ -279,9 +279,9 @@
 
 	</Item>
 
-	<!--###-->
+	<!--Tear gas Surplus SMG Magazine-->
 
-	<Item name="" identifier="fenitersmgmagazine1" maxstacksize="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo" impactsoundtag="impact_metal_light">
+	<Item name="Tear gas Surplus SMG Magazine" identifier="fenitersmgmagazine1" aliases="teargassmgmagazine" maxstacksize="12" maxstacksizecharacterinventory="3" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo" impactsoundtag="impact_metal_light">
 		
 		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Ammo/chemicalwarfareammo.png" sourcerect="0,0,64,64" />
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/chemicalwarfareammo.png" depth="0.54" sourcerect="49,196,21,44" origin="0.5,0.5" />
@@ -301,9 +301,9 @@
 		
 	</Item>
 
-		<!--###-->
+		<!--Tear Gas Surplus SMG Round-->
 
-	<Item name="" identifier="fenitersmground1" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+	<Item name="Tear Gas Surplus SMG Round" identifier="fenitersmground1" aliases="teargassmground" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
 
 		<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
 		<Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
@@ -314,7 +314,7 @@
 
 		<Projectile characterusable="false" hitscan="true" removeonhit="true">
 
-			<ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
+			<ParticleEmitter particle="tracerfirearmteargas" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
 
 			<Attack structuredamage="4" targetforce="1" itemdamage="4" severlimbsprobability="0.1">
 				<Affliction identifier="gunshotwound" strength="1.5" />
@@ -338,7 +338,7 @@
 				<ParticleEmitter particle="fensmokevent" anglemin="70" anglemax="100" velocitymax="200" particlespersecond="64" colormultiplier="255,225,255,105" />
 
 				<Explosion range="185.0" ballastfloradamage="60" structuredamage="1" itemdamage="1" severlimbsprobability="0.5" penetration="0.1" showeffects="false">
-					<Affliction identifier="feniternonlethalagent" strength="5.25" />
+					<Affliction identifier="feniternonlethalagent" strength="2" />
 				</Explosion>
 			</StatusEffect>
 
@@ -350,9 +350,9 @@
 
 	</Item>
 
-	<!--###-->
+	<!--Surplus Nerve Agent SMG Magazine-->
 
-	<Item name="" identifier="fenitersmgmagazine2" maxstacksize="12" maxstacksizecharacterinventory="3" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo" impactsoundtag="impact_metal_light">
+	<Item name="Surplus Nerve Agent SMG Magazine" identifier="fenitersmgmagazine2" aliases="nerveagentsmgmagazine" maxstacksize="12" maxstacksizecharacterinventory="3" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo" impactsoundtag="impact_metal_light">
 
 		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Ammo/chemicalwarfareammo.png" sourcerect="64,0,64,64" />
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/chemicalwarfareammo.png" depth="0.54" sourcerect="70,196,21,44" origin="0.5,0.5" />
@@ -378,7 +378,9 @@
 
 	</Item>
 
-	<Item name="" identifier="fenitersmground2" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+	<!--Surplus Nerve Agent SMG Round-->
+	
+	<Item name="Surplus Nerve Agent SMG Round" identifier="fenitersmground2" aliases="nerveagentsmground" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
 
 		<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
 		<Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
@@ -389,7 +391,7 @@
 
 		<Projectile characterusable="false" hitscan="true" removeonhit="true">
 
-			<ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
+			<ParticleEmitter particle="tracerfirearmnerveagent" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
 
 			<Attack structuredamage="4" targetforce="1" itemdamage="4" severlimbsprobability="0.1">
 				<Affliction identifier="gunshotwound" strength="6.5" />
@@ -403,7 +405,7 @@
 
 			<StatusEffect type="OnImpact" target="This">
 				<Explosion range="70.0" ballastfloradamage="12" structuredamage="0" itemdamage="0" severlimbsprobability="0" showeffects="false">
-					<Affliction identifier="feniternerveagent" strength="3.45" />
+					<Affliction identifier="feniternerveagent" strength="1.5" />
 				</Explosion>
 			</StatusEffect>
 
@@ -422,9 +424,9 @@
 
 	</Item>
 
-		<!--###-->
+		<!--Surplus Psychochem SMG Magazine-->
 	
-	<Item name="" identifier="fenitersmgmagazine3" maxstacksize="12" maxstacksizecharacterinventory="3" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo" impactsoundtag="impact_metal_light">
+	<Item name="Surplus Psychochem SMG Magazine" identifier="fenitersmgmagazine3" aliases="psychochemsmgmagazine" maxstacksize="12" maxstacksizecharacterinventory="3" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo" impactsoundtag="impact_metal_light">
 
 		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Ammo/chemicalwarfareammo.png" sourcerect="128,0,64,64" />
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/chemicalwarfareammo.png" depth="0.54" sourcerect="91,196,21,44" origin="0.5,0.5" />
@@ -444,9 +446,9 @@
 
 	</Item>
 
-		<!--###-->
+		<!--Surplus Psychochem SMG Round-->
 	
-	<Item name="" identifier="fenitersmground3" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+	<Item name="Surplus Psychochem SMG Round" identifier="fenitersmground3" aliases="psychochemsmground" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
 		
 		<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
 		<Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
@@ -457,7 +459,7 @@
 		
 		<Projectile characterusable="false" hitscan="true" removeonhit="true">
 			
-			<ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
+			<ParticleEmitter particle="tracerfirearmpsychochem" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
 			
 			<Attack structuredamage="4" targetforce="1" itemdamage="4" severlimbsprobability="0.1">
 				<Affliction identifier="gunshotwound" strength="6.5" />
@@ -470,7 +472,7 @@
 			
 			<StatusEffect type="OnImpact" target="This">
 				<Explosion range="35.0" ballastfloradamage="0" structuredamage="0" itemdamage="0" severlimbsprobability="0" showeffects="false">
-					<Affliction identifier="feniterpsychoagent" strength="12.95" />
+					<Affliction identifier="feniterpsychoagent" strength="1" />
 				</Explosion>
 			</StatusEffect>
 			
