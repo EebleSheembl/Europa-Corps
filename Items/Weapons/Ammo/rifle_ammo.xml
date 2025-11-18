@@ -1415,7 +1415,7 @@
 		
 		<Projectile characterusable="false" hitscan="true" removeonhit="true">
 			
-			<ParticleEmitter particle="tracerfirearmpsychochem	" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
+			<ParticleEmitter particle="tracerfirearmpsychochem" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
 			
 			<Attack structuredamage="15" targetforce="1" itemdamage="15" severlimbsprobability="0.5" penetration="0.45">
 				<Affliction identifier="gunshotwound" strength="15" />
