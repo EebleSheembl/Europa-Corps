@@ -279,7 +279,9 @@
 
 	</Item>
 
-	<!--Tear gas Surplus SMG Magazine-->
+		<!--###-->
+
+		<!--Tear gas Surplus SMG Magazine-->
 
 	<Item name="Tear gas Surplus SMG Magazine" identifier="fenitersmgmagazine1" aliases="teargassmgmagazine" maxstacksize="12" maxstacksizecharacterinventory="3" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo" impactsoundtag="impact_metal_light">
 		
@@ -300,6 +302,8 @@
 		<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
 		
 	</Item>
+
+		<!--###-->
 
 		<!--Tear Gas Surplus SMG Round-->
 
@@ -350,7 +354,9 @@
 
 	</Item>
 
-	<!--Surplus Nerve Agent SMG Magazine-->
+		<!--###-->
+
+		<!--Surplus Nerve Agent SMG Magazine-->
 
 	<Item name="Surplus Nerve Agent SMG Magazine" identifier="fenitersmgmagazine2" aliases="nerveagentsmgmagazine" maxstacksize="12" maxstacksizecharacterinventory="3" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo" impactsoundtag="impact_metal_light">
 
@@ -378,7 +384,9 @@
 
 	</Item>
 
-	<!--Surplus Nerve Agent SMG Round-->
+		<!--###-->
+
+		<!--Surplus Nerve Agent SMG Round-->
 	
 	<Item name="Surplus Nerve Agent SMG Round" identifier="fenitersmground2" aliases="nerveagentsmground" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
 
@@ -424,6 +432,8 @@
 
 	</Item>
 
+		<!--###-->
+
 		<!--Surplus Psychochem SMG Magazine-->
 	
 	<Item name="Surplus Psychochem SMG Magazine" identifier="fenitersmgmagazine3" aliases="psychochemsmgmagazine" maxstacksize="12" maxstacksizecharacterinventory="3" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo" impactsoundtag="impact_metal_light">
@@ -445,6 +455,8 @@
 		<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
 
 	</Item>
+
+		<!--###-->
 
 		<!--Surplus Psychochem SMG Round-->
 	
