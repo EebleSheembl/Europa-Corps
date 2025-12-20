@@ -1,14 +1,6 @@
 if CLIENT and Game.IsMultiplayer then return end
-local countdown = 60
 
--- this function works on a good day and sometimes just becomes clunky for no apparent reason
 local function LoseStamina(character)
-
-    if countdown > 0 then
-        countdown = countdown - 1
-        return
-    end
-    countdown = 60
 
     if not character.IsHuman then return end
 
@@ -40,9 +32,17 @@ local function LoseStamina(character)
     Networking.CreateEntityEvent(character, Character.CharacterStatusEventData.__new(true))
 end
 
+local countdown = 60
+
 if SERVER then
     Hook.Add("think", "EC.ServerStaminaUpdate", function()
         if Game.RoundStarted then
+                if countdown > 0 then
+                    countdown = countdown - 1
+                    return
+                end
+                countdown = 60
+
             for client in Client.ClientList do
                 LoseStamina(client.Character)
             end
@@ -53,6 +53,12 @@ end
 if CLIENT then
     Hook.Add("think", "EC.SingleplayerStaminaUpdate", function()
         if Game.RoundStarted and not Game.Paused then
+                if countdown > 0 then
+                    countdown = countdown - 1
+                    return
+                end
+                countdown = 60
+
             LoseStamina(Character.Controlled)
         end
     end)
