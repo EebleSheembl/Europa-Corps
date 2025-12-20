@@ -39,9 +39,10 @@
 			<Affliction identifier="pain" strength="16"/>
 		</StatusEffect>
 		
-		<!--Controls Fatigue in misc.xml-->
-		<StatusEffect type="Always" target="Character">
-			<Affliction identifier="sprint" strength="100"/>
+		<!--Spawned or revived? give stamina-->
+		<StatusEffect type="Always" target="Character" interval="1" disableDeltaTime="true">
+			<Conditional stamina="eq 0"/>
+			<Affliction identifier="stamina" strength="1"/>
 		</StatusEffect>
 
 	</limb>
