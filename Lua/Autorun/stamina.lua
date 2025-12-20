@@ -36,6 +36,8 @@ local function LoseStamina(character)
     if stamina.Strength > 20 then
         stamina.Strength = stamina.Strength - 20
     end
+
+    Networking.CreateEntityEvent(character, Character.CharacterStatusEventData.__new(true))
 end
 
 if SERVER then
