@@ -1,9 +1,12 @@
 <infotexts language="English" nowhitespace="false" translatedname="English">
 
-	<!--Fatigue-->
-	<afflictionname.fatigue>Fatigue</afflictionname.fatigue>
-	<afflictiondescription.fatigue.low>You could use a break to regain your energy.</afflictiondescription.fatigue.low>
-	<afflictiondescription.fatigue.high>You can't run like this for much longer, you need to stop and catch your breath.</afflictiondescription.fatigue.high>
+	<!--Stamina-->
+	<afflictionname.stamina>Stamina</afflictionname.stamina>
+	<afflictiondescription.stamina.100>Stamina: 100</afflictiondescription.stamina.100>
+	<afflictiondescription.stamina.75>Stamina: 75</afflictiondescription.stamina.75>
+	<afflictiondescription.stamina.50>Stamina: 50</afflictiondescription.stamina.50>
+	<afflictiondescription.stamina.25>Stamina: 25</afflictiondescription.stamina.25>
+	<afflictiondescription.stamina.0>Stamina: 0</afflictiondescription.stamina.0>
 	
 	<!--Preso Latex-->
 	<afflictionname.scp_presolatexinfection>Preso Latex Petrification</afflictionname.scp_presolatexinfection>
