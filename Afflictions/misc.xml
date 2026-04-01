@@ -425,6 +425,178 @@
 			strengthchange="10"
 			minspeedmultiplier="0.7" maxspeedmultiplier="0.3"/>
 
-        <icon texture="%ModDir%/Sprites/Afflictions/afflictions.png" sourcerect="1428,0,128,128" color="255,50,50,255" origin="0,0" />
+    	<icon texture="%ModDir%/Sprites/Afflictions/afflictions.png" sourcerect="1428,0,128,128" color="255,50,50,255" origin="0,0" />
     </Affliction>
+
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<Affliction name="Machine Anatomy"
+	identifier="machine_anatomy_affliction"
+	description="The body of the subject has been modified beyond humanity. Bleeding is no longer a threat to their machine figure."
+	type="geneticmaterialbuff"
+	limbspecific="false"
+	indicatorlimb="Torso"
+	hideiconafterdelay="true"
+	showiconthreshold="0"
+	treatmentthreshold="100"
+	maxstrength="100"
+	iconcolors="94,54,95;163,73,164;200,191,231">
+
+    	<Effect
+		minstrength="0" maxstrength="100"
+		resistancefor="bleeding"
+		minresistance="10.0"
+		maxresistance="100.0" />
+
+    	<StatusEffect target="Character">
+    		<TriggerAnimation Type="Walk" filename="VigorousWalk" priority="5" ExpectedSpecies="Human" />
+    	</StatusEffect>
+
+    	<icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
+  	</Affliction>
+
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<Affliction name="Machine Resistance"
+	identifier="machine_resistance_affliction"
+	description="The body of the subject has been modified beyond humanity. Bullets. Teeth. Blades. Explosives. All now less effective against their machine figure."
+	type="geneticmaterialbuff"
+	limbspecific="false"
+	indicatorlimb="Torso"
+	hideiconafterdelay="true"
+	showiconthreshold="0"
+	treatmentthreshold="100"
+	maxstrength="100"
+	iconcolors="94,54,95;163,73,164;200,191,231">
+
+   		<Effect
+		minstrength="0" maxstrength="100"
+		resistancefor="damage"
+		minresistance="0.1"
+		maxresistance="0.5" />
+
+   		<icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
+  	</Affliction>
+
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<Affliction name="Machine Superiority"
+	identifier="machine_superiority_affliction"
+	description="The body of the subject has been modified beyond humanity. Stuns are now tremendously less effective to their machine figure."
+	type="geneticmaterialbuff"
+	limbspecific="false"
+	indicatorlimb="Torso"
+	hideiconafterdelay="true"
+	showiconthreshold="0"
+	treatmentthreshold="100"
+	maxstrength="100"
+	iconcolors="94,54,95;163,73,164;200,191,231">
+
+    	<Effect
+		minstrength="0" maxstrength="100"
+		resistancefor="stun"
+		minresistance="0.1"
+		maxresistance="0.6" />
+
+    	<icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
+  	</Affliction>
+
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<Affliction name="Mutant Regeneration"
+	identifier="mutant_regen_affliction"
+	type="geneticmaterialbuff"
+	limbspecific="false"
+	indicatorlimb="Torso"
+	hideiconafterdelay="true"
+	showiconthreshold="0" 
+	treatmentthreshold="100" 
+	maxstrength="100" 
+	iconcolors="94,54,95;163,73,164;200,191,231">
+
+    	<Effect
+		minstrength="0" maxstrength="100">
+
+    		<StatusEffect target="Character" interval="0.1" disabledeltatime="true">
+    			<ReduceAffliction type="damage" amount="0.1" />
+    			<ReduceAffliction type="bleeding" amount="0.5" />
+    		</StatusEffect>
+			
+    	</Effect>
+
+    	<icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="163,73,764,255" origin="0,0" />
+  	</Affliction>
+
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<Affliction
+	name="Mutant Hyperactivity" 
+	identifier="mutant_superspeed_affliction" 
+	type="geneticmaterialbuff" 
+	limbspecific="false" 
+	indicatorlimb="Torso" 
+	hideiconafterdelay="true" 
+	showiconthreshold="0" 
+	treatmentthreshold="100"
+	 maxstrength="100" 
+	 iconcolors="94,54,95;163,73,164;200,191,231">
+
+    	<Effect 
+		minstrength="0" maxstrength="100">
+
+    		<StatValue stattype="WalkingSpeed" minvalue="3.0" maxvalue="4.0" />
+
+    	</Effect>
+
+    	<icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
+  	</Affliction>
+
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<AfflictionHusk
+	name="coalie belt light!!!"
+	identifier="MOShusk"
+	type="alieninfection"
+	healableinmedicalclinic="false"
+	limbspecific="false" 
+	targets="human" 
+	huskedspeciesname="[speciesname]MOShusk" 
+	indicatorlimb="Waist" 
+	showiconthreshold="5" 
+	needsair="true" 
+	causespeechimpediment="false"
+	treatmentthreshold="1000"
+	dormantthreshold="0"
+	activethreshold="1"
+	transitionthreshold="1000"
+	transformthresholdondeath="1000"
+	sendmessages="false"
+	maxstrength="2"
+	iconcolors="94,54,95;163,73,164;200,191,231">
+
+    	<Effect minstrength="0" maxstrength="2"
+		strengthchange="-10" />
+
+    	<icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="90,142,200,50" origin="0,0" />
+  	</AfflictionHusk>
+
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<Affliction 
+	Name="Smoked" 
+	Identifier="smoked" 
+	MaxStrength="25" 
+	showiconthreshold="1000">
+
+    	<Effect 
+		MinStrength="0" MaxStrength="25" 
+		strengthchange="-10">
+
+    		<StatusEffect target="Character" ObstructVision="true" setvalue="true" />
+
+    	</Effect>
+
+    	<AfflictionOverlay texture="%ModDir%/Sprites/Smoked.png" />
+  	</Affliction>
+
 </Afflictions>
