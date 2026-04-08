@@ -730,11 +730,11 @@
 			</StatusEffect>
 
 			<StatusEffect tags="medical" type="OnSuccess" target="UseTarget" comparison="and" duration="30">
-				<ReduceAffliction type="chemicalcontamination" amount="30" />
+				<ReduceAffliction type="poison_contaminant" amount="30" />
 			</StatusEffect>
 
 			<StatusEffect tags="medical" type="OnFailure" target="UseTarget" comparison="and" duration="30">
-				<ReduceAffliction type="chemicalcontamination" amount="25" />
+				<ReduceAffliction type="poison_contaminant" amount="25" />
 			</StatusEffect>
 
 			<StatusEffect type="OnBroken" target="This">

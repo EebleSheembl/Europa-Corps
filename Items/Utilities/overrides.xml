@@ -31,7 +31,7 @@
 				<StatusEffect type="OnUse" target="UseTarget">
 					<RequiredItem items="ethanol" type="Contained" />
 					
-					<ReduceAffliction type="chemicalcontamination" amount="1.25" />
+					<ReduceAffliction type="poison_contaminant" amount="1.25" />
 				</StatusEffect>
 				
 				<PaintColors>
@@ -56,7 +56,7 @@
 				<StatusEffect type="OnUse" target="UseTarget">
 					<RequiredItem items="ethanol" type="Contained" />
 					
-					<ReduceAffliction type="chemicalcontamination" amount="4.25" />
+					<ReduceAffliction type="poison_contaminant" amount="4.25" />
 					
 					<ParticleEmitter particle="spray" velocitymin="750.0" velocitymax="850.0" particlespersecond="100" copyentityangle="true" />
 					

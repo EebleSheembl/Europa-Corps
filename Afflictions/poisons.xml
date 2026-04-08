@@ -1,4 +1,13 @@
 <Afflictions>
+
+<!-- different affliction types for poisons that should be resisted different ways: -->
+<!-- poison: already in the blood (injections, etc) -->
+<!-- poison_airborne: inhaled. resisted by breathing from tanks instead of air -->
+<!-- poison_skin: skin contact. resisted only by special suits -->
+<!-- poison_contaminant: anything contact. nothing resists. -->
+
+
+
 	<!--+++++++-->
 	<!--POISONS--> 
 	<!--+++++++-->
@@ -105,7 +114,7 @@
 		name="" 
 		identifier="scp_presolatexexposure" 
 		description="" 
-		type="chemicalexposure" 
+		type="poison_skin" 
 		causeofdeathdescription="" 
 		selfcauseofdeathdescription="" 
 		limbspecific="false" indicatorlimb="Head" 
@@ -153,7 +162,7 @@
 		name="" 
 		identifier="scp_latexcontamination" 
 		description="" 
-		type="airborneinfection" 
+		type="poison_skin" 
 		causeofdeathdescription="" 
 		selfcauseofdeathdescription="" 
 		limbspecific="false" indicatorlimb="Head" 
@@ -311,7 +320,7 @@
 		name="" 
 		identifier="scp_devilsbreathexposure" 
 		description="" 
-		type="chemicalexposure" 
+		type="poison_airborne" 
 		causeofdeathdescription="" 
 		selfcauseofdeathdescription="" 
 		limbspecific="false" indicatorlimb="Head" 
@@ -355,12 +364,12 @@
 	</Affliction>
 
 	<!--++++++++++++++++++++++++++++++++++++-->
-
+	
 	<Affliction
 		name="Ants" 
 		identifier="ants" 
 		description="The patient is showing signs of great pain and torture." 
-		type="resistance" 
+		type="resistance"
 		causeofdeathdescription="Tortured to death" 
 		selfcauseofdeathdescription="You have were tortured to death." 
 		limbspecific="false" indicatorlimb="Torso" 
@@ -463,7 +472,7 @@
 		name="" 
 		identifier="feniternerveagent" 
 		description="" 
-		type="chemicalagent" 
+		type="poison_skin" 
 		causeofdeathdescription="" 
 		selfcauseofdeathdescription="" 
 		limbspecific="false" indicatorlimb="Torso" 
@@ -624,7 +633,7 @@
 		name="" 
 		identifier="feniternerveagentcon" 
 		description="" 
-		type="chemicalcontamination" 
+		type="poison_contaminant" 
 		limbspecific="false" indicatorlimb="Torso" 
 		showiconthreshold="101" showinhealthscannerthreshold="1"
 		maxstrength="100" 
@@ -650,7 +659,7 @@
 	<Affliction 
 		name="" 
 		identifier="feniterpulmonaryagent1" 
-		type="chemicalagent" 
+		type="poison_airborne" 
 		description="" 
 		causeofdeathdescription="" 
 		selfcauseofdeathdescription="" 
@@ -769,7 +778,7 @@
 		description="" 
 		causeofdeathdescription="Perforated lungs resulting in asphyxiation." 
 		selfcauseofdeathdescription="Your lungs are perforated by pulmonary agents." 
-		type="chemicalagent" 
+		type="poison_contaminant" 
 		limbspecific="false" indicatorlimb="Torso" 
 		showiconthreshold="90" 
 		showinhealthscannerthreshold="10" 
@@ -837,7 +846,7 @@
 	<Affliction 
 		name="" 
 		identifier="feniterbloodagent" 
-		type="chemicalagent" 
+		type="poison_skin" 
 		description=""
 		causeofdeathdescription="" 
 		selfcauseofdeathdescription="" 
@@ -939,7 +948,7 @@
 	<Affliction 
 		name="" 
 		identifier="feniterblisteragentinternal" 
-		type="chemicalagent" 
+		type="poison_airborne" 
 		description="" 
 		causeofdeathdescription="" 
 		selfcauseofdeathdescription="" 
@@ -1080,7 +1089,7 @@
 		name="" 
 		identifier="feniterblisteragentcon" 
 		description="" 
-		type="chemicalcontamination" 
+		type="poison_contaminant" 
 		limbspecific="false" indicatorlimb="Torso" 
 		showiconthreshold="101" 
 		showinhealthscannerthreshold="1" 
@@ -1111,7 +1120,7 @@
 		description="" 
 		causeofdeathdescription="" 
 		selfcauseofdeathdescription="" 
-		type="chemicalcontamination" 
+		type="chemical_airborne" 
 		limbspecific="false" indicatorlimb="Head" 
 		showiconthreshold="1" showinhealthscannerthreshold="1"
 		maxstrength="100" 
@@ -1246,7 +1255,7 @@
 		description="" 
 		causeofdeathdescription="" 
 		selfcauseofdeathdescription="" 
-		type="chemicalagent" 
+		type="poison_airborne" 
 		limbspecific="false" indicatorlimb="Head" 
 		showiconthreshold="10" 
 		showinhealthscannerthreshold="10" 
@@ -1355,7 +1364,7 @@
 		name="" 
 		identifier="feniterhallucination1" 
 		description="" 
-		type="chemicalagent" 
+		type="poison" 
 		limbspecific="false" indicatorlimb="Torso" 
 		showiconthreshold="101" 
 		showinhealthscannerthreshold="101" 
@@ -1389,7 +1398,7 @@
 		name="" 
 		identifier="feniterhallucination2" 
 		description="" 
-		type="chemicalagent" 
+		type="poison" 
 		limbspecific="false" indicatorlimb="Torso" 
 		showiconthreshold="101" 
 		showinhealthscannerthreshold="101" 

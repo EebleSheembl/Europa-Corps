@@ -134,9 +134,9 @@
 	<Affliction 
 		name="Anesthesia" 
 		identifier="anesthesia" 
-		type="resistance" 
-		causeofdeathdescription="Sleeped to death" 
-		selfcauseofdeathdescription="You sleeped to death" 
+		type="poison_airborne" 
+		causeofdeathdescription="Slept to death" 
+		selfcauseofdeathdescription="You slept to death" 
 		limbspecific="false" indicatorlimb="Head" 
 		showiconthreshold="5" 
 		maxstrength="20">
