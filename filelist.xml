@@ -71,7 +71,11 @@
 	<!--++++++++++-->
 	<!--CHARACTERS-->
 	<!--++++++++++-->
-	<Character file="%ModDir%/Human/human.xml"/>
+	<Character file="%ModDir%/Characters/Human/human.xml"/>
+
+	<!--Variants-->
+	<Character file="%ModDir%/Characters/Variants/Huskmutant_melter_boss.xml" />
+  	<Character file="%ModDir%/Characters/Variants/Huskmutantarmoredexosuit_titan_boss.xml" />
 
 	<!--++++-->
 	<!--MISC-->
