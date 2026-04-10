@@ -485,14 +485,14 @@
 
 	<!--+++++++++++++++++++++++++++++++++++-->
 	
-	<FenAtropine name="" identifier="feniternerveagentcure" category="Medical" Tags="smallitem,chem" maxstacksize="8" cargocontaineridentifier="mediccrate" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+	<FenAtropine name="" identifier="nerveagentcure" category="Medical" Tags="smallitem,chem" maxstacksize="8" cargocontaineridentifier="mediccrate" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
 
 		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/chemicalwarfaremain.png" sourcerect="230,0,70,70" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/chemicalwarfaremain.png" sourcerect="160,0,70,70" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="25" height="40" density="5" />
 
-		<SuitableTreatment identifier="feniternerveagent" suitability="10" />
+		<SuitableTreatment identifier="nerveagent" suitability="10" />
 
 		<MeleeWeapon 
 			canBeCombined="true" removeOnCombined="true" 
@@ -509,7 +509,7 @@
 			</StatusEffect>
 
 			<StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="60">
-				<ReduceAffliction identifier="feniternerveagent" amount="3" />
+				<ReduceAffliction identifier="nerveagent" amount="3" />
 				<Affliction identifier="organdamage" amount="0.3" />
 				<Affliction identifier="nausea" amount="1.5" />
 				<Affliction identifier="psychosis" amount="0.4" />
@@ -517,7 +517,7 @@
 			</StatusEffect>
 
 			<StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="60">
-				<ReduceAffliction identifier="feniternerveagent" amount="1.5" />
+				<ReduceAffliction identifier="nerveagent" amount="1.5" />
 				<Affliction identifier="organdamage" amount="0.22" />
 				<Affliction identifier="nausea" amount="1.2" />
 				<Affliction identifier="psychosis" amount="0.3" />
@@ -536,15 +536,15 @@
 
 	<!--+++++++++++++++++++++++++++++++++++-->
 	
-	<FenPulmonaryflush name="" identifier="feniterpulmonaryagentcure1" category="Medical" Tags="smallitem,chem" maxstacksize="8" cargocontaineridentifier="mediccrate" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+	<FenPulmonaryflush name="" identifier="pulmonaryflush" category="Medical" Tags="smallitem,chem" maxstacksize="8" cargocontaineridentifier="mediccrate" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
 
 		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/chemicalwarfaremain.png" sourcerect="230,80,80,80" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/chemicalwarfaremain.png" sourcerect="160,80,70,80" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="25" height="40" density="5" />
 
-		<SuitableTreatment identifier="feniterpulmonaryagent1" suitability="1" />
-		<SuitableTreatment identifier="feniterblisteragentinternal" suitability="1" />
+		<SuitableTreatment identifier="pulmonaryagentbuildup" suitability="1" />
+		<SuitableTreatment identifier="blisteragentinternal" suitability="1" />
 
 		<MeleeWeapon 
 				canBeCombined="true" removeOnCombined="true" 
@@ -561,24 +561,24 @@
 			</StatusEffect>
 
 			<StatusEffect tags="medical" type="OnSuccess" target="UseTarget" comparison="and" duration="30">
-				<Conditional feniterpulmonaryagent1="gte 40" />
-				<Conditional feniterpulmonaryagent1="lt 60" />
+				<Conditional pulmonaryagentbuildup="gte 40" />
+				<Conditional pulmonaryagentbuildup="lt 60" />
 
-				<ReduceAffliction identifier="feniterpulmonaryagent1" amount="0.135" />
+				<ReduceAffliction identifier="pulmonaryagentbuildup" amount="0.135" />
 			</StatusEffect>
 
 			<StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="100">
-				<Conditional feniterblisteragentinternal="gte 1" />
+				<Conditional blisteragentinternal="gte 1" />
 
-				<ReduceAffliction identifier="feniterblisteragentinternal" amount="0.435" />
+				<ReduceAffliction identifier="blisteragentinternal" amount="0.435" />
 			</StatusEffect>
 
 			<StatusEffect tags="medical" type="OnFailure" target="UseTarget" comparison="and" duration="30">
-				<Conditional feniterpulmonaryagent1="gte 40" />
-				<Conditional feniterpulmonaryagent1="lt 60" />
+				<Conditional pulmonaryagentbuildup="gte 40" />
+				<Conditional pulmonaryagentbuildup="lt 60" />
 
-				<ReduceAffliction identifier="feniterpulmonaryagent1" amount="0.085" />
-				<ReduceAffliction identifier="feniterblisteragentinternal" amount="0.435" />
+				<ReduceAffliction identifier="pulmonaryagentbuildup" amount="0.085" />
+				<ReduceAffliction identifier="blisteragentinternal" amount="0.435" />
 				<Affliction identifier="internaldamage" amount="0.85" />
 				<Affliction identifier="nausea" amount="1" />
 			</StatusEffect>
@@ -595,14 +595,14 @@
 	
 	<!--+++++++++++++++++++++++++++++++++++-->
 	
-	<FenPulmonarybinder name="" identifier="feniterpulmonaryagentcure2" category="Medical" Tags="smallitem,chem" maxstacksize="8" cargocontaineridentifier="mediccrate" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+	<FenPulmonarybinder name="" identifier="pulmonaryagentantidote" category="Medical" Tags="smallitem,chem" maxstacksize="8" cargocontaineridentifier="mediccrate" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
 
 		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/chemicalwarfaremain.png" sourcerect="230,175,70,80" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/chemicalwarfaremain.png" sourcerect="160,175,70,80" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="25" height="40" density="5" />
 
-		<SuitableTreatment identifier="feniterpulmonaryagent1" suitability="10" />
+		<SuitableTreatment identifier="pulmonaryagentbuildup" suitability="10" />
 
 		<MeleeWeapon 
 			canBeCombined="true" removeOnCombined="true" 
@@ -619,15 +619,15 @@
 			</StatusEffect>
 
 			<StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="100">
-				<Conditional feniterpulmonaryagent1="lt 40" />
+				<Conditional pulmonaryagentbuildup="lt 40" />
 
-				<ReduceAffliction identifier="feniterpulmonaryagent1" amount="0.095" />
+				<ReduceAffliction identifier="pulmonaryagentbuildup" amount="0.095" />
 			</StatusEffect>
 
 			<StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="100">
-				<Conditional feniterpulmonaryagent1="lt 40" />
+				<Conditional pulmonaryagentbuildup="lt 40" />
 
-				<ReduceAffliction identifier="feniterpulmonaryagent1" amount="0.095" />
+				<ReduceAffliction identifier="pulmonaryagentbuildup" amount="0.095" />
 				<Affliction identifier="organdamage" amount="0.3" />
 				<Affliction identifier="nausea" amount="0.85" />
 				<Affliction identifier="stun" amount="1" />
@@ -645,14 +645,14 @@
 
 	<!--+++++++++++++++++++++++++++++++++++-->
 
-	<FenHaloperidolStr name="" identifier="feniterpsychoagentcure" category="Medical" Tags="smallitem,chem" maxstacksize="8" cargocontaineridentifier="mediccrate" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+	<FenHaloperidolStr name="" identifier="psychochemicalagentantidote" category="Medical" Tags="smallitem,chem" maxstacksize="8" cargocontaineridentifier="mediccrate" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
 
 		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/chemicalwarfaremain.png" sourcerect="240,355,65,70" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/chemicalwarfaremain.png" sourcerect="170,355,50,70" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="25" height="40" density="5" />
 
-		<SuitableTreatment identifier="feniterpsychoagent" suitability="10" />
+		<SuitableTreatment identifier="psychochemicalagent" suitability="10" />
 		
 		<MeleeWeapon 
 			canBeCombined="true" removeOnCombined="true" 
@@ -669,28 +669,28 @@
 			</StatusEffect>
 
 			<StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="100.0">
-				<Conditional feniterpsychoagent="lt 80" />
+				<Conditional psychochemicalagent="lt 80" />
 
-				<ReduceAffliction identifier="feniterpsychoagent" amount="0.8" />
+				<ReduceAffliction identifier="psychochemicalagent" amount="0.8" />
 				<ReduceAffliction identifier="psychosis" amount="3" />
 				<ReduceAffliction identifier="hallucinating" amount="0.6" />
 				<ReduceAffliction identifier="hallucinatingshortduration" amount="0.6" />
-				<ReduceAffliction identifier="feniterhallucination1" amount="8" />
-				<ReduceAffliction identifier="feniterhallucination2" amount="8" />
+				<ReduceAffliction identifier="psychochemicalhallucination1" amount="8" />
+				<ReduceAffliction identifier="psychochemicalhallucination2" amount="8" />
 				<ReduceAffliction identifier="invertcontrols" amount="3" />
 				<Affliction identifier="psychosisresistance" amount="5" />
 				<Affliction identifier="stun" amount="1" />
 			</StatusEffect>
 
 			<StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="100.0">
-				<Conditional feniterpsychoagent="lt 80" />
+				<Conditional psychochemicalagent="lt 80" />
 
-				<ReduceAffliction identifier="feniterpsychoagent" amount="0.4" />
+				<ReduceAffliction identifier="psychochemicalagent" amount="0.4" />
 				<ReduceAffliction identifier="psychosis" amount="1.5" />
 				<ReduceAffliction identifier="hallucinating" amount="0.3" />
 				<ReduceAffliction identifier="hallucinatingshortduration" amount="0.3" />
-				<ReduceAffliction identifier="feniterhallucination1" amount="4" />
-				<ReduceAffliction identifier="feniterhallucination2" amount="4" />
+				<ReduceAffliction identifier="psychochemicalhallucination1" amount="4" />
+				<ReduceAffliction identifier="psychochemicalhallucination2" amount="4" />
 				<ReduceAffliction identifier="invertcontrols" amount="1.5" />
 				<Affliction identifier="psychosisresistance" amount="2.5" />
 				<Affliction identifier="stun" amount="1" />
@@ -708,7 +708,7 @@
 	
 		<!--+++++++++++++++++++++++++++++++++++-->
 
-	<FenGenDecon name="" identifier="feniterdecontaminant" category="Medical" Tags="smallitem,chem" maxstacksize="8" cargocontaineridentifier="mediccrate" useinhealthinterface="true" scale="1.2" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+	<FenGenDecon name="" identifier="decontaminant" category="Medical" Tags="smallitem,chem" maxstacksize="8" cargocontaineridentifier="mediccrate" useinhealthinterface="true" scale="1.2" impactsoundtag="impact_metal_light" RequireAimToUse="True">
 
 		<InventoryIcon texture="%ModDir%/Sprites/Items/Utilities/chemicalwarfareextraicon.png" sourcerect="0,64,64,64" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Sprites/Items/Utilities/chemicalwarfaremisc.png" sourcerect="147,42,12,26" depth="0.6" origin="0.5,0.5" />

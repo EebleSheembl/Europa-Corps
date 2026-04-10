@@ -283,18 +283,18 @@
 
 		<!--Tear gas Surplus SMG Magazine-->
 
-	<Item name="Tear gas Surplus SMG Magazine" identifier="fenitersmgmagazine1" aliases="teargassmgmagazine" maxstacksize="12" maxstacksizecharacterinventory="3" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo" impactsoundtag="impact_metal_light">
+	<Item name="Tear gas Surplus SMG Magazine" identifier="smgmagazine_teargas" aliases="smgmagazine_teargas" maxstacksize="12" maxstacksizecharacterinventory="3" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo" impactsoundtag="impact_metal_light">
 		
 		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Ammo/chemicalwarfareammo.png" sourcerect="0,0,64,64" />
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/chemicalwarfareammo.png" depth="0.54" sourcerect="49,196,21,44" origin="0.5,0.5" />
 		
 		<Body width="14" height="40" density="25" />
 		
-		<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="fenitersmground1" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-			<Containable items="fenitersmground1" />
+		<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="smground_teargas" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+			<Containable items="smground_teargas" />
 			
 			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
-				<SpawnItem identifiers="fenitersmground1" spawnposition="ThisInventory" />
+				<SpawnItem identifiers="smground_teargas" spawnposition="ThisInventory" />
 			</StatusEffect>
 			
 		</ItemContainer>
@@ -307,7 +307,7 @@
 
 		<!--Tear Gas Surplus SMG Round-->
 
-	<Item name="Tear Gas Surplus SMG Round" identifier="fenitersmground1" aliases="teargassmground" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+	<Item name="Tear Gas Surplus SMG Round" identifier="smground_teargas" aliases="teargassmground" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
 
 		<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
 		<Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
@@ -342,7 +342,7 @@
 				<ParticleEmitter particle="fensmokevent" anglemin="70" anglemax="100" velocitymax="200" particlespersecond="64" colormultiplier="255,225,255,105" />
 
 				<Explosion range="185.0" ballastfloradamage="60" structuredamage="1" itemdamage="1" severlimbsprobability="0.5" penetration="0.1" showeffects="false">
-					<Affliction identifier="feniternonlethalagent" strength="2" />
+					<Affliction identifier="teargas" strength="2" />
 				</Explosion>
 			</StatusEffect>
 
@@ -358,22 +358,22 @@
 
 		<!--Surplus Nerve Agent SMG Magazine-->
 
-	<Item name="Surplus Nerve Agent SMG Magazine" identifier="fenitersmgmagazine2" aliases="nerveagentsmgmagazine" maxstacksize="12" maxstacksizecharacterinventory="3" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo" impactsoundtag="impact_metal_light">
+	<Item name="Surplus Nerve Agent SMG Magazine" identifier="smgmagazine_nerveagent" aliases="nerveagentsmgmagazine" maxstacksize="12" maxstacksizecharacterinventory="3" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo" impactsoundtag="impact_metal_light">
 
 		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Ammo/chemicalwarfareammo.png" sourcerect="64,0,64,64" />
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/chemicalwarfareammo.png" depth="0.54" sourcerect="70,196,21,44" origin="0.5,0.5" />
 
 		<Body width="14" height="40" density="25" />
 
-		<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="fenitersmground2" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-			<Containable items="fenitersmground2" />
+		<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="smground_nerveagent" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+			<Containable items="smground_nerveagent" />
 
 			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
-				<SpawnItem identifiers="fenitersmground2" spawnposition="ThisInventory" />
+				<SpawnItem identifiers="smground_nerveagent" spawnposition="ThisInventory" />
 
 				<Explosion range="50.0" ballastfloradamage="450" structuredamage="0" itemdamage="0" showeffects="false"> <!--unsafe to use...-->
-					<Affliction identifier="feniternerveagentcon" strength="1.65" />
-					<Affliction identifier="feniternerveagent" strength="1.25" />
+					<Affliction identifier="nerveagentcontamination" strength="1.65" />
+					<Affliction identifier="nerveagent" strength="1.25" />
 				</Explosion>
 
 			</StatusEffect>
@@ -388,7 +388,7 @@
 
 		<!--Surplus Nerve Agent SMG Round-->
 	
-	<Item name="Surplus Nerve Agent SMG Round" identifier="fenitersmground2" aliases="nerveagentsmground" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+	<Item name="Surplus Nerve Agent SMG Round" identifier="smground_nerveagent" aliases="nerveagentsmground" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
 
 		<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
 		<Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
@@ -413,7 +413,7 @@
 
 			<StatusEffect type="OnImpact" target="This">
 				<Explosion range="70.0" ballastfloradamage="12" structuredamage="0" itemdamage="0" severlimbsprobability="0" showeffects="false">
-					<Affliction identifier="feniternerveagent" strength="1.5" />
+					<Affliction identifier="nerveagent" strength="1.5" />
 				</Explosion>
 			</StatusEffect>
 
@@ -436,18 +436,18 @@
 
 		<!--Surplus Psychochem SMG Magazine-->
 	
-	<Item name="Surplus Psychochem SMG Magazine" identifier="fenitersmgmagazine3" aliases="psychochemsmgmagazine" maxstacksize="12" maxstacksizecharacterinventory="3" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo" impactsoundtag="impact_metal_light">
+	<Item name="Surplus Psychochem SMG Magazine" identifier="smgmagazine_psychoagent" aliases="psychochemsmgmagazine" maxstacksize="12" maxstacksizecharacterinventory="3" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo" impactsoundtag="impact_metal_light">
 
 		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Ammo/chemicalwarfareammo.png" sourcerect="128,0,64,64" />
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/chemicalwarfareammo.png" depth="0.54" sourcerect="91,196,21,44" origin="0.5,0.5" />
 
 		<Body width="14" height="40" density="25" />
 
-		<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="fenitersmground3" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-			<Containable items="fenitersmground3" />
+		<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="smground_psychoagent" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+			<Containable items="smground_psychoagent" />
 			
 			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
-				<SpawnItem identifiers="fenitersmground3" spawnposition="ThisInventory" />
+				<SpawnItem identifiers="smground_psychoagent" spawnposition="ThisInventory" />
 			</StatusEffect>
 
 		</ItemContainer>
@@ -460,7 +460,7 @@
 
 		<!--Surplus Psychochem SMG Round-->
 	
-	<Item name="Surplus Psychochem SMG Round" identifier="fenitersmground3" aliases="psychochemsmground" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+	<Item name="Surplus Psychochem SMG Round" identifier="smground_psychoagent" aliases="psychochemsmground" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
 		
 		<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
 		<Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
@@ -484,7 +484,7 @@
 			
 			<StatusEffect type="OnImpact" target="This">
 				<Explosion range="35.0" ballastfloradamage="0" structuredamage="0" itemdamage="0" severlimbsprobability="0" showeffects="false">
-					<Affliction identifier="feniterpsychoagent" strength="1" />
+					<Affliction identifier="psychochemicalagent" strength="1" />
 				</Explosion>
 			</StatusEffect>
 			
