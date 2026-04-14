@@ -111,6 +111,51 @@
 
 
 			<!--++++++++++++++++++++++++++++++++++++-->
+			<!--Innerwear-->
+
+
+		<Item name="" identifier="scp_cbrnsuit" description="" category="Equipment" subcategory="Coalition" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+			<InventoryIcon name="cbrnsuitinv" texture="%ModDir:Enhanced Armaments%/Jobgear/cbrnsuit.png" sourcerect="619,-3,69,63" origin="0.5,0.5" />
+			<Sprite name="cbrnsuitground" texture="%ModDir:Enhanced Armaments%/Jobgear/cbrnsuit.png" sourcerect="544,65,162,73" depth="0.6" origin="0.5,0.5" />
+			<Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+
+			<Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+				<sprite name="CBRN helmet" texture="%ModDir:Enhanced Armaments%/Jobgear/cbrnsuit.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.72" hidewearablesoftype="hair" sourcerect="560,164,94,91" origin="0.5,0.51" />
+				<sprite name="CBRN Torso" texture="%ModDir:Enhanced Armaments%/Jobgear/cbrnsuit.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+				<sprite name="CBRN Uniform Right Hand" texture="%ModDir:Enhanced Armaments%/Jobgear/cbrnsuit.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+				<sprite name="CBRN Uniform Left Hand" texture="%ModDir:Enhanced Armaments%/Jobgear/cbrnsuit.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+				<sprite name="CBRN Uniform Right Lower Arm" texture="%ModDir:Enhanced Armaments%/Jobgear/cbrnsuit.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+				<sprite name="Heavy Uniform Left Lower Arm" texture="%ModDir:Enhanced Armaments%/Jobgear/cbrnsuit.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+				<sprite name="Heavy Uniform Right Upper Arm" texture="%ModDir:Enhanced Armaments%/Jobgear/cbrnsuit.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+				<sprite name="Heavy Uniform Left Upper Arm" texture="%ModDir:Enhanced Armaments%/Jobgear/cbrnsuit.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+				<sprite name="Heavy Uniform Waist" texture="%ModDir:Enhanced Armaments%/Jobgear/cbrnsuit.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+				<sprite name="Heavy Uniform Right Thigh" texture="%ModDir:Enhanced Armaments%/Jobgear/cbrnsuit.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+				<sprite name="Heavy Uniform Left Thigh" texture="%ModDir:Enhanced Armaments%/Jobgear/cbrnsuit.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+				<sprite name="Heavy Uniform Right Leg" texture="%ModDir:Enhanced Armaments%/Jobgear/cbrnsuit.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+				<sprite name="Heavy Uniform Left Leg" texture="%ModDir:Enhanced Armaments%/Jobgear/cbrnsuit.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+				<sprite name="Heavy Uniform Left Shoe" texture="%ModDir:Enhanced Armaments%/Jobgear/cbrnsuit.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+				<sprite name="Heavy Uniform Right Shoe" texture="%ModDir:Enhanced Armaments%/Jobgear/cbrnsuit.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+				
+				<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="feniternerveagent,feniterpulmonaryagent2,feniterbloodagent,feniterblisteragentinternal,feniternonlethalagent,feniterpsychoagent,anesthesia" damagemultiplier="0" probabilitymultiplier="0" />
+				<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="scp_presolatexinfection" damagemultiplier="0" probabilitymultiplier="0" />
+				<damagemodifier afflictionidentifiers="acidburn,burn" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
+				<damagemodifier afflictionidentifiers="radiationsickness" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+				<damagemodifier afflictiontypes="alieninfection" armorsector="0.0,360.0" damagemultiplier="0.75" probabilitymultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+				<damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
+				<damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.8" damagesound="LimbArmor" deflectprojectiles="true" />
+				<SkillModifier skillidentifier="weapons" skillvalue="-5" />
+				<SkillModifier skillidentifier="mechanical" skillvalue="-10" />
+				<SkillModifier skillidentifier="electrical" skillvalue="-10" />
+				<StatValue stattype="WalkingSpeed" value="-0.1" />
+				<StatValue stattype="SwimmingSpeed" value="-0.1" />
+				<StatusEffect type="OnWearing" target="Character" tags="cbrnsuit" disabledeltatime="true" comparison="and" duration="1" interval="1">
+					<Conditional HasStatusTag="sealed" />
+				</StatusEffect>
+			</Wearable>
+		</Item>
+
+
+			<!--++++++++++++++++++++++++++++++++++++-->
 			<!--Outerwear-->
 
 
