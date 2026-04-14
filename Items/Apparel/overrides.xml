@@ -114,6 +114,7 @@
 			<!--Innerwear-->
 
 
+			<!--CBRN Suit-->
 		<Item name="" identifier="scp_cbrnsuit" description="" category="Equipment" subcategory="Coalition" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
 			<InventoryIcon name="cbrnsuitinv" texture="%ModDir:Enhanced Armaments%/Jobgear/cbrnsuit.png" sourcerect="619,-3,69,63" origin="0.5,0.5" />
 			<Sprite name="cbrnsuitground" texture="%ModDir:Enhanced Armaments%/Jobgear/cbrnsuit.png" sourcerect="544,65,162,73" depth="0.6" origin="0.5,0.5" />
@@ -293,6 +294,105 @@
 
 			<aitarget maxsightrange="1500" />
     	</Item>
+
+		<Item name="" identifier="fenitercbrneod" category="Equipment" tags="smallitem,clothing" scale="0.5" fireproof="true" impactsoundtag="impact_metal_light" cargocontaineridentifier="feniterchemcrate1">
+			<InventoryIcon texture="%ModDir:3166943069%/thecodelol/Items/hazmatextra.png" sourcerect="300,0,150,120" origin="0.5,0.5" />
+			<Sprite name="Diving Suit Item" texture="%ModDir:3166943069%/thecodelol/Items/bombsuit_Item.png" sourcerect="0,0,146,120" depth="0.55" origin="0.5,0.5" />
+			<Body width="160" height="110" density="30" />
+
+			<Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
+				<sprite name="CBRN EOD Suit Torso" texture="%ModDir:3166943069%/thecodelol/Items/bombsuit.png" limb="Torso" hidelimb="false" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" limbdepth="8" />
+				<sprite name="CBRN EOD Helmet Wearable" texture="%ModDir:3166943069%/thecodelol/Items/helmets.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.675" hidelimb="false" sourcerect="160,0,160,160" origin="0.5,0.57" alphaclipotherwearables="true" />
+				<sprite name="CBRN EOD Suit Right Hand" texture="%ModDir:3166943069%/thecodelol/Items/bombsuit.png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+				<sprite name="CBRN EOD Suit Left Hand" texture="%ModDir:3166943069%/thecodelol/Items/bombsuit.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+				<sprite name="CBRN EOD Suit Right Lower Arm" texture="%ModDir:3166943069%/thecodelol/Items/bombsuit.png" limb="RightArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+				<sprite name="CBRN EOD Suit Left Lower Arm" texture="%ModDir:3166943069%/thecodelol/Items/bombsuit.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+				<sprite name="CBRN EOD Suit Right Upper Arm" texture="%ModDir:3166943069%/thecodelol/Items/bombsuit.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+				<sprite name="CBRN EOD Suit Left Upper Arm" texture="%ModDir:3166943069%/thecodelol/Items/bombsuit.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+				<sprite name="CBRN EOD Suit Waist" texture="%ModDir:3166943069%/thecodelol/Items/bombsuit.png" limb="Waist" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+				<sprite name="CBRN EOD Suit Right Thigh" texture="%ModDir:3166943069%/thecodelol/Items/bombsuit.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+				<sprite name="CBRN EOD Suit Left Thigh" texture="%ModDir:3166943069%/thecodelol/Items/bombsuit.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+				<sprite name="CBRN EOD Suit Right Leg" texture="%ModDir:3166943069%/thecodelol/Items/bombsuit.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+				<sprite name="CBRN EOD Suit Left Leg" texture="%ModDir:3166943069%/thecodelol/Items/bombsuit.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+				<sprite name="CBRN EOD Suit Left Shoe" texture="%ModDir:3166943069%/thecodelol/Items/bombsuit.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+				<sprite name="CBRN EOD Suit Right Shoe" texture="%ModDir:3166943069%/thecodelol/Items/bombsuit.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+				<StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" UseHullOxygen="false" />
+				<StatusEffect type="OnWearing" target="Character" UseHullOxygen="false" ObstructVision="true" SpeedMultiplier="0.6" LowPassMultiplier="0.2" setvalue="true" disabledeltatime="true">
+					<Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="250" loop="true" />
+					<Sound file="Content/Items/Diving/DivingSuitLoop2.ogg" range="250" loop="true" />
+				</StatusEffect>
+				<StatusEffect type="OnContained" target="Contained" Condition="1.0" interval="1" disabledeltatime="true">
+					<Conditional Voltage="gt 0.01" targetcontainer="true" targetgrandparent="true" targetitemcomponent="Powered" />
+					<RequiredItem items="refillableoxygensource" type="Contained" excludebroken="false" excludefullcondition="true" />
+				</StatusEffect>
+				<StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000.0" Condition="-0.2" comparison="Or">
+					<Conditional IsDead="false" />
+					<RequiredItem items="oxygensource" type="Contained" />
+				</StatusEffect>
+				<StatusEffect type="OnWearing" target="Contained,Character" Oxygen="-10.0" Condition="-0.5" interval="1" disabledeltatime="true">
+					<Conditional IsDead="false" />
+					<RequiredItem items="weldingfueltank" type="Contained" />
+				</StatusEffect>
+				<StatusEffect type="OnWearing" target="Contained,Character" targetlimbs="Torso" Oxygen="-10.0" Condition="-0.5" interval="1" disabledeltatime="true">
+					<Conditional IsDead="false" />
+					<RequiredItem items="incendiumfueltank" type="Contained" />
+					<Affliction identifier="burn" amount="3.0" />
+				</StatusEffect>
+				<StatusEffect type="OnContained" target="Contained" Condition="0.15" targetslot="0" interval="1" disabledeltatime="true">
+					<RequiredItem items="mobilebattery" type="Contained" />
+					<RequiredItem items="refillableoxygensource" type="Contained" />\
+				</StatusEffect>
+				<StatusEffect type="OnContained" target="Contained" Condition="-0.3" targetslot="1" interval="1" disabledeltatime="true">
+					<Conditional targetcontainer="true" IsOn="true" />
+					<RequiredItem items="mobilebattery" type="Contained" />
+				</StatusEffect>
+				<damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.25" damagesound="" deflectprojectiles="true" />
+				<damagemodifier afflictiontypes="stun" armorsector="0.0,360.0" damagemultiplier="0.70" />
+				<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,explosiondamage,radiationsickness,acidreaction,lacerations,,bleeding" damagemultiplier="0.25" damagesound="" />
+				<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" probabilitymultiplier="0" damagesound="impact_metal_heavy" />
+				<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="feniternerveagent,feniterpulmonaryagent2,feniterbloodagent,feniterblisteragentinternal,feniternonlethalagent,feniterpsychoagent,anesthesia" damagemultiplier="0" probabilitymultiplier="0" />
+				<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound,bitewounds" damagemultiplier="0.5" damagesound="impact_metal_heavy" />
+				<damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+				<ItemComponent IsActiveConditionalComparison="Or">
+					<IsActive InWater="eq true" />
+					<StatusEffect type="OnActive" target="Contained,Character" comparison="And" targetslot="0">
+					<RequiredItem items="oxygensource" type="Contained" />
+					<Conditional condition="lt 5.0" />
+					<Sound file="Content/Items/WarningBeepSlow.ogg" range="250" loop="true" />
+					</StatusEffect>
+					<StatusEffect type="OnActive" target="Contained" playsoundonrequireditemfailure="true" targetslot="0">
+					<RequiredItem items="oxygensource" type="Contained" matchonempty="true" />
+					<Conditional condition="lte 0.0" />
+					<Sound file="Content/Items/WarningBeep.ogg" range="250" loop="true" />
+				</StatusEffect>
+				</ItemComponent>
+				<StatusEffect tags="sealed" type="OnWearing" target="Character" duration="1" stackable="false" setvalue="true" />
+				<StatusEffect tags="cbrnsuit" type="OnWearing" target="Character" duration="1" stackable="false" setvalue="true" />
+			</Wearable>
+			<Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="0,-50" handle1="-10,-20" handle2="10,-20" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use">
+			<Upgrade gameversion="0.1401.0.0" msg="ItemMsgPickUpUse" />
+			</Holdable>
+
+			<ItemContainer capacity="0" maxstacksize="0" hideitems="true" containedstateindicatorstyle="tank" containedstateindicatorslot="0">
+				<Containable items="none" />
+				<SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="64,448,64,64" origin="0.5,0.5" />
+				<SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+				<SubContainer capacity="1" maxstacksize="1">
+					<Containable items="oxygensource,weldingtoolfuel" excludeditems="oxygenitetank" />
+					<Containable items="oxygenitetank">
+					<StatusEffect type="OnContaining" target="Character" SpeedMultiplier="1.3" setvalue="true" comparison="And" targetslot="0">
+						<Conditional IsDead="false" />
+						<Conditional HullOxygenPercentage="lt 50" />
+						<Conditional InWater="false" />
+					</StatusEffect>
+					</Containable>
+				</SubContainer>
+				<SubContainer capacity="1" maxstacksize="1">
+					<Containable items="mobilebattery" />
+					<StatusEffect type="OnContaining" targettype="This" Voltage="1.0" setvalue="true" />
+				</SubContainer>
+			</ItemContainer>
+		</Item>
 
 
 			<!--++++++++++++++++++++++++++++++++++++-->
