@@ -55,6 +55,7 @@
 	<Item file="%ModDir%/Items/Emitters/emitters.xml"/>
 	<Item file="%ModDir%/Items/Materials/materials.xml"/>
 	<Item file="%ModDir%/Items/Materials/overrides_materials.xml"/>
+	<Item file="%ModDir%/Items/Misc/overrides.xml"/>
 
 	<!--+++++++++++-->
 	<!--AFFLICTIONS--> 
