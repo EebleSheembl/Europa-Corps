@@ -656,6 +656,8 @@
 
 	<!--++++++++++++++++++++++++++++++++++++-->
 
+	<!--feniterpulmonaryagent1-->
+
 	<Affliction 
 		name="" 
 		identifier="pulmonaryagentbuildup" 
@@ -668,66 +670,36 @@
 		maxstrength="100" 
 		affectmachines="true">
 
-		<Effect 
-			minstrength="0" maxstrength="20" 
-			minvitalitydecrease="0" maxvitalitydecrease="0" 
-			strengthchange="0.035" 
-			minscreendistort="0" maxscreendistort="0.015" 
-			minscreenblur="0" maxscreenblur="0.015" 
-			minspeedmultiplier="1" maxspeedmultiplier="0.95" 
-			minchromaticaberration="0" maxchromaticaberration="0.015">
-		</Effect>
 
 		<Effect 
-			minstrength="20" maxstrength="40" 
-			minvitalitydecrease="0" maxvitalitydecrease="1"
-			strengthchange="0.05" 
-			minscreendistort="0.015" maxscreendistort="0.040" 
-			minscreenblur="0.015" maxscreenblur="0.040" 
-			minspeedmultiplier="0.95" maxspeedmultiplier="0.9" 
-			minchromaticaberration="0.015" maxchromaticaberration="0.025">
+			minstrength="0" maxstrength="20" strengthchange="0.5">
 		</Effect>
 
-		<Effect 
-			minstrength="40" maxstrength="60" 
-			minvitalitydecrease="1" maxvitalitydecrease="2" 
-			strengthchange="0.07" 
-			minscreendistort="0.040" maxscreendistort="0.80" 
-			minscreenblur="0.040" maxscreenblur="0.80" 
-			minspeedmultiplier="0.9" maxspeedmultiplier="0.35" 
-			minskillmultiplier="1" maxskillmultiplier="0.05" 
-			minchromaticaberration="0.025" maxchromaticaberration="0.45">
+    	<Effect 
+			minstrength="20" maxstrength="40" strengthchange="0.4">
 		</Effect>
 
-		<Effect 
-			minstrength="60" maxstrength="80" 
-			minvitalitydecrease="2" maxvitalitydecrease="40" 
-			strengthchange="0.08" 
-			minscreendistort="0.80" maxscreendistort="2" 
-			minscreenblur="0.80" maxscreenblur="2" 
-			minspeedmultiplier="0.4" maxspeedmultiplier="0" 
-			minskillmultiplier="0.05" maxskillmultiplier="0" 
-			minchromaticaberration="0.45" maxchromaticaberration="1">
-
-			<StatusEffect target="Character" setvalue="true">
-				<Affliction identifier="stun" amount="100" />
-			</StatusEffect>
+    	<Effect 
+			minstrength="40" maxstrength="60" strengthchange="0.3" 
+			resistancefor="OxygenLow" minresistance="0" maxresistance="-0.4">
 		</Effect>
 
-		<Effect 
-			minstrength="80" maxstrength="100" 
-			minvitalitydecrease="40" maxvitalitydecrease="10000" 
-			strengthchange="0.5" 
-			minscreendistort="2" maxscreendistort="4" 
-			minscreenblur="2" maxscreenblur="4" 
-			minspeedmultiplier="0" maxspeedmultiplier="0" 
-			minskillmultiplier="0" maxskillmultiplier="0" 
-			minchromaticaberration="1" maxchromaticaberration="1">
-
-			<StatusEffect target="Character" setvalue="true">
-				<Affliction identifier="stun" amount="100" />
-			</StatusEffect>
+   		<Effect 
+			minstrength="60" maxstrength="80" strengthchange="0.3" 
+			resistancefor="OxygenLow" minresistance="-0.4" maxresistance="-0.8" 
+			graincolor="0,0,20,255" mingrainstrength="0" maxgrainstrength="2" 
+			minscreendistort="0" maxscreendistort="0.5" 
+			minscreenblur="0" maxscreenblur="1">
 		</Effect>
+
+    	<Effect 
+			minstrength="80" maxstrength="100" strengthchange="0.2" 
+			resistancefor="OxygenLow" minresistance="-0.8" maxresistance="-1.2" 
+			graincolor="0,0,20,255" mingrainstrength="2" maxgrainstrength="3" 
+			minscreendistort="0.5" maxscreendistort="1" 
+			minscreenblur="1" maxscreenblur="2" 
+			minspeedmultiplier="1" maxspeedmultiplier="0.8" >
+		</Effect>	
 
 		<Description textidentifier="afflictiondescription.pulmonaryagentbuildup.self" target="Self" minstrength="40" maxstrength="60" />
 		<Description textidentifier="afflictiondescription.pulmonaryagentbuildup" target="OtherCharacter" minstrength="40" maxstrength="60" />
@@ -735,42 +707,47 @@
 		<Description textidentifier="afflictiondescription.pulmonaryagentbuildup.high" target="OtherCharacter" minstrength="60" maxstrength="100" />
 
 		<PeriodicEffect 
-			mininterval="14" maxinterval="16" 
-			multiplyafflictionsbymaxvitality="true">
+			mininterval="10" maxinterval="20">
 
-			<StatusEffect target="Character" OxygenAvailable="-2000.0" duration="5" comparison="and">
-				<Conditional pulmonaryagentbuildup="gte 40" />
-				<Conditional pulmonaryagentbuildup="lt 50" />
-				<Affliction identifier="stun" amount="2" />
-			</StatusEffect>
-		</PeriodicEffect>
+    		<StatusEffect target="Character" duration="5" comparison="and">
+    		  <Conditional pulmonaryagentbuildup="gte 40" />
+    		  <Conditional pulmonaryagentbuildup="lt 50" />
 
-		<PeriodicEffect
-			mininterval="24" maxinterval="28" 
-			multiplyafflictionsbymaxvitality="true">
+    		  <Affliction identifier="incrementalstun" amount="9" />
+    		  <Affliction identifier="Oxygenlow" amount="4" />
+    		</StatusEffect>
+    	</PeriodicEffect>
 
-			<StatusEffect target="Character" OxygenAvailable="-2000.0" duration="10" comparison="and">
-				<Conditional pulmonaryagentbuildup="gte 50" />
-				<Conditional pulmonaryagentbuildup="lt 60" />
-				<Affliction identifier="stun" amount="3" />
-			</StatusEffect>
-		</PeriodicEffect>
+    	<PeriodicEffect 
+			mininterval="20" maxinterval="30">
 
-		<PeriodicEffect 
-			mininterval="26" maxinterval="29" 
-			multiplyafflictionsbymaxvitality="true">
+    		<StatusEffect target="Character" duration="10" comparison="and">
+    			<Conditional pulmonaryagentbuildup="gte 50" />
+    			<Conditional pulmonaryagentbuildup="lt 60" />
 
-			<StatusEffect target="Character" OxygenAvailable="-2000.0" duration="12" comparison="and">
-				<Conditional pulmonaryagentbuildup="gte 60" />
-				<Conditional pulmonaryagentbuildup="lt 101" />
-				<Affliction identifier="stun" amount="4" />
-			</StatusEffect>
-		</PeriodicEffect>
+    			<Affliction identifier="incrementalstun" amount="9" />
+    			<Affliction identifier="Oxygenlow" amount="3" />
+    		</StatusEffect>
+    	</PeriodicEffect>
+		
+    	<PeriodicEffect 
+			mininterval="20" maxinterval="40">
+
+    		<StatusEffect target="Character" duration="12" comparison="and">
+    			<Conditional pulmonaryagentbuildup="gte 60" />
+    			<Conditional pulmonaryagentbuildup="lt 101" />
+
+    			<Affliction identifier="incrementalstun" amount="9" />
+    			<Affliction identifier="Oxygenlow" amount="2" />
+    		</StatusEffect>
+    	</PeriodicEffect>
 
 		<icon texture="%ModDir%/Sprites/Afflictions/chemicalagentsafflictions.png" sourcerect="128,0,128,128" color="122,122,23,255" origin="0,0" />
 	</Affliction>
 
 	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<!--feniterpulmonaryagent2-->
 
 	<Affliction 
 		name="" 
