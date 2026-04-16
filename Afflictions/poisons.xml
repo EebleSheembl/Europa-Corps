@@ -1238,97 +1238,96 @@
 		showinhealthscannerthreshold="10" 
 		maxstrength="100" affectmachines="false">
 
-		<Effect
-		strengthchange="-0.1">
-			<StatusEffect target="Character">
-				<Affliction identifier="psychosis" amount="1" />
-			</StatusEffect>
-		</Effect>
-
-		<Effect 
-			minstrength="5" maxstrength="80" 
-			minvitalitydecrease="0" maxvitalitydecrease="0" 
-			strengthchange="-0.05" 
-			minscreendistort="0.0" maxscreendistort="5.0" 
-			minscreenblur="0.0" maxscreenblur="2" 
-			minradialdistort="0" maxradialdistort="2" 
-			minchromaticaberration="0" maxchromaticaberration="15" 
+    	<Effect 
+			minstrength="0" maxstrength="80" strengthchange="-0.2" 
+			minscreendistort="0.0" maxscreendistort="2.0" 
+			minscreenblur="0.0" maxscreenblur="1" 
 			minskillmultiplier="1" maxskillmultiplier="0.2" 
 			minspeedmultiplier="1" maxspeedmultiplier="0.8" 
-			mingrainstrength="0" maxgrainstrength="2" 
-			MinAfflictionOverlayAlphaMultiplier="0" MaxAfflictionOverlayAlphaMultiplier="0.8" 
-			dialogflag="psychochemicalagent">
+			mingrainstrength="0" maxgrainstrength="1" 
+			MinAfflictionOverlayAlphaMultiplier="0" MaxAfflictionOverlayAlphaMultiplier="0.6" 
+			dialogflag="feniterpsychoagent">
 
-			<StatusEffect target="Character">
-				<Affliction identifier="psychosis" amount="1" />
-			</StatusEffect>
-		</Effect>
+    		<StatusEffect target="Character">
+    			<Affliction identifier="psychosis" amount="1" />
+    		</StatusEffect>
+    	</Effect>
 
-		<Effect 
-			minstrength="80" maxstrength="100" 
-			minvitalitydecrease="0" maxvitalitydecrease="1000" 
-			strengthchange="-0.05" 
-			minscreendistort="5" maxscreendistort="10" 
-			minscreenblur="2" maxscreenblur="4" 
-			minradialdistort="0" maxradialdistort="2" 
-			minchromaticaberration="15" maxchromaticaberration="15" 
-			minspeedmultiplier="0.8" maxspeedmultiplier="0" 
+    	<Effect 
+			minstrength="80" maxstrength="100" strengthchange="-0.1" 
+			minscreendistort="2" maxscreendistort="4" 
+			minscreenblur="1" maxscreenblur="1" 
+			minspeedmultiplier="0.8" maxspeedmultiplier="0.7" 
 			minskillmultiplier="0.2" maxskillmultiplier="0" 
-			mingrainstrength="2" maxgrainstrength="4" 
-			MinAfflictionOverlayAlphaMultiplier="0.8" MaxAfflictionOverlayAlphaMultiplier="1">
-
-			<StatusEffect target="Character">
-				<Affliction identifier="psychosis" amount="1" />
-			</StatusEffect>
-		</Effect>
+			mingrainstrength="1" maxgrainstrength="2" 
+			MinAfflictionOverlayAlphaMultiplier="0.6" MaxAfflictionOverlayAlphaMultiplier="0.6">
+			
+    		<StatusEffect target="Character">
+    		 	<Affliction identifier="psychosis" amount="1" />
+    		</StatusEffect>
+    	</Effect>
 
 		<Description textidentifier="afflictiondescription.psychochemicalagent.self" target="Self" />
 		<Description textidentifier="afflictiondescription.psychochemicalagent" target="OtherCharacter" />
 
-		<PeriodicEffect 
+   		<PeriodicEffect 
 			mininterval="5" maxinterval="10">
 
-			<StatusEffect target="Character">
-				<Conditional psychochemicalhallucination1="lt 1" />
-				<Affliction identifier="psychochemicalhallucination1" amount="0.1" />
-			</StatusEffect>
+   			<StatusEffect target="Character">
+   				<Conditional feniterhallucination1="lt 1" />
+   				<Affliction identifier="feniterhallucination1" amount="0.1" />
+   			</StatusEffect>
 
-			<StatusEffect target="Character">
-				<Conditional psychochemicalhallucination2="lt 1" />
-				<Affliction identifier="psychochemicalhallucination2" amount="0.1" />
-			</StatusEffect>
-		</PeriodicEffect>
+   			<StatusEffect target="Character">
+   				<Conditional feniterhallucination2="lt 1" />
+   				<Affliction identifier="feniterhallucination2" amount="0.1" />
+   			</StatusEffect>
+   		</PeriodicEffect>
 
-		<PeriodicEffect 
+   		<PeriodicEffect 
 			mininterval="10" maxinterval="20">
 
-			<StatusEffect target="Character">
-				<Conditional IsLocalPlayer="True" />
-				<Sound file="%ModDir%/Sounds/Medical/whisper.ogg" selectionmode="Random" />
-				<Sound file="%ModDir%/Sounds/Medical/insect.ogg" />
-			</StatusEffect>
-		</PeriodicEffect>
+   			<StatusEffect target="Character">
+   				<Conditional IsLocalPlayer="True" />
+   				<Sound file="%ModDir%/thecodelol/Others/whisper.ogg" selectionmode="Random" />
+   				<Sound file="%ModDir%/thecodelol/Others/insect.ogg" />
+   			</StatusEffect>
+   		</PeriodicEffect>
 
-		<PeriodicEffect 
+   		<PeriodicEffect 
 			mininterval="100" maxinterval="200">
 
-			<StatusEffect target="Character">
-				<Conditional IsLocalPlayer="True" />
-				<Sound file="%ModDir%/Sounds/Medical/knock.ogg" />
-			</StatusEffect>
-		</PeriodicEffect>
+   			<StatusEffect target="Character">
+   				<Conditional IsLocalPlayer="True" />
+   				<Sound file="%ModDir%/thecodelol/Others/knock.ogg" />
+   			</StatusEffect>
+   		</PeriodicEffect>
 
-		<PeriodicEffect 
+   		<PeriodicEffect 
 			mininterval="2" maxinterval="3">
-			<StatusEffect target="Character">
-				<Affliction identifier="invertcontrols" amount="1" />
-			</StatusEffect>
 
-			<StatusEffect target="Character" setvalue="true">
-				<Conditional invertcontrols="gte 2" />
-				<ReduceAffliction identifier="invertcontrols" amount="1000" />
-			</StatusEffect>
-		</PeriodicEffect>
+   			<StatusEffect target="Character">
+   				<Affliction identifier="invertcontrols" amount="1" />
+   			</StatusEffect>
+
+   			<StatusEffect target="Character" setvalue="true">
+   				<Conditional invertcontrols="gte 2" />
+   				<ReduceAffliction identifier="invertcontrols" amount="1000" />
+   			</StatusEffect>
+
+   		</PeriodicEffect>
+
+   		<PeriodicEffect 
+			mininterval="15" maxinterval="30">
+
+   			<StatusEffect target="Character" duration="5">
+   				<Conditional feniterpsychoagent="gt 90" />
+   				<Affliction identifier="watchersgaze" amount="40" />
+   				<Affliction identifier="organdamage" amount="3" />
+   				<Affliction identifier="nausea" amount="2" />
+   			</StatusEffect>
+
+   		</PeriodicEffect>
 		
 		<icon texture="%ModDir%/Sprites/Afflictions/chemicalagentsafflictions.png" sourcerect="512,0,128,128" color="122,122,23,255" origin="0,0" />
 		<AfflictionOverlay texture="%ModDir%/Sprites/Afflictions/psychosismain.png" sourcerect="0,0,1024,680" color="0,0,0,255" origin="0,0" />
