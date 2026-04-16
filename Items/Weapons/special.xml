@@ -647,7 +647,7 @@
 	</Item>
 
 		<!--Nerve Agent-->
-	<Item name="" identifier="fenitergasgrenade1" category="Weapon" maxstacksize="8" cargocontaineridentifier="chemicalcrate" tags="smallitem,weapon,explosive" Scale="0.5" impactsoundtag="" health="15">
+	<Item name="" identifier="nervegasgrenade" category="Weapon" maxstacksize="8" cargocontaineridentifier="chemicalcrate" tags="smallitem,weapon,explosive" Scale="0.5" impactsoundtag="" health="15">
 	
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/chemicalwarfaremain.png" sourcerect="20,11,27,53" depth="0.55" origin="0.5,0.5" />
 		
@@ -675,8 +675,8 @@
 				<Conditional hastag="eq armed" />
 
 				<Explosion showeffects="false" range="500">
-					<Affliction identifier="feniternerveagent" strength="1" />
-					<Affliction identifier="feniternerveagentcon" strength="2" />
+					<Affliction identifier="nerveagent" strength="1" />
+					<Affliction identifier="nerveagentcontamination" strength="2" />
 				</Explosion>
 			</StatusEffect>
 
@@ -731,7 +731,7 @@
 
 	</Item>
 
-	<Item identifier="nervegasgrenadeactive" variantof="fenitergasgrenade1" descriptionidentifier="fenitergasgrenade1" tags="smallitem,weapon,explosive,armed"/>
+	<Item identifier="nervegasgrenadeactive" variantof="nervegasgrenade" descriptionidentifier="nervegasgrenade" tags="smallitem,weapon,explosive,armed"/>
 
 
 	<Item identifier="nervegasemitter" category="weapon" tags="" scale="0.5" noninteractable="true" hiddeningame="true">
@@ -747,8 +747,8 @@
 				<Conditional IsOn="eq True"/>
 
 				<Explosion showeffects="false" range="500">
-					<Affliction identifier="feniternerveagent" strength="2" />
-					<Affliction identifier="feniternerveagentcon" strength="4" />
+					<Affliction identifier="nerveagent" strength="2" />
+					<Affliction identifier="nerveagentcontamination" strength="4" />
 				</Explosion>
 			</StatusEffect>
 
@@ -774,7 +774,7 @@
 	<!--++++++++++++++++++++++++++++++++++++-->
 
 	<!--Pulmonary Agent-->
-	<Item name="" identifier="fenitergasgrenade2" category="Weapon" maxstacksize="8" cargocontaineridentifier="chemicalcrate" tags="smallitem,weapon,explosive" Scale="0.5" impactsoundtag="impact_metal_heavy" health="30">
+	<Item name="" identifier="pulmonarygasgrenade" category="Weapon" maxstacksize="8" cargocontaineridentifier="chemicalcrate" tags="smallitem,weapon,explosive" Scale="0.5" impactsoundtag="impact_metal_heavy" health="30">
 
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/chemicalwarfaremain.png" sourcerect="20,81,27,53" depth="0.55" origin="0.5,0.5" />
 
@@ -804,7 +804,7 @@
 				<Conditional hastag="eq armed" />
 
 				<Explosion showeffects="false" range="600">
-					<Affliction identifier="feniterpulmonaryagent2" strength="3" />
+					<Affliction identifier="pulmonaryagentexposure" strength="3" />
 				</Explosion>
 			</StatusEffect>
 
@@ -813,7 +813,7 @@
 	</Item>
 
 
-	<Item identifier="pulmgasgrenadeactive" variantof="fenitergasgrenade2" descriptionidentifier="fenitergasgrenade2" tags="smallitem,weapon,explosive,armed"/>
+	<Item identifier="pulmgasgrenadeactive" variantof="pulmonarygasgrenade" descriptionidentifier="pulmonarygasgrenade" tags="smallitem,weapon,explosive,armed"/>
 
 
 	<Item identifier="pulmgasemitter" category="weapon" tags="" scale="0.5" noninteractable="true" hiddeningame="true">
@@ -829,7 +829,7 @@
 				<Conditional IsOn="eq True"/>
 
 				<Explosion showeffects="false" range="500">
-					<Affliction identifier="feniterpulmonaryagent2" strength="5" />
+					<Affliction identifier="pulmonaryagentexposure" strength="5" />
 				</Explosion>
 			</StatusEffect>
 
@@ -855,7 +855,7 @@
 	<!--++++++++++++++++++++++++++++++++++++-->
 
 	<!--Blood Agent-->
-	<Item name="" identifier="fenitergasgrenade3" category="Weapon" maxstacksize="8" cargocontaineridentifier="chemicalcrate" tags="smallitem,weapon,explosive" Scale="0.5" impactsoundtag="impact_metal_heavy" health="10">
+	<Item name="" identifier="bloodgasgrenade" category="Weapon" maxstacksize="8" cargocontaineridentifier="chemicalcrate" tags="smallitem,weapon,explosive" Scale="0.5" impactsoundtag="impact_metal_heavy" health="10">
 
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/chemicalwarfaremain.png" sourcerect="20,151,27,53" depth="0.55" origin="0.5,0.5" />
 
@@ -885,7 +885,7 @@
 				<Conditional hastag="eq armed" />
 
 				<Explosion showeffects="false" range="600">
-					<Affliction identifier="feniterbloodagent" strength="7" />
+					<Affliction identifier="bloodagent" strength="7" />
 					<Affliction identifier="restrictedvision" strength="500" />
 				</Explosion>
 
@@ -896,7 +896,7 @@
 	</Item>
 
 
-	<Item identifier="bloodgasgrenadeactive" variantof="fenitergasgrenade3" descriptionidentifier="fenitergasgrenade3" tags="smallitem,weapon,explosive,armed"/>
+	<Item identifier="bloodgasgrenadeactive" variantof="bloodgasgrenade" descriptionidentifier="bloodgasgrenade" tags="smallitem,weapon,explosive,armed"/>
 
 
 	<Item identifier="bloodgasemitter" category="weapon" tags="" scale="0.5" noninteractable="true" hiddeningame="true">
@@ -912,7 +912,7 @@
 				<Conditional IsOn="eq True"/>
 
 				<Explosion showeffects="false" range="500">
-					<Affliction identifier="feniterbloodagent" strength="7" />
+					<Affliction identifier="bloodagent" strength="7" />
 					<Affliction identifier="restrictedvision" strength="500" />
 				</Explosion>
 			</StatusEffect>
@@ -939,7 +939,7 @@
 	<!--++++++++++++++++++++++++++++++++++++-->
 
 	<!--Blistering Agent-->
-	<Item name="" identifier="fenitergasgrenade4" category="Weapon" maxstacksize="8" cargocontaineridentifier="chemicalcrate" tags="smallitem,weapon,explosive" Scale="0.5" impactsoundtag="impact_metal_heavy" health="15">
+	<Item name="" identifier="blistergasgrenade" category="Weapon" maxstacksize="8" cargocontaineridentifier="chemicalcrate" tags="smallitem,weapon,explosive" Scale="0.5" impactsoundtag="impact_metal_heavy" health="15">
 
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/chemicalwarfaremain.png" sourcerect="19,222,27,53" depth="0.55" origin="0.5,0.5" />
 
@@ -965,8 +965,8 @@
 				<Conditional hastag="eq armed" />
 
 				<Explosion showeffects="false" range="600">
-					<Affliction identifier="feniterblisteragentinternal" strength="3" />
-					<Affliction identifier="feniterblisteragentcon" strength="5" />
+					<Affliction identifier="blisteragentinternal" strength="3" />
+					<Affliction identifier="blisteragentcontamination" strength="5" />
 					<Affliction identifier="acidburn" strength="10" />
 				</Explosion>
 			</StatusEffect>
@@ -976,7 +976,7 @@
 	</Item>
 
 
-	<Item identifier="blistergasgrenadeactive" variantof="fenitergasgrenade4" descriptionidentifier="fenitergasgrenade4" tags="smallitem,weapon,explosive,armed"/>
+	<Item identifier="blistergasgrenadeactive" variantof="blistergasgrenade" descriptionidentifier="blistergasgrenade" tags="smallitem,weapon,explosive,armed"/>
 
 
 	<Item identifier="blistergasemitter" category="weapon" tags="" scale="0.5" noninteractable="true" hiddeningame="true">
@@ -992,8 +992,8 @@
 				<Conditional IsOn="eq True"/>
 
 				<Explosion showeffects="false" range="500">
-					<Affliction identifier="feniterblisteragentinternal" strength="4" />
-					<Affliction identifier="feniterblisteragentcon" strength="8" />
+					<Affliction identifier="blisteragentinternal" strength="4" />
+					<Affliction identifier="blisteragentcontamination" strength="8" />
 					<Affliction identifier="acidburn" strength="8" />
 				</Explosion>
 			</StatusEffect>
@@ -1019,7 +1019,7 @@
 	<!--++++++++++++++++++++++++++++++++++++-->
 
 	<!--Tear Gas-->
-	<Item name="" identifier="fenitergasgrenade5" category="Weapon" maxstacksize="8" cargocontaineridentifier="chemicalcrate" tags="smallitem,weapon,explosive" Scale="0.5" impactsoundtag="impact_metal_heavy" health="30">
+	<Item name="" identifier="teargasgrenade" category="Weapon" maxstacksize="8" cargocontaineridentifier="chemicalcrate" tags="smallitem,weapon,explosive" Scale="0.5" impactsoundtag="impact_metal_heavy" health="30">
 
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/chemicalwarfaremain.png" sourcerect="19,291,27,53" depth="0.55" origin="0.5,0.5" />
 
@@ -1049,7 +1049,7 @@
 				<Conditional hastag="eq armed" />
 
 				<Explosion showeffects="false" range="250">
-					<Affliction identifier="feniternonlethalagent" strength="2.5" />
+					<Affliction identifier="teargas" strength="2.5" />
 				</Explosion>
 
 			</StatusEffect>
@@ -1059,7 +1059,7 @@
 	</Item>
 
 
-	<Item identifier="teargasgrenadeactive" variantof="fenitergasgrenade5" descriptionidentifier="fenitergasgrenade5" tags="smallitem,weapon,explosive,armed"/>
+	<Item identifier="teargasgrenadeactive" variantof="teargasgrenade" descriptionidentifier="teargasgrenade" tags="smallitem,weapon,explosive,armed"/>
 
 
 	<Item identifier="teargasemitter" category="weapon" tags="" scale="0.5" noninteractable="true" hiddeningame="true">
@@ -1075,7 +1075,7 @@
 				<Conditional IsOn="eq True"/>
 
 				<Explosion showeffects="false" range="500">
-					<Affliction identifier="feniternonlethalagent" strength="0.5" />
+					<Affliction identifier="teargas" strength="0.5" />
 				</Explosion>
 			</StatusEffect>
 
@@ -1101,7 +1101,7 @@
 	<!--++++++++++++++++++++++++++++++++++++-->
 
 	<!--Psychochemical Agent-->
-	<Item name="" identifier="fenitergasgrenade6" category="Weapon" maxstacksize="8" cargocontaineridentifier="chemicalcrate" tags="smallitem,weapon,explosive" Scale="0.5" impactsoundtag="impact_metal_heavy" health="20">
+	<Item name="" identifier="psychogasgrenade" category="Weapon" maxstacksize="8" cargocontaineridentifier="chemicalcrate" tags="smallitem,weapon,explosive" Scale="0.5" impactsoundtag="impact_metal_heavy" health="20">
 
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/chemicalwarfaremain.png" sourcerect="19,361,27,53" depth="0.55" origin="0.5,0.5" />
 
@@ -1129,7 +1129,7 @@
 				<Conditional hastag="eq armed" />
 
 				<Explosion showeffects="false" range="500">
-					<Affliction identifier="feniterpsychoagent" strength="5" />
+					<Affliction identifier="psychochemicalagent" strength="5" />
 				</Explosion>
 			</StatusEffect>
 
@@ -1138,7 +1138,7 @@
 	</Item>
 
 
-	<Item identifier="psychogasgrenadeactive" variantof="fenitergasgrenade6" descriptionidentifier="fenitergasgrenade6" tags="smallitem,weapon,explosive,armed"/>
+	<Item identifier="psychogasgrenadeactive" variantof="psychogasgrenade" descriptionidentifier="psychogasgrenade" tags="smallitem,weapon,explosive,armed"/>
 
 
 	<Item identifier="psychogasemitter" category="weapon" tags="" scale="0.5" noninteractable="true" hiddeningame="true">
@@ -1154,7 +1154,7 @@
 				<Conditional IsOn="eq True"/>
 
 				<Explosion showeffects="false" range="500">
-					<Affliction identifier="feniterpsychoagent" strength="3" />
+					<Affliction identifier="psychochemicalagent" strength="3" />
 				</Explosion>
 			</StatusEffect>
 
@@ -1180,7 +1180,7 @@
 	<!--++++++++++++++++++++++++++++++++++++-->
 
 	<!--Incapacitating Agent-->
-	<Item name="" identifier="fenitergasgrenade7" category="Weapon" maxstacksize="8" cargocontaineridentifier="chemicalcrate" tags="smallitem,weapon,explosive" Scale="0.5" impactsoundtag="impact_metal_heavy" health="15">
+	<Item name="" identifier="sleepgasgrenade" category="Weapon" maxstacksize="8" cargocontaineridentifier="chemicalcrate" tags="smallitem,weapon,explosive" Scale="0.5" impactsoundtag="impact_metal_heavy" health="15">
 
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/chemicalwarfaremain.png" sourcerect="19,431,27,53" depth="0.55" origin="0.5,0.5" />
 
@@ -1219,7 +1219,7 @@
 	</Item>
 
 
-	<Item identifier="sleepgasgrenadeactive" variantof="fenitergasgrenade7" descriptionidentifier="fenitergasgrenade7" tags="smallitem,weapon,explosive,armed"/>
+	<Item identifier="sleepgasgrenadeactive" variantof="sleepgasgrenade" descriptionidentifier="sleepgasgrenade" tags="smallitem,weapon,explosive,armed"/>
 
 
 	<Item identifier="sleepgasemitter" category="weapon" tags="" scale="0.5" noninteractable="true" hiddeningame="true">

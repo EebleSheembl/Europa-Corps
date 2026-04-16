@@ -227,29 +227,29 @@
 			
 			<!--weapons-->
 			<Item identifier="sgt_rifle" equip="true"/>
-			<Item identifier="feniterrifleround1"/>
-			<Item identifier="feniterrifleround1"/>
-			<Item identifier="feniterrifleround1"/>
-			<Item identifier="feniterrifleround1"/>
-			<Item identifier="feniterrifleround1"/>
-			<Item identifier="feniterrifleround1"/>
-			<Item identifier="feniterrifleround1"/>
-			<Item identifier="feniterrifleround1"/>
-			<Item identifier="feniterrifleround1"/>
-			<Item identifier="feniterrifleround1"/>
-			<Item identifier="feniterrifleround1"/>
-			<Item identifier="feniterrifleround1"/>
+			<Item identifier="riflebullet_teargas"/>
+			<Item identifier="riflebullet_teargas"/>
+			<Item identifier="riflebullet_teargas"/>
+			<Item identifier="riflebullet_teargas"/>
+			<Item identifier="riflebullet_teargas"/>
+			<Item identifier="riflebullet_teargas"/>
+			<Item identifier="riflebullet_teargas"/>
+			<Item identifier="riflebullet_teargas"/>
+			<Item identifier="riflebullet_teargas"/>
+			<Item identifier="riflebullet_teargas"/>
+			<Item identifier="riflebullet_teargas"/>
+			<Item identifier="riflebullet_teargas"/>
 
-			<Item identifier="feniterrifleround3"/>
-			<Item identifier="feniterrifleround3"/>
-			<Item identifier="feniterrifleround3"/>
-			<Item identifier="feniterrifleround3"/>
-			<Item identifier="feniterrifleround3"/>
-			<Item identifier="feniterrifleround3"/>
+			<Item identifier="riflebullet_psychoagent"/>
+			<Item identifier="riflebullet_psychoagent"/>
+			<Item identifier="riflebullet_psychoagent"/>
+			<Item identifier="riflebullet_psychoagent"/>
+			<Item identifier="riflebullet_psychoagent"/>
+			<Item identifier="riflebullet_psychoagent"/>
 			
-			<Item identifier="feniterrifleround2"/>
-			<Item identifier="feniterrifleround2"/>
-			<Item identifier="feniterrifleround2"/>
+			<Item identifier="riflebullet_nerveagent"/>
+			<Item identifier="riflebullet_nerveagent"/>
+			<Item identifier="riflebullet_nerveagent"/>
 
 		</ItemSet>
 
@@ -286,29 +286,29 @@
 			
 			<!--weapons-->
 			<Item identifier="sgt_rifle" equip="true"/>
-			<Item identifier="feniterrifleround1"/>
-			<Item identifier="feniterrifleround1"/>
-			<Item identifier="feniterrifleround1"/>
-			<Item identifier="feniterrifleround1"/>
-			<Item identifier="feniterrifleround1"/>
-			<Item identifier="feniterrifleround1"/>
-			<Item identifier="feniterrifleround1"/>
-			<Item identifier="feniterrifleround1"/>
-			<Item identifier="feniterrifleround1"/>
-			<Item identifier="feniterrifleround1"/>
-			<Item identifier="feniterrifleround1"/>
-			<Item identifier="feniterrifleround1"/>
+			<Item identifier="riflebullet_teargas"/>
+			<Item identifier="riflebullet_teargas"/>
+			<Item identifier="riflebullet_teargas"/>
+			<Item identifier="riflebullet_teargas"/>
+			<Item identifier="riflebullet_teargas"/>
+			<Item identifier="riflebullet_teargas"/>
+			<Item identifier="riflebullet_teargas"/>
+			<Item identifier="riflebullet_teargas"/>
+			<Item identifier="riflebullet_teargas"/>
+			<Item identifier="riflebullet_teargas"/>
+			<Item identifier="riflebullet_teargas"/>
+			<Item identifier="riflebullet_teargas"/>
 
-			<Item identifier="feniterrifleround3"/>
-			<Item identifier="feniterrifleround3"/>
-			<Item identifier="feniterrifleround3"/>
-			<Item identifier="feniterrifleround3"/>
-			<Item identifier="feniterrifleround3"/>
-			<Item identifier="feniterrifleround3"/>
+			<Item identifier="riflebullet_psychoagent"/>
+			<Item identifier="riflebullet_psychoagent"/>
+			<Item identifier="riflebullet_psychoagent"/>
+			<Item identifier="riflebullet_psychoagent"/>
+			<Item identifier="riflebullet_psychoagent"/>
+			<Item identifier="riflebullet_psychoagent"/>
 			
-			<Item identifier="feniterrifleround2"/>
-			<Item identifier="feniterrifleround2"/>
-			<Item identifier="feniterrifleround2"/>
+			<Item identifier="riflebullet_nerveagent"/>
+			<Item identifier="riflebullet_nerveagent"/>
+			<Item identifier="riflebullet_nerveagent"/>
 
 		</ItemSet>
 	</Job>
@@ -794,12 +794,12 @@
 			<Item identifier="oxygentank"/>
 
 			<Item identifier="toolbelt">
-				<Item identifier="feniterdecontaminant"/>
-				<Item identifier="feniterdecontaminant"/>
-				<Item identifier="feniterdecontaminant"/>
-				<Item identifier="feniterdecontaminant"/>
-				<Item identifier="feniterdecontaminant"/>
-				<Item identifier="feniterdecontaminant"/>
+				<Item identifier="decontaminant"/>
+				<Item identifier="decontaminant"/>
+				<Item identifier="decontaminant"/>
+				<Item identifier="decontaminant"/>
+				<Item identifier="decontaminant"/>
+				<Item identifier="decontaminant"/>
 
 				<Item identifier="antipsychosis"/>
 				<Item identifier="antipsychosis"/>

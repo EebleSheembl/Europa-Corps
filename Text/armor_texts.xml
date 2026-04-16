@@ -155,8 +155,8 @@
 	<entitydescription.scp_interceptorsuit>An experimental combat suit built upon an existing Slipsuit, using shark biomimicry to minimize water resistance for significantly better water travel. It also features Durasteel armour plating to make it more effective against small arms.</entitydescription.scp_interceptorsuit>
 	
 	<!-- CA items -->
-	<entityname.feniterhazmats>Advanced Hazmat Suit</entityname.feniterhazmats>
-	<entitydescription.feniterhazmats>Modified military hazardous materials suit. Suit power enables lights and assisted closed circuit breathing apparatus with battery in suit. Suit's internal gel protects from sudden water flow and may act as a diving suit in a pinch with slow movement. Multi-functional goggles that allow thermal, low light vision, and health-scanner function.</entitydescription.feniterhazmats>
-	<entityname.fenitercbrneod>Heavy EOD Suit</entityname.fenitercbrneod>
-	<entitydescription.fenitercbrneod>Heavy duty combined EOD/CBRN suit. Boasts imperviousness to almost all chemical hazards and extremely heavy resistance against most explosive, incendiary and physical hazards.</entitydescription.fenitercbrneod>
+	<entityname.hazmatsuit>Advanced Hazmat Suit</entityname.hazmatsuit>
+	<entitydescription.hazmatsuit>Modified military hazardous materials suit. Suit power enables lights and assisted closed circuit breathing apparatus with battery in suit. Suit's internal gel protects from sudden water flow and may act as a diving suit in a pinch with slow movement. Multi-functional goggles that allow thermal, low light vision, and health-scanner function.</entitydescription.hazmatsuit>
+	<entityname.eodsuit>Heavy EOD Suit</entityname.eodsuit>
+	<entitydescription.eodsuit>Heavy duty combined EOD/CBRN suit. Boasts imperviousness to almost all chemical hazards and extremely heavy resistance against most explosive, incendiary and physical hazards.</entitydescription.eodsuit>
 </infotexts>
