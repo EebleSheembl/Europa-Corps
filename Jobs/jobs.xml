@@ -51,11 +51,11 @@
         <Item identifier="scp_arevolverround" amount="10" />
       </Item>
       <!--weapons-->
-      <Item identifier="sgt_dbs" equip="false">
+      <Item identifier="sgt_dbs" >
         <Item identifier="heavystunshell" amount="2" />
       </Item>
       <Item identifier="heavystunshell" amount="6" />
-      <Item identifier="scp_rsh12" equip="false">
+      <Item identifier="scp_rsh12" >
         <Item identifier="scp_arevolverround" amount="5" />
       </Item>
       <Item identifier="scp_arevolverround" amount="5" />
@@ -92,7 +92,7 @@
         <Item identifier="antibleeding1" amount="8" />
         <Item identifier="deusizine" amount="4" />
       </Item>
-      <item identifier="scp_val" equip="true">
+      <item identifier="scp_val" >
         <item identifier="scp_ak74mag" />
       </item>
       <item identifier="scp_ak74mag" amount="4" />
@@ -130,7 +130,7 @@
         <Item identifier="deusizine" amount="4" />
       </Item>
       <!--weapons-->
-      <Item identifier="scp_sr3" equip="false">
+      <Item identifier="scp_sr3" >
         <Item identifier="scp_ak74mag" />
       </Item>
       <Item identifier="scp_ak74mag" amount="4" />
@@ -168,7 +168,7 @@
         <Item identifier="deusizine" amount="4" />
       </Item>
       <!--weapons-->
-      <Item identifier="sgt_boshotgun" equip="false">
+      <Item identifier="sgt_boshotgun" >
         <Item identifier="scp_saigaextmag" />
       </Item>
       <Item identifier="scp_saigaextmag" amount="6" />
@@ -208,7 +208,7 @@
         <Item identifier="fulguriumbatterycell" amount="3" />
       </Item>
       <!--weapons-->
-      <Item identifier="sgt_rifle" equip="true" />
+      <Item identifier="sgt_rifle" />
       <Item identifier="riflebullet_teargas" amount="12" />
       <Item identifier="riflebullet_psychoagent" amount="6" />
       <Item identifier="riflebullet_nerveagent" amount="4" />
@@ -230,7 +230,7 @@
         <Item identifier="fulguriumbatterycell" amount="3" />
       </Item>
       <!--weapons-->
-      <Item identifier="sgt_rifle" equip="true" />
+      <Item identifier="sgt_rifle" />
       <Item identifier="riflebullet_teargas" amount="12" />
       <Item identifier="riflebullet_psychoagent" amount="6" />
       <Item identifier="riflebullet_nerveagent" amount="4" />
@@ -331,7 +331,7 @@
         <Item identifier="deusizine" amount="2" />
         <Item identifier="scp_vodka" />
       </Item>
-      <Item identifier="scp_sg550" equip="true">
+      <Item identifier="scp_sg550" >
         <Item identifier="scp_556mag" />
       </Item>
       <Item identifier="scp_556mag" amount="8" />
@@ -366,7 +366,7 @@
         <Item identifier="deusizine" amount="2" />
       </Item>
       <!--weapons-->
-      <Item identifier="rifle" equip="true">
+      <Item identifier="rifle" >
         <Item identifier="riflebullet" amount="5" />
         <Item identifier="scope" />
       </Item>
@@ -477,7 +477,7 @@
         <Item identifier="deusizine" amount="2" />
         <Item identifier="scp_vodka" />
       </Item>
-      <Item identifier="scp_m4s90" equip="true">
+      <Item identifier="scp_m4s90" >
         <Item identifier="scp_12gmagbuck" amount="9" />
         <Item identifier="flashlight">
           <Item identifier="batterycell" />
@@ -729,7 +729,7 @@
         <Item identifier="button" amount="3" />
         <Item identifier="blackwire" amount="3" />
       </Item>
-      <Item identifier="sgt_apc" equip="true">
+      <Item identifier="sgt_apc" >
         <Item identifier="sgt_10mmmagext" />
         <Item identifier="flashlight">
           <Item identifier="batterycell" />
@@ -770,7 +770,7 @@
         <Item identifier="weldingfueltank" amount="2" />
         <Item identifier="oxygentank" amount="2" />
       </Item>
-      <Item identifier="scp_m4s90" equip="true">
+      <Item identifier="scp_m4s90" >
         <Item identifier="scp_12gslug" amount="9" />
         <Item identifier="flashlight">
           <Item identifier="batterycell" />
@@ -862,7 +862,7 @@
         <Item identifier="deusizine" amount="2" />
         <Item identifier="scp_vodka" />
       </Item>
-      <Item identifier="scp_sg550" equip="true">
+      <Item identifier="scp_sg550" >
         <Item identifier="scp_556mag" />
       </Item>
       <Item identifier="scp_556mag" amount="8" />
@@ -899,7 +899,7 @@
         <Item identifier="deusizine" amount="2" />
       </Item>
       <!--weapons-->
-      <Item identifier="rifle" equip="true">
+      <Item identifier="rifle" >
         <Item identifier="riflebullet" amount="5" />
         <Item identifier="scope" />
       </Item>
@@ -1196,7 +1196,7 @@
       <Item identifier="antibleeding1" amount="6" />
       <Item identifier="deusizine" amount="2" />
       <Item identifier="antibloodloss1" amount="2" />
-      <Item identifier="scp_tabuk" equip="true">
+      <Item identifier="scp_tabuk" >
         <Item identifier="scp_marksmanmag" />
         <Item identifier="scope" />
       </Item>
@@ -1346,7 +1346,7 @@
         <Item identifier="deusizine" amount="2" />
         <Item identifier="antibloodloss1" amount="2" />
       </Item>
-      <Item identifier="harpoongun" equip="true">
+      <Item identifier="harpoongun" >
         <Item identifier="spear" amount="6" />
       </Item>
       <Item identifier="spear" amount="18" />
@@ -1488,7 +1488,7 @@
       <Item identifier="headset" equip="true" />
       <Item identifier="invishelmet" equip="true" />
       <Item identifier="tricksterrig" equip="true" />
-      <Item identifier="trickstersbandolier" equip="true">
+      <Item identifier="sgt_bandolier" equip="true">
         <Item identifier="antibleeding1" amount="8" />
         <Item identifier="deusizine" amount="3" />
         <Item identifier="hyperzine" amount="8" />
@@ -1505,12 +1505,7 @@
         <Item identifier="sgt_10mmmagacid" />
       </Item>
       <Item identifier="sgt_10mmmagacid" amount="5" />
-      <Item identifier="crowbar" />
       <!--gear-->
-      <Item identifier="radiojammer">
-        <Item identifier="fulguriumbatterycell" />
-      </Item>
-      <Item identifier="fulguriumbatterycell" amount="2" />
       <Item identifier="scp_armykit" />
       <Item identifier="sgt_toolbox">
         <Item identifier="dudfrag" amount="8" />
@@ -1777,7 +1772,7 @@
         <Item identifier="button" amount="3" />
         <Item identifier="blackwire" amount="3" />
       </Item>
-      <Item identifier="scp_sr2" equip="true">
+      <Item identifier="scp_sr2" >
         <Item identifier="scp_umpmag" />
         <Item identifier="flashlight">
           <Item identifier="batterycell" />
@@ -1821,7 +1816,7 @@
         <Item identifier="oxygentank" amount="2" />
       </Item>
       <Item identifier="scp_specialrig" equip="true" />
-      <Item identifier="scp_m4s90" equip="true">
+      <Item identifier="scp_m4s90" >
         <Item identifier="scp_12gmagbuck" amount="9" />
         <Item identifier="flashlight">
           <Item identifier="batterycell" />
@@ -2002,7 +1997,7 @@
         <Item identifier="deusizine" amount="2" />
         <Item identifier="stabilozine" />
       </Item>
-      <Item identifier="scp_aks74u" equip="true">
+      <Item identifier="scp_aks74u" >
         <Item identifier="scp_ak74mag" />
       </Item>
       <Item identifier="scp_ak74mag" amount="8" />
@@ -2036,7 +2031,7 @@
         <Item identifier="deusizine" amount="2" />
       </Item>
       <!--weapons-->
-      <Item identifier="scp_tabuk" equip="true">
+      <Item identifier="scp_tabuk" >
         <Item identifier="scp_marksmanmag" />
         <Item identifier="scope" />
       </Item>
