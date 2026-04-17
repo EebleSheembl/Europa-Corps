@@ -86,6 +86,8 @@
 	<Jobs file="%ModDir%/Jobs/job_overrides.xml"/>
 	<NPCSets file="%ModDir%/Jobs/NPCs.xml" />
 	<Particles file="%ModDir%/Effects/Particles/particles.xml" />
+	<TalentTrees file="%ModDir%/Jobs/talenttrees.xml" />
+	<Talents file="%ModDir%/Jobs/talents.xml" />
 
 	<!--+++++-->
 	<!--TEXTS-->
