@@ -209,9 +209,9 @@
       </Item>
       <!--weapons-->
       <Item identifier="sgt_rifle" equip="true" />
-      <Item identifier="feniterrifleround1" amount="12" />
-      <Item identifier="feniterrifleround3" amount="6" />
-      <Item identifier="feniterrifleround2" amount="4" />
+      <Item identifier="riflebullet_teargas" amount="12" />
+      <Item identifier="riflebullet_psychoagent" amount="6" />
+      <Item identifier="riflebullet_nerveagent" amount="4" />
       <Item identifier="husk_giver" />
     </ItemSet>
 
@@ -231,9 +231,9 @@
       </Item>
       <!--weapons-->
       <Item identifier="sgt_rifle" equip="true" />
-      <Item identifier="feniterrifleround1" amount="12" />
-      <Item identifier="feniterrifleround3" amount="6" />
-      <Item identifier="feniterrifleround2" amount="4" />
+      <Item identifier="riflebullet_teargas" amount="12" />
+      <Item identifier="riflebullet_psychoagent" amount="6" />
+      <Item identifier="riflebullet_nerveagent" amount="4" />
       <Item identifier="husk_giver" />
     </ItemSet>
   </Job>
@@ -516,7 +516,7 @@
 
       <Item identifier="riotshield" equip="true" />
       <Item identifier="fulguriumbatterycell" amount="2" />
-      <Item identifier="fenitergasgrenade5" amount="2" />
+      <Item identifier="teargasgrenade" amount="2" />
       <Item identifier="handcuffs" amount="3" />
       <Item identifier="antibleeding2" amount="8" />
       <Item identifier="stypticpowder" amount="2" />
@@ -1120,7 +1120,7 @@
       <Item identifier="scp_hardeneddivingmask" equip="true" />
       <Item identifier="oxygentank" />
       <Item identifier="toolbelt">
-        <Item identifier="feniterdecontaminant" amount="6" />
+        <Item identifier="decontaminant" amount="6" />
         <Item identifier="antipsychosis" amount="2" />
         <Item identifier="scp_psyblock" amount="2" />
         <Item identifier="stabilozine" amount="5" />
@@ -1518,7 +1518,7 @@
         <Item identifier="dudgrav" amount="4" />
         <Item identifier="stungrenade" amount="4" />
       </Item>
-      <Item identifier="fenitergasgrenade5" amount="2" />
+      <Item identifier="teargasgrenade" amount="2" />
       <Item identifier="husk_giver" />
     </ItemSet>
   </Job>
@@ -1899,7 +1899,7 @@
       <Item identifier="ballistichelmet1" equip="true" />
       <Item identifier="scp_heavyvest" equip="true">
         <Item identifier="handcuffs" amount="6" />
-        <Item identifier="fenitergasgrenade5" />
+        <Item identifier="teargasgrenade" />
       </Item>
       <Item identifier="sgt_dbs">
         <Item identifier="heavystunshell" amount="2" />
