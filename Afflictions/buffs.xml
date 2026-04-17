@@ -59,4 +59,24 @@
 		<icon texture="Content/UI/MainIconsAtlas.png" sourcerect="256,896,128,128" color="10,193,114,255" origin="0,0" />
 	</Affliction>
 
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<Affliction
+		name="" 
+		identifier="poison_airborne_immunity" 
+		description=""
+		type="resistance" isbuff="true" 
+		limbspecific="false" indicatorlimb="Head" 
+		maxstrength="1"
+		showiconthreshold="9999" showinhealthscannerthreshold="9999">
+
+		<Effect 
+			minstrength="0" maxstrength="1" 
+			strengthchange="-1" 
+			resistancefor="poison_airborne" 
+			minresistance="1" maxresistance="1">
+		</Effect>
+		<icon texture="Content/UI/MainIconsAtlas.png" sourcerect="256,896,128,128" color="10,193,114,255" origin="0,0" />
+	</Affliction>
+
 </Afflictions>

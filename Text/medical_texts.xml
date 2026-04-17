@@ -373,8 +373,8 @@
 
 	<!--These are not part of DSM, but if DSM is enabled then the tooltip standard should be universal.-->
 
-	<entityname.feniternerveagentcure>2-PAM/CL</entityname.feniternerveagentcure>
-	<entitydescription.feniternerveagentcure>Pralidoxime Chloride/Atropine, used to treat nerve agent exposure.
+	<entityname.nerveagentcure>2-PAM/CL</entityname.nerveagentcure>
+	<entitydescription.nerveagentcure>Pralidoxime Chloride/Atropine, used to treat nerve agent exposure.
 
 	On Use:
 	‖color:154,213,163,255‖-120% Nerve Agent Exposure‖color:end‖
@@ -382,46 +382,46 @@
 	‖color:245,105,105,255‖+18% Organ Damage‖color:end‖
 	‖color:245,105,105,255‖+24% Psychosis‖color:end‖
 	‖color:243,162,50,255‖(Healing reduced and harmful effects increased if skill requirement not met.)‖color:end‖
-	</entitydescription.feniternerveagentcure>
+	</entitydescription.nerveagentcure>
 
 
-	<entityname.feniterpulmonaryagentcure1>General Purpose Pulmonary Flush</entityname.feniterpulmonaryagentcure1>
-	<entitydescription.feniterpulmonaryagentcure1>A blood diuretic used to treat heavy pulmonary agent buildup and lung damage from blistering agents. Only effective against pulmonary agents before symptoms show. 
+	<entityname.pulmonaryflush>General Purpose Pulmonary Flush</entityname.pulmonaryflush>
+	<entitydescription.pulmonaryflush>A blood diuretic used to treat heavy pulmonary agent buildup and lung damage from blistering agents. Only effective against pulmonary agents before symptoms show. 
 
 	On Use:
 	‖color:154,213,163,255‖-50% Pulmonary Agent Buildup‖color:end‖
 	‖color:154,213,163,255‖-40% Blistering Agent Exposure‖color:end‖
 	‖color:245,105,105,255‖Only effective against pulmonary agent below 50% buildup.‖color:end‖
-	</entitydescription.feniterpulmonaryagentcure1>
+	</entitydescription.pulmonaryflush>
 
 
-	<entityname.feniterpulmonaryagentcure2>Pulmonary/Blood Antidote</entityname.feniterpulmonaryagentcure2>
-	<entitydescription.feniterpulmonaryagentcure2>A blood diuretic used to treat pulmonary agent buildup. Effective for a while even after symptoms appear.
+	<entityname.pulmonaryagentantidote>Pulmonary/Blood Antidote</entityname.pulmonaryagentantidote>
+	<entitydescription.pulmonaryagentantidote>A blood diuretic used to treat pulmonary agent buildup. Effective for a while even after symptoms appear.
 
 	On Use:
 	‖color:154,213,163,255‖-60% Pulmonary Agent Buildup‖color:end‖
 	‖color:243,162,50,255‖(Harmful effects applied if skill requirement not met.)‖color:end‖
-	</entitydescription.feniterpulmonaryagentcure2>
+	</entitydescription.pulmonaryagentantidote>
 
 
-	<entityname.feniterpsychoagentcure>Psychochemical Antidote</entityname.feniterpsychoagentcure>
-	<entitydescription.feniterpsychoagentcure>A blood diuretic used to treat psychochemical agent exposure. Shuts down the central nervous system as well as causing extreme drowsiness.
+	<entityname.psychochemicalagentantidote>Psychochemical Antidote</entityname.psychochemicalagentantidote>
+	<entitydescription.psychochemicalagentantidote>A blood diuretic used to treat psychochemical agent exposure. Shuts down the central nervous system as well as causing extreme drowsiness.
 
 	On Use:
 	‖color:154,213,163,255‖-125% Psychochemical Agent Exposure‖color:end‖
 	‖color:243,162,50,255‖-75% Hallucinating‖color:end‖
 	‖color:154,213,163,255‖-75% Psychosis‖color:end‖
 	‖color:243,162,50,255‖(Healing reduced and harmful effects increased if skill requirement not met.)‖color:end‖
-	</entitydescription.feniterpsychoagentcure>
+	</entitydescription.psychochemicalagentantidote>
 
 
-	<entityname.feniterdecontaminant>Multi-Purpose Decontaminant</entityname.feniterdecontaminant>
-	<entitydescription.feniterdecontaminant>A cleaning mixture of primarily ethanol, extremely effective in cleaning dangerous chemicals off of the skin and clothes.
+	<entityname.decontaminant>Multi-Purpose Decontaminant</entityname.decontaminant>
+	<entitydescription.decontaminant>A cleaning mixture of primarily ethanol, extremely effective in cleaning dangerous chemicals off of the skin and clothes.
 
 	On Use:
 	‖color:154,213,163,255‖-900% Chemical Contamination‖color:end‖
 	‖color:243,162,50,255‖(Healing reduced if skill requirement not met.)‖color:end‖
-	</entitydescription.feniterdecontaminant>
+	</entitydescription.decontaminant>
 
 	<!-- Medical items -->
 

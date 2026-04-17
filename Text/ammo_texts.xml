@@ -241,14 +241,14 @@
             <entitydescription.scp_762natoprojectile>None</entitydescription.scp_762natoprojectile>
         <!--7.62x51mm durasteel round--> <!--TODO TAG-->
         <!--Surplus Tear Gas Rifle Round-->
-            <entityname.feniterrifleround1>Tear Gas Surplus Rifle Round</entityname.feniterrifleround1>
-            <entitydescription.feniterrifleround1>A hollowed out rifle round filled to the brim with a tear gas mixture. Incomparably painful to be hit by, but deals lackluster damage compared to a solid round.</entitydescription.feniterrifleround1>
+            <entityname.riflebullet_teargas>Tear Gas Surplus Rifle Round</entityname.riflebullet_teargas>
+            <entitydescription.riflebullet_teargas>A hollowed out rifle round filled to the brim with a tear gas mixture. Incomparably painful to be hit by, but deals lackluster damage compared to a solid round.</entitydescription.riflebullet_teargas>
         <!--Surplus Nerve Agent Rifle Round-->
-            <entityname.feniterrifleround2>Nerve Agent Surplus Rifle Round</entityname.feniterrifleround2>
-            <entitydescription.feniterrifleround2>A hollowed out rifle round filled to the brim with a nerve agent mixture. Less damaging than a solid round, but poisons the target and guarantees death unless treated or blocked by a hazard suit.</entitydescription.feniterrifleround2>
+            <entityname.riflebullet_nerveagent>Nerve Agent Surplus Rifle Round</entityname.riflebullet_nerveagent>
+            <entitydescription.riflebullet_nerveagent>A hollowed out rifle round filled to the brim with a nerve agent mixture. Less damaging than a solid round, but poisons the target and guarantees death unless treated or blocked by a hazard suit.</entitydescription.riflebullet_nerveagent>
         <!--Surplus Psychochemical Rifle Round-->
-            <entityname.feniterrifleround3>Psychochemical Agent Surplus Rifle Round</entityname.feniterrifleround3>
-            <entitydescription.feniterrifleround3>A hollowed out rifle round filled to the brim with a psychochemical agent mixture. Less damaging than a solid round, but the crippling effects of psychochemical agents cause severe long term effects.</entitydescription.feniterrifleround3>
+            <entityname.riflebullet_psychoagent>Psychochemical Agent Surplus Rifle Round</entityname.riflebullet_psychoagent>
+            <entitydescription.riflebullet_psychoagent>A hollowed out rifle round filled to the brim with a psychochemical agent mixture. Less damaging than a solid round, but the crippling effects of psychochemical agents cause severe long term effects.</entitydescription.riflebullet_psychoagent>
         <!--10 round 12.7x55 magazine-->
             <entityname.scp_ash12mag>Oppressor Battle Rifle Durasteel Magazine</entityname.scp_ash12mag>
             <entitydescription.scp_ash12mag>A 10 round 12.7x55mm magazine loaded with incredibly hot Durasteel cartridges, significantly increasing it's already devastating effect against body armour though puts immense wear on the gun.</entitydescription.scp_ash12mag>
@@ -335,16 +335,16 @@
             <entityname.scp_umpincendmag>Heavy Submachine Gun Burner Magazine</entityname.scp_umpincendmag>
             <entitydescription.scp_umpincendmag>A 25 round 11.4x23mm stick magazine containing FMJ-IL cartridges, designed to cause severe burns on contact with skin.</entitydescription.scp_umpincendmag>
         <!--Tear gas Surplus SMG Magazine-->
-            <entityname.fenitersmgmagazine1>Tear Gas Surplus SMG Magazine</entityname.fenitersmgmagazine1>
-            <entitydescription.fenitersmgmagazine1>Hollow small caliber rounds each containing a small amount of tear gas. Extremely painful to be hit by, but they deal lackluster damage compared to solid rounds.</entitydescription.fenitersmgmagazine1>
+            <entityname.smgmagazine_teargas>Tear Gas Surplus SMG Magazine</entityname.smgmagazine_teargas>
+            <entitydescription.smgmagazine_teargas>Hollow small caliber rounds each containing a small amount of tear gas. Extremely painful to be hit by, but they deal lackluster damage compared to solid rounds.</entitydescription.smgmagazine_teargas>
         <!--Tear Gas Surplus SMG Round--> <!--TODO TAG-->
         <!--Surplus Nerve Agent SMG Magazine-->
-            <entityname.fenitersmgmagazine2>Nerve Agent Surplus SMG Magazine</entityname.fenitersmgmagazine2>
-            <entitydescription.fenitersmgmagazine2>Hollow small caliber rounds each containing a small amount of a nerve agent mixture. Less damaging than solid rounds, but they poison targets and guarantee death unless treated or blocked by a hazard suit.</entitydescription.fenitersmgmagazine2>
+            <entityname.smgmagazine_nerveagent>Nerve Agent Surplus SMG Magazine</entityname.smgmagazine_nerveagent>
+            <entitydescription.smgmagazine_nerveagent>Hollow small caliber rounds each containing a small amount of a nerve agent mixture. Less damaging than solid rounds, but they poison targets and guarantee death unless treated or blocked by a hazard suit.</entitydescription.smgmagazine_nerveagent>
         <!--Surplus Nerve Agent SMG Round--> <!--TODO TAG-->
         <!--Surplus Psychochem SMG Magazine-->
-            <entityname.fenitersmgmagazine3>Psychochemical Agent Surplus SMG Magazine</entityname.fenitersmgmagazine3>
-            <entitydescription.fenitersmgmagazine3>Hollow small caliber rounds each containing a small amount of a psychochemical agent mixture. Less damaging than solid rounds, but the crippling effects of psychochemical agents cause severe long term effects.</entitydescription.fenitersmgmagazine3>
+            <entityname.smgmagazine_psychoagent>Psychochemical Agent Surplus SMG Magazine</entityname.smgmagazine_psychoagent>
+            <entitydescription.smgmagazine_psychoagent>Hollow small caliber rounds each containing a small amount of a psychochemical agent mixture. Less damaging than solid rounds, but the crippling effects of psychochemical agents cause severe long term effects.</entitydescription.smgmagazine_psychoagent>
         <!--Surplus Psychochem SMG Round--> <!--TODO TAG-->
     <!--Ammo_special_ammo-->
         <!--portable coilgun clip-->

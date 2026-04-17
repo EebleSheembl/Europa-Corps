@@ -397,41 +397,41 @@
 			<entityname.sgt_rifleprototype>Prototype Automatic Rifle</entityname.sgt_rifleprototype>
 			<entitydescription.sgt_rifleprototype>A more dated design, with some odd touches, it uses a hinged magazine with intent to be fed .30 caliber rounds individually. It's barrel assembly was never truly finished, as it's rifling causes some rounds to yaw in-air, losing penetrative power in the process.</entitydescription.sgt_rifleprototype>
 		<!--Nerve Agent-->
-			<entityname.fenitergasgrenade1>Nerve Agent Gas Grenade</entityname.fenitergasgrenade1>
-			<entitydescription.fenitergasgrenade1>Contains a highly lethal gas mixture that can be rapidly absorbed through the skin, making a hazard suit necessary for protection.</entitydescription.fenitergasgrenade1>
+			<entityname.nervegasgrenade>Nerve Agent Gas Grenade</entityname.nervegasgrenade>
+			<entitydescription.nervegasgrenade>Contains a highly lethal gas mixture that can be rapidly absorbed through the skin, making a hazard suit necessary for protection.</entitydescription.nervegasgrenade>
 		<!--Syringe Shotgun-->
 			<entityname.sgt_syringeshotgun>Syringe Shotgun</entityname.sgt_syringeshotgun>
 			<entitydescription.sgt_syringeshotgun>A design questionable by most, it discharges all of it's held syringes in a moments notice. Good for injecting concoxions or intensifying one toxin. Pressure chambers require all others to discharge before they will refill automatically.</entitydescription.sgt_syringeshotgun>
 			<entityname.nervegasgrenadeactive>Leaking Nerve Agent Gas Grenade</entityname.nervegasgrenadeactive>
 			<entityname.nervegasemitter>Nerve Agent Emitter</entityname.nervegasemitter>
 		<!--Pulmonary Agent-->
-			<entityname.fenitergasgrenade2>Pulmonary Agent Gas Grenade</entityname.fenitergasgrenade2>
-			<entitydescription.fenitergasgrenade2>Contains a dilute but invariably lethal gas mixture that can be absorbed through the lungs, making respirators sufficient protection. Slow to kill, but near invisible to the naked eye and difficult to treat.</entitydescription.fenitergasgrenade2>
+			<entityname.pulmonarygasgrenade>Pulmonary Agent Gas Grenade</entityname.pulmonarygasgrenade>
+			<entitydescription.pulmonarygasgrenade>Contains a dilute but invariably lethal gas mixture that can be absorbed through the lungs, making respirators sufficient protection. Slow to kill, but near invisible to the naked eye and difficult to treat.</entitydescription.pulmonarygasgrenade>
 			<entityname.pulmgasgrenadeactive>Leaking Pulmonary Agent Gas Grenade</entityname.pulmgasgrenadeactive>
 			<entityname.pulmgasemitter>Pulmonary Agent Emitter</entityname.pulmgasemitter>
 		<!--Blood Agent-->
-			<entityname.fenitergasgrenade3>Blood Agent Gas Grenade</entityname.fenitergasgrenade3>
-			<entitydescription.fenitergasgrenade3>Contains a concentrated cyanide-based toxin that causes immediate damage on contact with the skin and absorbs into the blood, making a hazard suit necessary for protection. Rapidly lethal and extremely visible, but long term effects are near non-existent should the victim survive.</entitydescription.fenitergasgrenade3>
+			<entityname.bloodgasgrenade>Blood Agent Gas Grenade</entityname.bloodgasgrenade>
+			<entitydescription.bloodgasgrenade>Contains a concentrated cyanide-based toxin that causes immediate damage on contact with the skin and absorbs into the blood, making a hazard suit necessary for protection. Rapidly lethal and extremely visible, but long term effects are near non-existent should the victim survive.</entitydescription.bloodgasgrenade>
 			<entityname.bloodgasgrenadeactive>Leaking Blood Agent Gas Grenade</entityname.bloodgasgrenadeactive>
 			<entityname.bloodgasemitter>Blood Agent Emitter</entityname.bloodgasemitter>
 		<!--Blistering Agent-->
-			<entityname.fenitergasgrenade4>Blistering Agent Grenade</entityname.fenitergasgrenade4>
-			<entitydescription.fenitergasgrenade4>Contains a potent acidic gas mixture that causes immediate burns on contact with the skin, and can build up in the lungs if inhaled, causing severe long term effects. Immediately lethal and very visible, but with long term effects mitigated by a respirator.</entitydescription.fenitergasgrenade4>
+			<entityname.blistergasgrenade>Blistering Agent Grenade</entityname.blistergasgrenade>
+			<entitydescription.blistergasgrenade>Contains a potent acidic gas mixture that causes immediate burns on contact with the skin, and can build up in the lungs if inhaled, causing severe long term effects. Immediately lethal and very visible, but with long term effects mitigated by a respirator.</entitydescription.blistergasgrenade>
 			<entityname.blistergasgrenadeactive>Leaking Blistering Agent Gas Grenade</entityname.blistergasgrenadeactive>
 			<entityname.blistergasemitter>Blistering Agent Emitter</entityname.blistergasemitter>
 		<!--Tear Gas-->
-			<entityname.fenitergasgrenade5>Tear Gas Grenade</entityname.fenitergasgrenade5>
-			<entitydescription.fenitergasgrenade5>Contains a potent irritant capable of causing extreme pain and crippling targets when inhaled. Barely lethal and easy to mitigate with a respirator, but crippling for a moderate period and with instant effect.</entitydescription.fenitergasgrenade5>
+			<entityname.teargasgrenade>Tear Gas Grenade</entityname.teargasgrenade>
+			<entitydescription.teargasgrenade>Contains a potent irritant capable of causing extreme pain and crippling targets when inhaled. Barely lethal and easy to mitigate with a respirator, but crippling for a moderate period and with instant effect.</entitydescription.teargasgrenade>
 			<entityname.teargasgrenadeactive>Leaking Tear Gas Grenade</entityname.teargasgrenadeactive>
 			<entityname.teargasemitter>Tear Gas Emitter</entityname.teargasemitter>
 		<!--Psychochemical Agent-->
-			<entityname.fenitergasgrenade6>Psychochemical Agent Gas Grenade</entityname.fenitergasgrenade6>
-			<entitydescription.fenitergasgrenade6>Contains a moderately dangerous neurotoxin that causes severe hallucinations and brain damage when inhaled. Low lethality and easy to mitigate with a respirator, but permanently crippling. Some soldiers intentionally inhale small doses for the chemical's psychedelic effects.</entitydescription.fenitergasgrenade6>
+			<entityname.psychogasgrenade>Psychochemical Agent Gas Grenade</entityname.psychogasgrenade>
+			<entitydescription.psychogasgrenade>Contains a moderately dangerous neurotoxin that causes severe hallucinations and brain damage when inhaled. Low lethality and easy to mitigate with a respirator, but permanently crippling. Some soldiers intentionally inhale small doses for the chemical's psychedelic effects.</entitydescription.psychogasgrenade>
 			<entityname.psychogasgrenadeactive>Leaking Psychochemical Agent Gas Grenade</entityname.psychogasgrenadeactive>
 			<entityname.psychogasemitter>Psychochemical Agent Emitter</entityname.psychogasemitter>
 		<!--Incapacitating Agent-->
-			<entityname.fenitergasgrenade7>Sedative Agent Gas Grenade</entityname.fenitergasgrenade7>
-			<entitydescription.fenitergasgrenade7>Contains potent and rapid-acting sedatives that can cause loss of consciousness seconds after inhalation, but require a moderate dose to have any effect. Completely non-lethal with no long-term effects aswell as being easy to mitigate with a respirator.</entitydescription.fenitergasgrenade7>
+			<entityname.sleepgasgrenade>Sedative Agent Gas Grenade</entityname.sleepgasgrenade>
+			<entitydescription.sleepgasgrenade>Contains potent and rapid-acting sedatives that can cause loss of consciousness seconds after inhalation, but require a moderate dose to have any effect. Completely non-lethal with no long-term effects aswell as being easy to mitigate with a respirator.</entitydescription.sleepgasgrenade>
 			<entityname.sleepgasgrenadeactive>Leaking Sedative Agent Gas Grenade</entityname.sleepgasgrenadeactive>
 			<entityname.sleepgasemitter>Sedative Agent Emitter</entityname.sleepgasemitter>
 </infotexts>

@@ -678,6 +678,7 @@
 			<damagemodifier afflictiontypes="alieninfection" armorsector="0.0,360.0" damagemultiplier="0.75" probabilitymultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
 			<damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
 			<damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.8" damagesound="LimbArmor" deflectprojectiles="true" />
+			<damagemodifier armorsector="0.0,360.0" afflictiontypes="poison_airborne" damagemultiplier="0" probabilitymultiplier="0" />
 
 			<SkillModifier skillidentifier="weapons" skillvalue="-5" />
 			<SkillModifier skillidentifier="mechanical" skillvalue="-10" />
@@ -693,6 +694,8 @@
 				<Conditional IsDead="false" />
 
 				<RequiredItem items="oxygentank" type="Contained" />
+
+				<Affliction identifier="poison_airborne_immunity" amount="1000.0"/>
 			</StatusEffect>
 
 			<StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="-100.0" Oxygen="-5.0" Condition="-5.0" targetslot="0">
@@ -781,6 +784,8 @@
 				<Conditional IsDead="false" />
 
 				<RequiredItem items="oxygentank" type="Contained" />
+
+				<Affliction identifier="poison_airborne_immunity" amount="1000.0"/>
 			</StatusEffect>
 
 			<StatusEffect type="OnWearing" target="Contained,Character" Oxygen="-20.0" Condition="-0.3">
@@ -798,7 +803,10 @@
 
 			<StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1500.0" Condition="-0.2" comparison="Or">
 				<Conditional IsDead="false" />
+
 				<RequiredItem items="oxygenitetank" type="Contained" />
+
+				<Affliction identifier="poison_airborne_immunity" amount="1000.0"/>
 			</StatusEffect>
 			
 			<StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.7" setvalue="true" disabledeltatime="true">
