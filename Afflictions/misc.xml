@@ -448,10 +448,6 @@
 		minresistance="10.0"
 		maxresistance="100.0" />
 
-    	<StatusEffect target="Character">
-    		<TriggerAnimation Type="Walk" filename="VigorousWalk" priority="5" ExpectedSpecies="Human" />
-    	</StatusEffect>
-
     	<icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
   	</Affliction>
 
@@ -553,35 +549,6 @@
 
 	<!--++++++++++++++++++++++++++++++++++++-->
 
-	<AfflictionHusk
-	name="coalie belt light!!!"
-	identifier="MOShusk"
-	type="alieninfection"
-	healableinmedicalclinic="false"
-	limbspecific="false" 
-	targets="human" 
-	huskedspeciesname="[speciesname]MOShusk" 
-	indicatorlimb="Waist" 
-	showiconthreshold="5" 
-	needsair="true" 
-	causespeechimpediment="false"
-	treatmentthreshold="1000"
-	dormantthreshold="0"
-	activethreshold="1"
-	transitionthreshold="1000"
-	transformthresholdondeath="1000"
-	sendmessages="false"
-	maxstrength="2"
-	iconcolors="94,54,95;163,73,164;200,191,231">
-
-    	<Effect minstrength="0" maxstrength="2"
-		strengthchange="-10" />
-
-    	<icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="90,142,200,50" origin="0,0" />
-  	</AfflictionHusk>
-
-	<!--++++++++++++++++++++++++++++++++++++-->
-
 	<Affliction 
 	Name="Smoked" 
 	Identifier="smoked" 
@@ -596,7 +563,7 @@
 
     	</Effect>
 
-    	<AfflictionOverlay texture="%ModDir%/Sprites/Smoked.png" />
+    	<AfflictionOverlay texture="%ModDir%/Sprites/Afflictions/Smoked.png" />
   	</Affliction>
 
 	<!--++++++++++++++++++++++++++++++++++++-->
@@ -745,7 +712,7 @@
     </Effect>
     <!--Animated shock from DynamicEuropa-->
     <!--go use their mod, stinky-->
-    <AfflictionOverlayAnimated texture="%ModDir%/ShockAnimation2.png" sourcerect="0,0,2048,1280" origin="0.5,0.5" alpha="1.0" animspeed="12" columns="2" rows="2" />
+    <AfflictionOverlayAnimated texture="%ModDir%/Sprites/Afflictions/ShockAnimation2.png" sourcerect="0,0,2048,1280" origin="0.5,0.5" alpha="1.0" animspeed="12" columns="2" rows="2" />
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,640,128,128" color="0,255,0,255" origin="0,0" />
   </Affliction>
   <!--oh my fucking god-->
