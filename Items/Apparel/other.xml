@@ -1,6 +1,24 @@
 <Items>
 
-		<!--###-->
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--Helmets-->
+
+	<Item name="" identifier="scp_clownbatmask" category="Equipment" subcategory="Clown" tags="smallitem,clothing,clownmask,clowns" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.4">
+
+		<Sprite name="Clownbat Helm" texture="%ModDir%/Sprites/Items/Apparel/helmets.png" sourcerect="423,446,100,102" depth="0.6" origin="0.5,0.5" />
+
+		<Body radius="30" density="50" />
+
+		<Wearable slots="Any,Head" msg="ItemMsgPickUpSelect">
+			<sprite name="Clownbat Helm Wearable" texture="%ModDir%/Sprites/Items/Apparel/helmets.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hidewearablesoftype="hair" sourcerect="423,446,100,102" origin="0.50285524,0.5793666" />
+
+			<damagemodifier afflictionidentifiers="gunshotwound,bleeding" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+			<damagemodifier afflictionidentifiers="lacerations,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+			<StatusEffect tags="clown" type="OnWearing" target="Character" HideFace="true" duration="0.1" stackable="false" />
+		</Wearable>
+	</Item>
+
+		<!--++++++++++++++++++++++++++++++++++++-->
 		<!--Outerwear-->
 
   <!--Modified Lynx from THG for the sakes of the thingy-->
@@ -43,38 +61,6 @@
       </SubContainer>
     </ItemContainer>
   </Item>
-		
-		<!--++++++++++++++++++++++++++++++++++++-->
-		<!--helmets-->
-
-	<Item name="" identifier="scp_clownbatmask" category="Equipment" subcategory="Clown" tags="smallitem,clothing,clownmask,clowns" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.4">
-
-		<Sprite name="Clownbat Helm" texture="%ModDir%/Sprites/Items/Apparel/helmets.png" sourcerect="423,446,100,102" depth="0.6" origin="0.5,0.5" />
-
-		<Body radius="30" density="50" />
-
-		<Wearable slots="Any,Head" msg="ItemMsgPickUpSelect">
-			<sprite name="Clownbat Helm Wearable" texture="%ModDir%/Sprites/Items/Apparel/helmets.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hidewearablesoftype="hair" sourcerect="423,446,100,102" origin="0.50285524,0.5793666" />
-
-			<damagemodifier afflictionidentifiers="gunshotwound,bleeding" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
-			<damagemodifier afflictionidentifiers="lacerations,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
-			<StatusEffect tags="clown" type="OnWearing" target="Character" HideFace="true" duration="0.1" stackable="false" />
-		</Wearable>
-	</Item>
-
-	<item identifier="invishelmet" name="Familiar Helmet" description="A helmet that looks identical to a familiar face. Looking at it is almost unnerving." variantof="ballistichelmet1" noninteractable="true" hideinmenus="true">
-		<sprite name="Ballistic Helmet 1 Wearable" texture="Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" sourcerect="0,0,1,1" origin="0.5,0.5" />
-		
-		<Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
-			<sprite name="Ballistic Helmet 1 Wearable" texture="Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" sourcerect="0,0,1,1" origin="0.5,0.5" />
-			
-			<StatusEffect type="OnWearing" target="This" Condition="100" setvalue="true" />
-			<StatusEffect type="Always" target="This" condition="-1000" />
-			<Statuseffect type="OnBroken" target="This">
-				<Remove />
-			</Statuseffect>
-		</Wearable>
-	</item>
 
 		<!--++++++++++++++++++++++++++++++++++++-->
 		<!--Innerwear-->
@@ -119,88 +105,8 @@
 
 	</Item>
 
-  <Item name="" identifier="inquisitorrobes" category="Equipment" tags="smallitem,clothing,huskcult,stealthitem" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
-    <InventoryIcon texture="Content/Map/Outposts/Art/FactionItems.png" sourcerect="409,2,63,45" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="383,359,117,65" depth="0.6" origin="0.5,0.5" />
-    <Body width="100" height="50" density="30" friction="0.8" restitution="0.01" />
-    <Wearable slots="Any,InnerClothes" variants="1" msg="ItemMsgPickUpSelect">
-      <sprite name="Cultist Torso" texture="stealthsuit.png" limb="Torso" hidelimb="true" hideotherwearables="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Cultist Right Hand" texture="stealthsuit.png" limb="RightHand" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Cultist Left Hand" texture="stealthsuit.png" limb="LeftHand" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Cultist Right Lower Arm" texture="stealthsuit.png" limb="RightArm" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Cultist Left Lower Arm" texture="stealthsuit.png" limb="LeftArm" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Cultist Right Upper Arm" texture="stealthsuit.png" limb="RightForearm" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Cultist Left Upper Arm" texture="stealthsuit.png" limb="LeftForearm" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Cultist Waist" texture="stealthsuit.png" limb="Waist" hidelimb="true" hideotherwearables="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Cultist Right Thigh" texture="stealthsuit.png" limb="RightThigh" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Cultist Left Thigh" texture="stealthsuit.png" limb="LeftThigh" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Cultist Right Leg" texture="stealthsuit.png" limb="RightLeg" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Cultist Left Leg" texture="stealthsuit.png" limb="LeftLeg" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Cultist Left Shoe" texture="stealthsuit.png" limb="LeftFoot" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Cultist Right Shoe" texture="stealthsuit.png" limb="RightFoot" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Cultist Head" texture="stealthsuit.png" limb="Head" hidelimb="true" hidewearablesoftype="Hair,Moustache,Beard" hideotherwearables="true" inheritlimbdepth="true" sourcerect="453,14,47,42" scale="0.65" origin="0.55,0.5" />
-      <StatusEffect type="OnWearing" target="Character" interval="0.5" disabledeltatime="true">
-        <Affliction identifier="disguisedashusk" amount="1.0" />
-      </StatusEffect>
-      <StatusEffect target="Character" type="OnWearing">
-        <Conditional cultistmarker="gt 0" />
-        <ReduceAffliction type="damage" amount="0.5" />
-        <ReduceAffliction type="bleeding" amount="1" />
-      </StatusEffect>
-      <StatusEffect target="Character,This" type="Always" Comparison="And">
-        <Conditional CurrentSpeed="lte 1.0" />
-        <!--walkspeed is 1.7, runspeed is 3.0 -->
-        <Conditional cultistmarker="gt 0" />
-        <Conditional Vitality="gt 0" />
-        <Affliction identifier="concealed" strength="2.1" />
-      </StatusEffect>
-      <StatusEffect target="Character,This" type="Always" Comparison="Or">
-        <Conditional CurrentSpeed="gt 2.7" />
-        <!--walkspeed is 1.7, runspeed is 3.0 -->
-        <Conditional Vitality="lte 0" />
-        <Affliction identifier="concealed" strength="-1.6" />
-      </StatusEffect>
-      <StatusEffect type="OnNotContained" target="This" SpriteColor="255,255,255,255" />
-    </Wearable>
-  </Item>
-
 		<!--++++++++++++++++++++++++++++++++++++-->
 		<!--Misc-->
-
-	<Item name="Coalition-Issued Beltlight" description="Based on standard europan glowsticks, this light uses a dimmer filling to massively extend its lifetime, and there's some rigging to hook it onto a belt, though the rigging does make it too bulky to carry in large quantities." identifier="coalitionbeltlight" category="Equipment" maxstacksize="8" maxstacksizecharacterinventory="1" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,light,provocative" impactsoundtag="impact_soft" isshootable="true" damagedbymonsters="true" health="10">
-	<InventoryIcon texture="%ModDir:3157764296%/ihategimp.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
-	<Sprite texture="Content/Items/Tools/tools.png" sourcerect="278,157,50,9" depth="0.55" origin="0.5,0.5" />
-	<Body width="50" height="9" density="10" />
-
-	<Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" holdangle="90" throwforce="2.0" aimpos="35,-10" msg="ItemMsgPickUpSelect" />
-
-	<LightComponent LightColor="90,142,200,50" Flicker="0.0" range="500" IsOn="false">
-		<sprite texture="Content/Items/Tools/tools.png" sourcerect="374,140,62,20" alpha="1.0" origin="0.5,0.5" />
-		<StatusEffect type="OnUse" targettype="This" IsOn="true" delay="0.5">
-			<Conditional IsOn="eq False" targetitemcomponent="LightComponent" />
-			<sound file="%ModDir:3157764296%/chemlightcrack.ogg" range="800.0" />
-		</StatusEffect>
-		<StatusEffect type="OnUse" targettype="This" IsOn="false" delay="0.5">
-			<Conditional IsOn="eq True" targetitemcomponent="LightComponent" />
-			<sound file="%ModDir:3157764296%/chemlightcrack.ogg" range="800.0" />
-		</StatusEffect>
-		<StatusEffect type="OnContained" targettype="Character,This" LightColor="90,142,200,50" disabledeltatime="True">
-			<Conditional IsOn="eq True" targetitemcomponent="LightComponent" />
-			<Affliction identifier="MOShusk" strength="100" />
-		</StatusEffect>
-		<StatusEffect type="OnNotContained" target="This" LightColor="90,142,200,50" />
-		<StatusEffect type="OnBroken" targettype="This" IsOn="false" />
-	</LightComponent>
-
-	<Wearable limbtype="Head" slots="Any,HealthInterface" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
-		<sprite name="Gene Splicer Wearable" texture="Content/Items/Genetic/Genetic.png" limb="Head" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.5" hideotherwearables="false" sourcerect="0,0,1,1" origin="0.0,0.0" />
-		<StatusEffect type="OnWearing" target="Character" disabledeltatime="true">
-			<Affliction identifier="MOShusk" strength="100" />
-		</StatusEffect>
-	</Wearable>
-
-	<AiTarget sightrange="4000" />
-	</Item>
 
 <Item name="" identifier="beltlight" category="Equipment" maxstacksize="8" maxstacksizecharacterinventory="1" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,light,provocative" impactsoundtag="impact_soft" isshootable="true" damagedbymonsters="true" health="10">
 	<InventoryIcon texture="%ModDir%/ihategimp.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
