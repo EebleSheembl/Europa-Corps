@@ -31,6 +31,7 @@
 	<Item file="%ModDir%/Items/Apparel/separatists.xml"/>
 	<Item file="%ModDir%/Items/Apparel/universal.xml"/>
 	<Item file="%ModDir%/Items/Apparel/other.xml"/>
+	<Item file="%ModDir%/Items/Apparel/cult.xml"/>
 	<Item file="%ModDir%/Items/Apparel/overrides_armor.xml"/>
 
 	<!--Medical-->
@@ -93,7 +94,7 @@
 	<!--TEXTS-->
 	<!--+++++-->
 	<Text file="%ModDir%/Text/affliction_texts.xml"/>
-	<Text file="%ModDir%/Text/armor_texts.xml"/>
+	<Text file="%ModDir%/Text/apparel_texts.xml"/>
 	<Text file="%ModDir%/Text/job_texts.xml"/>
 	<Text file="%ModDir%/Text/medical_texts.xml"/>
 	<Text file="%ModDir%/Text/misc_texts.xml"/>
