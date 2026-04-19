@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <NPCSets>
   <NPCSet Identifier="europacorpsbosses">
+
     <!--Bandits: Denise-->
     <npc identifier="denisemcneil_bandit_vetmud" job="securityofficer" moduleflags="none" behavior="Passive">
       <Character speciesname="human" gender="female" headspriteid="7" hairindex="16" beardindex="0" moustacheindex="0" faceattachmentindex="11" skincolor="244,190,152,255" haircolor="58,58,60,255" facialhaircolor="58,58,60,255" personality="tough" startitemsgiven="false">
@@ -21,8 +22,8 @@
         <Item identifier="idcard" equip="true" />
         <Item identifier="headset" equip="true" showpreview="false" />
         <!--Armor-->
-        <Item identifier="thghelmet8alt" equip="true" />
-        <Item identifier="thgmudraptorfullplatealt" equip="true" />
+        <Item identifier="vetmudraptorhelmet" equip="true" />
+        <Item identifier="vetmudraptorfullplate" equip="true" />
         <Item identifier="sgt_banditclothes1" equip="true" />
         <Item identifier="bandolier" equip="true">
           <Item identifier="scp_12gmagbuck" amount="48" />
@@ -43,6 +44,7 @@
         <Item identifier="scp_armykit" amount="1" />
       </ItemSet>
     </npc>
+
     <!--Bandits: Jacquline McNeil-->
     <npc identifier="jacqulinemcneil_bandit_endworm" job="securityofficer" moduleflags="none" behavior="Passive">
       <Character speciesname="human" gender="female" headspriteid="14" hairindex="10" beardindex="0" moustacheindex="0" faceattachmentindex="15" skincolor="200,165,131,255" haircolor="172,73,52,255" facialhaircolor="172,73,52,255" personality="tough" startitemsgiven="false">
@@ -63,8 +65,8 @@
         <Item identifier="idcard" equip="true" />
         <Item identifier="headset" equip="true" showpreview="false" />
         <!--Armor-->
-        <Item identifier="thghelmet14" equip="true" />
-        <Item identifier="thgendwormfullplate" equip="true" />
+        <Item identifier="endwormhelmet" equip="true" />
+        <Item identifier="endwormfullplate" equip="true" />
         <Item identifier="sgt_banditclothes1" equip="true" />
         <Item identifier="bandolier" equip="true">
           <Item identifier="scp_12gmagbuck" amount="48" />
@@ -85,6 +87,7 @@
         <Item identifier="scp_armykit" amount="1" />
       </ItemSet>
     </npc>
+
     <!--Renegades: Codi Ram-->
     <npc identifier="codiram_renegade_infiltrator" job="securityofficer" moduleflags="none" behavior="Passive">
       <Character speciesname="human" gender="male" headspriteid="3" hairindex="3" beardindex="1" moustacheindex="0" faceattachmentindex="15" skincolor="200,165,131,255" haircolor="187,169,129,255" facialhaircolor="187,169,129,255" personality="laid-back" startitemsgiven="false">
@@ -127,6 +130,7 @@
         <Item identifier="scp_armykit" amount="1" />
       </ItemSet>
     </npc>
+
     <!--Coalition: Sergei Quill-->
     <npc identifier="sergeiquill_coalie_blackopsmarksman" faction="coalition" job="securityofficer" moduleflags="none" behavior="Passive">
       <Character speciesname="human" gender="male" headspriteid="2" hairindex="2" beardindex="0" moustacheindex="0" faceattachmentindex="0" skincolor="200,165,131,255" haircolor="210,163,111,255" facialhaircolor="210,163,111,255" personality="professional" startitemsgiven="false">
@@ -170,6 +174,7 @@
         <Item identifier="scp_armykit" amount="1" />
       </ItemSet>
     </npc>
+
     <!--Cultists: Practitioner Proctor-->
     <npc identifier="practitionerproctor_cultist_kidnapper" job="securityofficer" moduleflags="none" behavior="Passive">
       <Character speciesname="human" gender="female" headspriteid="3" hairindex="2" beardindex="0" moustacheindex="0" faceattachmentindex="0" skincolor="255,255,255,255" haircolor="255,255,255,255" facialhaircolor="255,255,255,255" personality="crazy" startitemsgiven="false" salary="4076" experiencepoints="0" additionaltalentpoints="0" ragdoll="">
@@ -195,7 +200,7 @@
         <Item identifier="scp_hardeneddivingmask" equip="true">
           <Item Identifier="oxygenitetank" />
         </Item>
-        <Item identifier="lynxexoskeletonsuitsuit" equip="true">
+        <Item identifier="lynxexoskeletonsuit" equip="true">
           <Item Identifier="infbatterycell" />
         </Item>
         <Item identifier="disciplerobes" equip="true" />
@@ -219,5 +224,6 @@
         <!--Meds-->
       </ItemSet>
     </npc>
+
   </NPCSet>
 </NPCSets>

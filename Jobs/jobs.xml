@@ -42,7 +42,7 @@
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
       <Item identifier="disciplerobes" equip="true" />
-      <Item identifier="thghelmet13alt" equip="true" />
+      <Item identifier="blackmolochhelmet" equip="true" />
       <Item identifier="scp_heavyrig" equip="true" />
       <Item identifier="sgt_longrangeradio" equip="true">
         <Item identifier="antibleeding2" amount="8" />
@@ -1021,7 +1021,7 @@
       <item identifier="idcard" equip="true" />
       <item identifier="sgt_heavymechanicsuit" equip="true" />
       <item identifier="safetyharness" equip="true" />
-      <item identifier="thghelmet5" equip="true" />
+      <item identifier="hardhelmet" equip="true" />
       <item identifier="screwdriver" />
       <item identifier="wrench" />
       <item identifier="redwire" />
@@ -1192,7 +1192,7 @@
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
       <Item identifier="pirateclotheshard" equip="true" />
-      <Item identifier="thghelmet8alt" equip="true" />
+      <Item identifier="vetmudraptorhelmet" equip="true" />
       <Item identifier="antibleeding1" amount="6" />
       <Item identifier="deusizine" amount="2" />
       <Item identifier="antibloodloss1" amount="2" />
@@ -1245,7 +1245,7 @@
       <Item identifier="headset" equip="true" />
       <Item identifier="pirateclotheshard" equip="true" />
       <Item identifier="scp_simplehelmet" equip="true" />
-      <Item identifier="thglightbodyarmor" equip="true" />
+      <Item identifier="scp_softvest" equip="true" />
       <Item identifier="shotgun">
         <Item identifier="shotgunshell" amount="6" />
       </Item>
@@ -1379,7 +1379,7 @@
       <Item identifier="headset" equip="true" />
       <Item identifier="piratebodyarmor" equip="true" />
       <Item identifier="pirateclotheshard" equip="true" />
-      <Item identifier="thghelmet8alt" equip="true" />
+      <Item identifier="vetmudraptorhelmet" equip="true" />
       <Item identifier="scp_hk21">
         <Item identifier="scp_pkpsmallboxmag" />
       </Item>
@@ -1758,7 +1758,7 @@
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
       <Item identifier="beltlight" equip="true" />
-      <Item identifier="thghelmet5" equip="true" />
+      <Item identifier="hardhelmet" equip="true" />
       <Item identifier="sgt_heavymechanicsuit" equip="true" />
       <Item identifier="safetyharness" equip="true" />
       <Item identifier="backpack" equip="true">
@@ -1833,7 +1833,7 @@
       <Item identifier="fixfoamgrenade" amount="3" />
     </ItemSet>
   </Job>
-
+<!-- need to update this to current enforcer
   <Job identifier="seppie_enforcer" onlyjobspecificdialog="false" minnumber="0" maxnumber="0" initialcount="0" hiddenjob="true" uicolor="0.72,0.45,0.0">
     <Jobicon>
       <sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="256,256,128,128" origin="0.5,0.5" />
@@ -1869,7 +1869,7 @@
       <Item identifier="scp_propital" />
     </ItemSet>
   </Job>
-
+-->
   <Job identifier="seppie_MP" onlyjobspecificdialog="false" minnumber="0" maxnumber="0" initialcount="0" hiddenjob="true" uicolor="0.72,0.45,0.0">
     <Jobicon>
       <sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="256,256,128,128" origin="0.5,0.5" />
